@@ -11,6 +11,6 @@ public class TriggerLocal : UdonSharpBehaviour
 
     public override void Interact()
     {
-        changeThis.SetActive(!changeThis.activateSelf);
+        changeThis.SetActive(!changeThis.activeSelf);
     }
 }

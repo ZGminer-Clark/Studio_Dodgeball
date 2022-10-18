@@ -7,11 +7,9 @@ using VRC.Udon;
 public class TriggerSync : UdonSharpBehaviour
 {
 
-    public GameObject changeThis activateSelf;
+    public GameObject changeThis; //the object being changed
 
     [UdonSynced] bool isON;
-
-    
     
     public override void Interact()
     {
@@ -22,14 +20,11 @@ public class TriggerSync : UdonSharpBehaviour
         }
 
         SendCustomNetworkEvent(VRC.Udon.Common.Interfaces.NetworkEventTarget.All, "turnONorOFF");
-
     }
-
-
 
     public void turnONorOFF()
     {
-        isON = !changeThis.activateSelf;
+        isON = !changeThis.activeSelf;
         changeThis.SetActive(isON);
     }
 
