@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
-  m_Name: Cube (2) Udon C# Program Asset
+  m_Name: DodgeBallCollide
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: e98956e1c06caf749b80ee91c1cfc062,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 73175cde7f4c1f14382d1e1004845522,
     type: 2}
   udonAssembly: 
   assemblyError: 
-  sourceCsScript: {fileID: 0}
-  scriptVersion: 0
-  compiledVersion: 0
+  sourceCsScript: {fileID: 11500000, guid: e87cf8108f2a01c4594995e000e63b3f, type: 3}
+  scriptVersion: 2
+  compiledVersion: 2
   behaviourSyncMode: 0
   hasInteractEvent: 0
-  scriptID: 0
+  scriptID: -3589651801398603187
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
@@ -32,5 +32,22 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: fieldDefinitions
-      Entry: 6
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[UdonSharp.Compiler.FieldDefinition,
+        UdonSharp.Editor]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
