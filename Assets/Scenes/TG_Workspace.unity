@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 719975262}
   - component: {fileID: 719975261}
   m_Layer: 0
-  m_Name: Sphere (2)
+  m_Name: Multiball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1059,6 +1059,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghost Particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4581033453001967534, guid: d681c93041096484eb0e7360a0fb6567,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5627310034178320117, guid: d681c93041096484eb0e7360a0fb6567,
         type: 3}
