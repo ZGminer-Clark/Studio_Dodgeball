@@ -1,6 +1,17 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1a167b4f48529094d908e035a13a9882
 NativeFormatImporter:
+=======
+<<<<<<<< HEAD:Assets/ProBuilder Data.meta
+guid: 430a048805aacc049bd1ec15fb28893f
+folderAsset: yes
+DefaultImporter:
+========
+guid: 1cd42d316e65ce2498970f801cc436eb
+NativeFormatImporter:
+>>>>>>>> cdf608b1294350fa0cabe74bcfb42dd46556acb7:Assets/DodgeballCode/TriggerLocal.asset.meta
+>>>>>>> cdf608b1294350fa0cabe74bcfb42dd46556acb7
   externalObjects: {}
   mainObjectFileID: 0
   userData: 
