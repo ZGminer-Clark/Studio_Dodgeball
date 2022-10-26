@@ -1052,6 +1052,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2000388105448562046, guid: d681c93041096484eb0e7360a0fb6567,
         type: 3}
+      propertyPath: m_IsLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000388105448562046, guid: d681c93041096484eb0e7360a0fb6567,
+        type: 3}
+      propertyPath: m_IsContraintActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000388105448562046, guid: d681c93041096484eb0e7360a0fb6567,
+        type: 3}
       propertyPath: m_Sources.Array.data[0].sourceTransform
       value: 
       objectReference: {fileID: 93584623}
