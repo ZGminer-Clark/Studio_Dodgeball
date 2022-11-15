@@ -13,8 +13,7 @@ public class DodgeballController : UdonSharpBehaviour
     public VRCPlayerApi Thrower;
     private VRCPlayerApi playerHit;
 
-    public Vector3 OutZonePosition; //TeamOnePosition, TeamTwoPosition;
-    public Quaternion OutZoneRotation; //TeamOneRotation, TeamTwoRotation;
+    public Transform outZone;
 
     private void Start()
     {
@@ -34,8 +33,11 @@ public class DodgeballController : UdonSharpBehaviour
     {
         if (!hitFloor && !hasEliminatedPlayer)
         {
-            playerHit = player;
-            wasHit = true;
+            //if(player.GetPlayerTag("Team") != Thrower.GetPlayerTag("Team"))
+            //{
+                playerHit = player;
+                wasHit = true;
+            //}
         }
     }
 
@@ -43,7 +45,7 @@ public class DodgeballController : UdonSharpBehaviour
     {
         if(wasHit)
         {
-            playerHit.TeleportTo(OutZonePosition, OutZoneRotation);
+            playerHit.TeleportTo(outZone.position, outZone.rotation);
             hasEliminatedPlayer = true;
         }
     }
@@ -59,7 +61,7 @@ public class DodgeballController : UdonSharpBehaviour
         {
             if (wasHit)
                 wasHit = false;
-            Thrower.TeleportTo(OutZonePosition,OutZoneRotation);
+            Thrower.TeleportTo(outZone.position, outZone.rotation);
             Thrower = pickup.currentPlayer;
         }
     }
