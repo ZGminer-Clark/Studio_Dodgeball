@@ -17,21 +17,47 @@ public class DodgeballController : UdonSharpBehaviour
 
     private void Start()
     {
-        //pickup = this.gameObject.GetComponent<VRC_Pickup>();
+        pickup = this.gameObject.GetComponent<VRC_Pickup>();
+        if (pickup == null)
+            Debug.Log("[testing] pickup was not properly set");
+        else
+            Debug.Log("[testing] pickup set");
     }
 
     //checks if the collision is the floor. if it is, change hitFloor to true.
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("[testing] OnCollisionEnter Called");
-        Debug.Log("[testing] Collided with " + collision.gameObject.name);
+        Debug.Log("[testing] OnCollisionEnter Called. Collided with " + collision.gameObject.name);
         if (collision.gameObject.name == "floor")
         {
-            Debug.Log("[testing] ball hit floor");
+            Debug.Log("[testing] ball hit floor (line 30)");
             hitFloor = true;
+            Debug.Log("[testing] hitFloor = true (line 32)");
             hasEliminatedPlayer = false;
+            Debug.Log("[testing] hasEliminatedPlayer = false (line 34)");
         }
+
+       /* VRCPlayerApi temp = collision.gameObject.GetComponent(typeof(VRCPlayerApi));
+
+        if ()
+        {
+            Debug.Log("[testing] OnPlayerCollisionEnter called on player ");
+            if (!hitFloor && !hasEliminatedPlayer)
+            {
+                //if(player.GetPlayerTag("Team") != Thrower.GetPlayerTag("Team"))
+                //{
+                //playerHit = player;
+                wasHit = true;
+                Debug.Log("[testing] player  was hit.");
+                //}
+            }
+        }*/
     }
+
+    /*private void OnCollisionExit(Collision collision)
+    {
+        
+    }*/
 
     // when the ball collides with a player, check if the ball collided with the floor or has eliminated a player already.
     // if neither of those are true, set wasHit to true and store the player as playerHit.
@@ -68,24 +94,33 @@ public class DodgeballController : UdonSharpBehaviour
     //if it was caught, send the previous player to the out zone and set the new player as the thrower.
     public override void OnPickup()
     {
-        Debug.Log("[testing] OnPickup() called");
-        if(hitFloor)
+        Debug.Log("[testing] OnPickup() called (line 92)");
+
+        Debug.Log("[testing] hitFloor = " + hitFloor + " (line 94)");
+        if (hitFloor)
         {
+            Debug.Log("[testing] hitFloor definately = true (line 97)");
             hitFloor = false;
+            Debug.Log("[testing] hitFloor = false (line 99)");
             Thrower = pickup.currentPlayer;
-            Debug.Log("[testing] Thrower is now player " + Thrower.playerId);
+            Debug.Log("[testing] Thrower is now player " + Thrower.playerId + " (line 101)");
         }
         else
         {
+            Debug.Log("[testing] wasHit = "+ wasHit +" (line 105)");
             if (wasHit)
             {
+                Debug.Log("[testing] wasHit definately = true (line 108)");
                 wasHit = false;
-                Debug.Log("[testing] wasHit is now false");
+                Debug.Log("[testing] wasHit is now false (line 110)");
             }
 
+            Debug.Log("[testing] Thrower.playerId ("+ Thrower.playerId + ") != pickup.currentPlayer.playerId("+ pickup.currentPlayer.playerId + ")?  (line 113)");
             if (Thrower.playerId != pickup.currentPlayer.playerId)
             {
+                Debug.Log("[testing] Thrower is not the current player (line 116)");
                 Thrower.TeleportTo(outZone.position, outZone.rotation);
+                Debug.Log("[testing] Teleport thrower to out (line 118)");
                 Thrower = pickup.currentPlayer;
                 Debug.Log("[testing] Previous thrower (player " + Thrower.playerId + ") sent to out.");
                 Debug.Log("[testing] Thrower is now player " + Thrower.playerId);
@@ -95,5 +130,7 @@ public class DodgeballController : UdonSharpBehaviour
                 Debug.Log("[testing] The same player caught the ball.");
             }
         }
+
+        Debug.Log("[testing] OnPickup() finished");
     }
 }
