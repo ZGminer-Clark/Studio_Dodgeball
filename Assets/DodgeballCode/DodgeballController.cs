@@ -40,7 +40,7 @@ public class DodgeballController : UdonSharpBehaviour
             Debug.Log("[testing] hasEliminatedPlayer = false (line 40)");
         }
 
-        Debug.Log("[testing] was it a player? hitFloor = "+ hitFloor +" and hasEliminatedPlayer = "+ hasEliminatedPlayer +". (line 43)");
+        /*Debug.Log("[testing] was it a player? hitFloor = "+ hitFloor +" and hasEliminatedPlayer = "+ hasEliminatedPlayer +". (line 43)");
         if (!hitFloor && !hasEliminatedPlayer)
         {
             Debug.Log("[testing] since both are false... (line 46)");
@@ -56,10 +56,10 @@ public class DodgeballController : UdonSharpBehaviour
             {
                 Debug.Log("there is no VRCPlayerApi attatched to this object. (line 57)");
             }
-        }
+        }*/
     }
 
-    private void OnCollisionExit(Collision collision)
+    /*private void OnCollisionExit(Collision collision)
     {
         Debug.Log("[testing] OnCollisionExit called. leaving " + collision.gameObject.name +". (line 64)");
 
@@ -84,10 +84,10 @@ public class DodgeballController : UdonSharpBehaviour
                 Debug.Log("there is no VRCPlayerApi attatched to this object.");
             }
         }
-    }
+    }*/
 
-    /* when the ball collides with a player, check if the ball collided with the floor or has eliminated a player already.
-    // if neither of those are true, set wasHit to true and store the player as playerHit.
+        // when the ball collides with a player, check if the ball collided with the floor or has eliminated a player already.
+        // if neither of those are true, set wasHit to true and store the player as playerHit.
     public override void OnPlayerCollisionEnter(VRCPlayerApi player)
     {
         Debug.Log("[testing] OnPlayerCollisionEnter called on player " + player.playerId);
@@ -114,7 +114,7 @@ public class DodgeballController : UdonSharpBehaviour
             hasEliminatedPlayer = true;
             Debug.Log("[testing] Player " + playerHit.playerId + " sent to out.");
         }
-    }*/
+    }
 
     //when the player picks up the ball check if the player is picking it up off the ground or catching it.
     //if it was on the ground, set the player as the thrower and set hitFloor to false.
