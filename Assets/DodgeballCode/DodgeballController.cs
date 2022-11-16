@@ -5,19 +5,19 @@ using VRC.Udon;
 
 public class DodgeballController : UdonSharpBehaviour
 {
-    private bool hitFloor = true;               
-    private bool hasEliminatedPlayer = false;   //ensures each throw can only knock out one person
-    private VRC_Pickup pickup;
+    public bool hitFloor = true;
+    public bool hasEliminatedPlayer = false;   //ensures each throw can only knock out one person
+    public VRC_Pickup pickup;
 
     public bool wasHit = false;
     public VRCPlayerApi Thrower;
-    private VRCPlayerApi playerHit;
+    public VRCPlayerApi playerHit;
 
     public Transform outZone;
 
     private void Start()
     {
-        pickup = this.gameObject.GetComponent<VRC_Pickup>();
+        //pickup = this.gameObject.GetComponent<VRC_Pickup>();
     }
 
     //checks if the collision is the floor. if it is, change hitFloor to true.
@@ -25,6 +25,7 @@ public class DodgeballController : UdonSharpBehaviour
     {
         if (collision.gameObject.name == "floor")
         {
+            Debug.Log("[testing] ball hit floor");
             hitFloor = true;
             hasEliminatedPlayer = false;
         }
@@ -34,12 +35,14 @@ public class DodgeballController : UdonSharpBehaviour
     // if neither of those are true, set wasHit to true and store the player as playerHit.
     public override void OnPlayerCollisionEnter(VRCPlayerApi player)
     {
+        Debug.Log("[testing] OnPlayerCollisionEnter called on player " + player.playerId);
         if (!hitFloor && !hasEliminatedPlayer)
         {
             //if(player.GetPlayerTag("Team") != Thrower.GetPlayerTag("Team"))
             //{
                 playerHit = player;
                 wasHit = true;
+                Debug.Log("[testing] player " + player.playerId + "was hit.");
             //}
         }
     }
@@ -48,10 +51,13 @@ public class DodgeballController : UdonSharpBehaviour
     //and set hasEliminatedPlayer to true.
     public override void OnPlayerCollisionExit(VRCPlayerApi player)
     {
-        if(wasHit)
+        Debug.Log("[testing] OnPlayerCollisionExit called on player "+ player.playerId);
+        if (wasHit && playerHit != null)
         {
             playerHit.TeleportTo(outZone.position, outZone.rotation);
+            playerHit = null;
             hasEliminatedPlayer = true;
+            Debug.Log("[testing] Player " + playerHit.playerId + " sent to out.");
         }
     }
 
@@ -60,17 +66,32 @@ public class DodgeballController : UdonSharpBehaviour
     //if it was caught, send the previous player to the out zone and set the new player as the thrower.
     public override void OnPickup()
     {
+        Debug.Log("[testing] OnPickup() called");
         if(hitFloor)
         {
             hitFloor = false;
             Thrower = pickup.currentPlayer;
+            Debug.Log("[testing] Thrower is now player " + Thrower.playerId);
         }
         else
         {
             if (wasHit)
+            {
                 wasHit = false;
-            Thrower.TeleportTo(outZone.position, outZone.rotation);
-            Thrower = pickup.currentPlayer;
+                Debug.Log("[testing] wasHit is now false");
+            }
+
+            if (Thrower.playerId != pickup.currentPlayer.playerId)
+            {
+                Thrower.TeleportTo(outZone.position, outZone.rotation);
+                Thrower = pickup.currentPlayer;
+                Debug.Log("[testing] Previous thrower (player " + Thrower.playerId + ") sent to out.");
+                Debug.Log("[testing] Thrower is now player " + Thrower.playerId);
+            }
+            else
+            {
+                Debug.Log("[testing] The same player caught the ball.");
+            }
         }
     }
 }
