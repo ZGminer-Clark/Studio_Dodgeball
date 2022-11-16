@@ -20,11 +20,11 @@ public class DodgeballController : UdonSharpBehaviour
 
     private void Start()
     {
-        pickup = this.gameObject.GetComponent<VRC_Pickup>();
         if (pickup == null)
-            Debug.Log("[testing] pickup was not properly set. (line 25)");
-        else
+        {
+            pickup = this.gameObject.transform.GetChild(0).GetComponent<VRC_Pickup>();
             Debug.Log("[testing] pickup set. (line 27)");
+        }
     }
 
     //checks if the collision is the floor. if it is, change hitFloor to true.
@@ -88,7 +88,7 @@ public class DodgeballController : UdonSharpBehaviour
 
         // when the ball collides with a player, check if the ball collided with the floor or has eliminated a player already.
         // if neither of those are true, set wasHit to true and store the player as playerHit.
-    public override void OnPlayerCollisionEnter(VRCPlayerApi player)
+    public override void OnPlayerTriggerEnter(VRCPlayerApi player)
     {
         Debug.Log("[testing] OnPlayerCollisionEnter called on player " + player.playerId);
         if (!hitFloor && !hasEliminatedPlayer)
@@ -104,7 +104,7 @@ public class DodgeballController : UdonSharpBehaviour
 
     //when the ball stops colliding with a player, check if the player is marked as hit. if they are, move them to the outZone
     //and set hasEliminatedPlayer to true.
-    public override void OnPlayerCollisionExit(VRCPlayerApi player)
+    public override void OnPlayerTriggerExit(VRCPlayerApi player)
     {
         Debug.Log("[testing] OnPlayerCollisionExit called on player "+ player.playerId);
         if (wasHit && playerHit != null)
