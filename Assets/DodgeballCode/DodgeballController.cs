@@ -23,6 +23,8 @@ public class DodgeballController : UdonSharpBehaviour
     //checks if the collision is the floor. if it is, change hitFloor to true.
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log("[testing] OnCollisionEnter Called");
+        Debug.Log("[testing] Collided with " + collision.gameObject.name);
         if (collision.gameObject.name == "floor")
         {
             Debug.Log("[testing] ball hit floor");
