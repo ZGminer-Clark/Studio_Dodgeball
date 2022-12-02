@@ -3406,6 +3406,7 @@ GameObject:
   - component: {fileID: 376673491}
   - component: {fileID: 376673490}
   - component: {fileID: 376673489}
+  - component: {fileID: 376673493}
   - component: {fileID: 376673488}
   - component: {fileID: 376673487}
   - component: {fileID: 376673485}
@@ -3515,7 +3516,7 @@ SphereCollider:
   m_GameObject: {fileID: 376673484}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -3581,6 +3582,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &376673493
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376673484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &502356572
 GameObject:
   m_ObjectHideFlags: 0
@@ -5913,7 +5927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1388520015
 Transform:
   m_ObjectHideFlags: 0

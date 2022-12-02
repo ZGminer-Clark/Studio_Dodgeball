@@ -17,142 +17,159 @@ MonoBehaviour:
   udonAssembly: ".data_start\r\n\r\n    .export outZone\r\n    .export pickup\r\n   
     \r\n    __Boolean_0: %SystemBoolean, null\r\n    __message_0: %SystemObject,
     null\r\n    __instance_0: %SystemString, null\r\n    __Boolean_1: %SystemBoolean,
-    null\r\n    __Boolean_2: %SystemBoolean, null\r\n    onPlayerTriggerEnterPlayer:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __Boolean_3: %SystemBoolean, null\r\n   
-    __message_1: %SystemObject, null\r\n    __instance_1: %SystemString, null\r\n   
-    __Boolean_4: %SystemBoolean, null\r\n    __message_2: %SystemObject, null\r\n   
-    __instance_2: %SystemString, null\r\n    __Boolean_5: %SystemBoolean, null\r\n   
-    __Boolean_6: %SystemBoolean, null\r\n    __Int32_0: %SystemInt32, null\r\n   
-    __Int32_1: %SystemInt32, null\r\n    __instance_3: %VRCSDKBaseVRCPlayerApi, null\r\n   
-    onPlayerTriggerExitPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __player_0: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __instance_4: %VRCSDKBaseVRCPlayerApi, null\r\n    __teleportPos_0:
-    %UnityEngineVector3, null\r\n    __teleportRot_0: %UnityEngineQuaternion, null\r\n   
-    __instance_5: %UnityEngineTransform, this\r\n    __instance_6: %UnityEngineTransform,
-    this\r\n    __message_3: %SystemObject, null\r\n    __instance_7: %SystemString,
-    null\r\n    __message_4: %SystemObject, null\r\n    __instance_8: %SystemString,
-    null\r\n    __Boolean_7: %SystemBoolean, null\r\n    __Boolean_8: %SystemBoolean,
-    null\r\n    __Boolean_9: %SystemBoolean, null\r\n    __Boolean_A: %SystemBoolean,
-    null\r\n    __Boolean_B: %SystemBoolean, null\r\n    __Int32_2: %SystemInt32,
-    null\r\n    __Int32_3: %SystemInt32, null\r\n    __instance_B: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __instance_C: %VRCSDK3ComponentsVRCPickup, null\r\n    __instance_D:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_E: %VRCSDKBaseVRCPlayerApi, null\r\n   
-    __teleportPos_1: %UnityEngineVector3, null\r\n    __teleportRot_1: %UnityEngineQuaternion,
-    null\r\n    __instance_F: %UnityEngineTransform, this\r\n    __instance_10: %UnityEngineTransform,
-    this\r\n    __message_6: %SystemObject, null\r\n    __instance_11: %SystemString,
-    null\r\n    __instance_9: %VRCSDK3ComponentsVRCPickup, null\r\n    __message_5:
-    %SystemObject, null\r\n    __instance_A: %SystemString, null\r\n    __Boolean_C:
-    %SystemBoolean, null\r\n    __message_7: %SystemObject, null\r\n    __instance_12:
-    %SystemString, null\r\n    __message_8: %SystemObject, null\r\n    __instance_13:
-    %SystemString, null\r\n    __Boolean_D: %SystemBoolean, null\r\n    __a_0: %SystemString,
-    null\r\n    __b_0: %SystemString, null\r\n    __instance_14: %UnityEngineGameObject,
-    this\r\n    __instance_15: %UnityEngineCollision, null\r\n    onCollisionEnterOther:
-    %UnityEngineCollision, null\r\n    __Boolean_E: %SystemBoolean, null\r\n    __message_9:
-    %SystemObject, null\r\n    __instance_16: %SystemString, null\r\n    hitFloor:
-    %SystemBoolean, null\r\n    hasEliminatedPlayer: %SystemBoolean, null\r\n   
-    isBeingHeld: %SystemBoolean, null\r\n    wasHit: %SystemBoolean, null\r\n   
-    Thrower: %VRCSDKBaseVRCPlayerApi, null\r\n    playerHit: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    outZone: %UnityEngineTransform, this\r\n    pickup: %VRCSDK3ComponentsVRCPickup,
-    null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _onPlayerTriggerEnter\r\n   
-    \r\n    _onPlayerTriggerEnter:\r\n    \r\n        PUSH, isBeingHeld\r\n       
-    JUMP_IF_FALSE, 0x00000018\r\n        JUMP, 0x000000C0\r\n        PUSH, __instance_0\r\n       
-    PUSH, __message_0\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    null\r\n    __Boolean_2: %SystemBoolean, null\r\n    __Int32_0: %SystemInt32,
+    null\r\n    __Int32_1: %SystemInt32, null\r\n    __instance_1: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    onPlayerCollisionExitPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n   
+    __player_0: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_2: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __teleportPos_0: %UnityEngineVector3, null\r\n    __teleportRot_0:
+    %UnityEngineQuaternion, null\r\n    __instance_3: %UnityEngineTransform, this\r\n   
+    __instance_4: %UnityEngineTransform, this\r\n    __message_1: %SystemObject,
+    null\r\n    __instance_5: %SystemString, null\r\n    __message_2: %SystemObject,
+    null\r\n    __instance_6: %SystemString, null\r\n    __Boolean_3: %SystemBoolean,
+    null\r\n    __Boolean_4: %SystemBoolean, null\r\n    __Boolean_5: %SystemBoolean,
+    null\r\n    __Boolean_6: %SystemBoolean, null\r\n    __Boolean_7: %SystemBoolean,
+    null\r\n    __Int32_2: %SystemInt32, null\r\n    __Int32_3: %SystemInt32, null\r\n   
+    __instance_9: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_A: %VRCSDK3ComponentsVRCPickup,
+    null\r\n    __instance_B: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_C:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __teleportPos_1: %UnityEngineVector3, null\r\n   
+    __teleportRot_1: %UnityEngineQuaternion, null\r\n    __instance_D: %UnityEngineTransform,
+    this\r\n    __instance_E: %UnityEngineTransform, this\r\n    __message_4: %SystemObject,
+    null\r\n    __instance_F: %SystemString, null\r\n    __instance_7: %VRCSDK3ComponentsVRCPickup,
+    null\r\n    __message_3: %SystemObject, null\r\n    __instance_8: %SystemString,
+    null\r\n    __Boolean_8: %SystemBoolean, null\r\n    __message_5: %SystemObject,
+    null\r\n    __instance_10: %SystemString, null\r\n    __message_6: %SystemObject,
+    null\r\n    __instance_11: %SystemString, null\r\n    __Boolean_9: %SystemBoolean,
+    null\r\n    __a_0: %SystemString, null\r\n    __b_0: %SystemString, null\r\n   
+    __instance_12: %UnityEngineGameObject, this\r\n    __instance_13: %UnityEngineCollision,
+    null\r\n    onCollisionEnterOther: %UnityEngineCollision, null\r\n    __Boolean_A:
+    %SystemBoolean, null\r\n    __message_7: %SystemObject, null\r\n    __instance_14:
+    %SystemString, null\r\n    __Boolean_B: %SystemBoolean, null\r\n    __message_8:
+    %SystemObject, null\r\n    __instance_15: %SystemString, null\r\n    __Boolean_C:
+    %SystemBoolean, null\r\n    __Boolean_D: %SystemBoolean, null\r\n    onPlayerCollisionEnterPlayer:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __Boolean_E: %SystemBoolean, null\r\n   
+    __message_9: %SystemObject, null\r\n    __instance_16: %SystemString, null\r\n   
+    __Boolean_F: %SystemBoolean, null\r\n    __message_A: %SystemObject, null\r\n   
+    __instance_17: %SystemString, null\r\n    __Boolean_10: %SystemBoolean, null\r\n   
+    __Boolean_11: %SystemBoolean, null\r\n    __Int32_4: %SystemInt32, null\r\n   
+    __Int32_5: %SystemInt32, null\r\n    __instance_18: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __player_1: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_19: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    __teleportPos_2: %UnityEngineVector3, null\r\n    __teleportRot_2:
+    %UnityEngineQuaternion, null\r\n    __instance_1A: %UnityEngineTransform, this\r\n   
+    __instance_1B: %UnityEngineTransform, this\r\n    __message_B: %SystemObject,
+    null\r\n    __instance_1C: %SystemString, null\r\n    hitFloor: %SystemBoolean,
+    null\r\n    hasEliminatedPlayer: %SystemBoolean, null\r\n    isBeingHeld: %SystemBoolean,
+    null\r\n    wasHit: %SystemBoolean, null\r\n    Thrower: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    playerHit: %VRCSDKBaseVRCPlayerApi, null\r\n    outZone: %UnityEngineTransform,
+    this\r\n    pickup: %VRCSDK3ComponentsVRCPickup, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onPlayerTriggerExit\r\n    \r\n    _onPlayerTriggerExit:\r\n    \r\n       
+    PUSH, isBeingHeld\r\n        JUMP_IF_FALSE, 0x00000018\r\n        JUMP, 0x0000019C\r\n       
+    PUSH, __instance_0\r\n        PUSH, __message_0\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
     PUSH, __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, hitFloor\r\n        JUMP_IF_FALSE, 0x00000058\r\n        JUMP, 0x000000C0\r\n       
-    PUSH, hasEliminatedPlayer\r\n        JUMP_IF_FALSE, 0x00000070\r\n        JUMP,
-    0x000000C0\r\n        PUSH, onPlayerTriggerEnterPlayer\r\n        PUSH, playerHit\r\n       
-    COPY\r\n        PUSH, __Boolean_3\r\n        PUSH, wasHit\r\n        COPY\r\n       
-    PUSH, __instance_1\r\n        PUSH, __message_1\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
-    PUSH, __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerTriggerExit\r\n    \r\n    _onPlayerTriggerExit:\r\n   
-    \r\n        PUSH, isBeingHeld\r\n        JUMP_IF_FALSE, 0x000000E0\r\n       
-    JUMP, 0x00000264\r\n        PUSH, __instance_2\r\n        PUSH, __message_2\r\n       
-    EXTERN, \"SystemString.__ToString__SystemString\"\r\n        PUSH, __message_2\r\n       
-    EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        PUSH,
-    wasHit\r\n        JUMP_IF_FALSE, 0x00000264\r\n        PUSH, onPlayerTriggerExitPlayer\r\n       
-    PUSH, __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH,
+    PUSH, wasHit\r\n        JUMP_IF_FALSE, 0x0000019C\r\n        PUSH, onPlayerCollisionExitPlayer\r\n       
+    PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
     __Int32_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
     PUSH, playerHit\r\n        PUSH, __player_0\r\n        COPY\r\n        PUSH,
     __player_0\r\n        PUSH, __Int32_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerId__VRCSDKBaseVRCPlayerApi__SystemInt32\"\r\n       
-    PUSH, __Int32_0\r\n        PUSH, __Int32_1\r\n        PUSH, __Boolean_6\r\n       
+    PUSH, __Int32_0\r\n        PUSH, __Int32_1\r\n        PUSH, __Boolean_2\r\n       
     EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
-    PUSH, __Boolean_6\r\n        JUMP_IF_FALSE, 0x0000025C\r\n        PUSH, onPlayerTriggerExitPlayer\r\n       
-    PUSH, __instance_4\r\n        COPY\r\n        PUSH, outZone\r\n        PUSH,
-    __instance_5\r\n        COPY\r\n        PUSH, __instance_5\r\n        PUSH, __teleportPos_0\r\n       
+    PUSH, __Boolean_2\r\n        JUMP_IF_FALSE, 0x00000194\r\n        PUSH, onPlayerCollisionExitPlayer\r\n       
+    PUSH, __instance_2\r\n        COPY\r\n        PUSH, outZone\r\n        PUSH,
+    __instance_3\r\n        COPY\r\n        PUSH, __instance_3\r\n        PUSH, __teleportPos_0\r\n       
     EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
-    PUSH, outZone\r\n        PUSH, __instance_6\r\n        COPY\r\n        PUSH,
-    __instance_6\r\n        PUSH, __teleportRot_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
-    PUSH, __instance_4\r\n        PUSH, __teleportPos_0\r\n        PUSH, __teleportRot_0\r\n       
+    PUSH, outZone\r\n        PUSH, __instance_4\r\n        COPY\r\n        PUSH,
+    __instance_4\r\n        PUSH, __teleportRot_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_2\r\n        PUSH, __teleportPos_0\r\n        PUSH, __teleportRot_0\r\n       
     EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n       
-    PUSH, __instance_7\r\n        PUSH, __message_3\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
-    PUSH, __message_3\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x0000025C\r\n        JUMP, 0x00000264\r\n        JUMP, 0xFFFFFFFC\r\n   
+    PUSH, __instance_5\r\n        PUSH, __message_1\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0x00000194\r\n        JUMP, 0x0000019C\r\n        JUMP, 0xFFFFFFFC\r\n   
     \r\n    .export _onPickup\r\n    \r\n    _onPickup:\r\n    \r\n        PUSH,
-    __instance_8\r\n        PUSH, __message_4\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
-    PUSH, __message_4\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, __Boolean_7\r\n        PUSH, isBeingHeld\r\n        COPY\r\n        PUSH,
-    hitFloor\r\n        JUMP_IF_FALSE, 0x00000328\r\n        PUSH, __Boolean_9\r\n       
-    PUSH, hitFloor\r\n        COPY\r\n        PUSH, pickup\r\n        PUSH, __instance_9\r\n       
-    COPY\r\n        PUSH, __instance_9\r\n        PUSH, Thrower\r\n        EXTERN,
+    __instance_6\r\n        PUSH, __message_2\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_2\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    PUSH, __Boolean_3\r\n        PUSH, isBeingHeld\r\n        COPY\r\n        PUSH,
+    hitFloor\r\n        JUMP_IF_FALSE, 0x00000260\r\n        PUSH, __Boolean_5\r\n       
+    PUSH, hitFloor\r\n        COPY\r\n        PUSH, pickup\r\n        PUSH, __instance_7\r\n       
+    COPY\r\n        PUSH, __instance_7\r\n        PUSH, Thrower\r\n        EXTERN,
     \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
-    PUSH, __instance_A\r\n        PUSH, __message_5\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
-    PUSH, __message_5\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x000004BC\r\n        PUSH, __Boolean_A\r\n        PUSH, wasHit\r\n       
-    COPY\r\n        PUSH, pickup\r\n        PUSH, __instance_C\r\n        COPY\r\n       
-    PUSH, __instance_C\r\n        PUSH, __instance_B\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
-    PUSH, __instance_B\r\n        PUSH, __Int32_2\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
-    PUSH, Thrower\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH,
-    __instance_D\r\n        PUSH, __Int32_3\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
-    PUSH, __Int32_2\r\n        PUSH, __Int32_3\r\n        PUSH, __Boolean_B\r\n       
+    PUSH, __instance_8\r\n        PUSH, __message_3\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_3\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0x000003F4\r\n        PUSH, __Boolean_6\r\n        PUSH, wasHit\r\n       
+    COPY\r\n        PUSH, pickup\r\n        PUSH, __instance_A\r\n        COPY\r\n       
+    PUSH, __instance_A\r\n        PUSH, __instance_9\r\n        EXTERN, \"VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, __instance_9\r\n        PUSH, __Int32_2\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
+    PUSH, Thrower\r\n        PUSH, __instance_B\r\n        COPY\r\n        PUSH,
+    __instance_B\r\n        PUSH, __Int32_3\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
+    PUSH, __Int32_2\r\n        PUSH, __Int32_3\r\n        PUSH, __Boolean_7\r\n       
     EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
-    PUSH, __Boolean_B\r\n        JUMP_IF_FALSE, 0x000003E4\r\n        JUMP, 0x000004BC\r\n       
-    PUSH, Thrower\r\n        PUSH, __instance_E\r\n        COPY\r\n        PUSH,
-    outZone\r\n        PUSH, __instance_F\r\n        COPY\r\n        PUSH, __instance_F\r\n       
+    PUSH, __Boolean_7\r\n        JUMP_IF_FALSE, 0x0000031C\r\n        JUMP, 0x000003F4\r\n       
+    PUSH, Thrower\r\n        PUSH, __instance_C\r\n        COPY\r\n        PUSH,
+    outZone\r\n        PUSH, __instance_D\r\n        COPY\r\n        PUSH, __instance_D\r\n       
     PUSH, __teleportPos_1\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
-    PUSH, outZone\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH,
-    __instance_10\r\n        PUSH, __teleportRot_1\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
-    PUSH, __instance_E\r\n        PUSH, __teleportPos_1\r\n        PUSH, __teleportRot_1\r\n       
+    PUSH, outZone\r\n        PUSH, __instance_E\r\n        COPY\r\n        PUSH,
+    __instance_E\r\n        PUSH, __teleportRot_1\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_C\r\n        PUSH, __teleportPos_1\r\n        PUSH, __teleportRot_1\r\n       
     EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n       
-    PUSH, __instance_11\r\n        PUSH, __message_6\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
-    PUSH, __message_6\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, pickup\r\n        PUSH, __instance_9\r\n        COPY\r\n        PUSH, __message_5\r\n       
+    PUSH, __instance_F\r\n        PUSH, __message_4\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_4\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    PUSH, pickup\r\n        PUSH, __instance_7\r\n        COPY\r\n        PUSH, __message_3\r\n       
     EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        JUMP,
     0xFFFFFFFC\r\n    \r\n    .export _onDrop\r\n    \r\n    _onDrop:\r\n    \r\n       
-    PUSH, __Boolean_C\r\n        PUSH, isBeingHeld\r\n        COPY\r\n        PUSH,
-    __instance_12\r\n        PUSH, __message_7\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
-    PUSH, __message_7\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    PUSH, __Boolean_8\r\n        PUSH, isBeingHeld\r\n        COPY\r\n        PUSH,
+    __instance_10\r\n        PUSH, __message_5\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_5\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onCollisionEnter\r\n    \r\n    _onCollisionEnter:\r\n   
-    \r\n        PUSH, __instance_13\r\n        PUSH, __message_8\r\n        EXTERN,
-    \"SystemString.__ToString__SystemString\"\r\n        PUSH, __message_8\r\n       
+    \r\n        PUSH, __instance_11\r\n        PUSH, __message_6\r\n        EXTERN,
+    \"SystemString.__ToString__SystemString\"\r\n        PUSH, __message_6\r\n       
     EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n        PUSH,
-    onCollisionEnterOther\r\n        PUSH, __instance_15\r\n        COPY\r\n       
-    PUSH, __instance_15\r\n        PUSH, __instance_14\r\n        EXTERN, \"UnityEngineCollision.__get_gameObject__UnityEngineGameObject\"\r\n       
-    PUSH, __instance_14\r\n        PUSH, __a_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
-    PUSH, __a_0\r\n        PUSH, __b_0\r\n        PUSH, __Boolean_D\r\n        EXTERN,
+    onCollisionEnterOther\r\n        PUSH, __instance_13\r\n        COPY\r\n       
+    PUSH, __instance_13\r\n        PUSH, __instance_12\r\n        EXTERN, \"UnityEngineCollision.__get_gameObject__UnityEngineGameObject\"\r\n       
+    PUSH, __instance_12\r\n        PUSH, __a_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
+    PUSH, __a_0\r\n        PUSH, __b_0\r\n        PUSH, __Boolean_9\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_D\r\n        JUMP_IF_FALSE, 0x000005E8\r\n        PUSH, __Boolean_E\r\n       
-    PUSH, hitFloor\r\n        COPY\r\n        PUSH, __instance_16\r\n        PUSH,
-    __message_9\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __Boolean_9\r\n        JUMP_IF_FALSE, 0x00000520\r\n        PUSH, __Boolean_A\r\n       
+    PUSH, hitFloor\r\n        COPY\r\n        PUSH, __instance_14\r\n        PUSH,
+    __message_7\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_7\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0x00000520\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerCollisionEnter\r\n   
+    \r\n    _onPlayerCollisionEnter:\r\n    \r\n        PUSH, isBeingHeld\r\n       
+    JUMP_IF_FALSE, 0x00000540\r\n        JUMP, 0x000005E8\r\n        PUSH, __instance_15\r\n       
+    PUSH, __message_8\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_8\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    PUSH, hitFloor\r\n        JUMP_IF_FALSE, 0x00000580\r\n        JUMP, 0x000005E8\r\n       
+    PUSH, hasEliminatedPlayer\r\n        JUMP_IF_FALSE, 0x00000598\r\n        JUMP,
+    0x000005E8\r\n        PUSH, onPlayerCollisionEnterPlayer\r\n        PUSH, playerHit\r\n       
+    COPY\r\n        PUSH, __Boolean_E\r\n        PUSH, wasHit\r\n        COPY\r\n       
+    PUSH, __instance_16\r\n        PUSH, __message_9\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
     PUSH, __message_9\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    JUMP, 0x000005E8\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerCollisionExit\r\n    \r\n   
+    _onPlayerCollisionExit:\r\n    \r\n        PUSH, isBeingHeld\r\n        JUMP_IF_FALSE,
+    0x00000608\r\n        JUMP, 0x0000078C\r\n        PUSH, __instance_17\r\n       
+    PUSH, __message_A\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_A\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    PUSH, wasHit\r\n        JUMP_IF_FALSE, 0x0000078C\r\n        PUSH, onPlayerCollisionExitPlayer\r\n       
+    PUSH, __instance_18\r\n        COPY\r\n        PUSH, __instance_18\r\n       
+    PUSH, __Int32_4\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
+    PUSH, playerHit\r\n        PUSH, __player_1\r\n        COPY\r\n        PUSH,
+    __player_1\r\n        PUSH, __Int32_5\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetPlayerId__VRCSDKBaseVRCPlayerApi__SystemInt32\"\r\n       
+    PUSH, __Int32_4\r\n        PUSH, __Int32_5\r\n        PUSH, __Boolean_11\r\n       
+    EXTERN, \"SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
+    PUSH, __Boolean_11\r\n        JUMP_IF_FALSE, 0x00000784\r\n        PUSH, onPlayerCollisionExitPlayer\r\n       
+    PUSH, __instance_19\r\n        COPY\r\n        PUSH, outZone\r\n        PUSH,
+    __instance_1A\r\n        COPY\r\n        PUSH, __instance_1A\r\n        PUSH,
+    __teleportPos_2\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
+    PUSH, outZone\r\n        PUSH, __instance_1B\r\n        COPY\r\n        PUSH,
+    __instance_1B\r\n        PUSH, __teleportRot_2\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_19\r\n        PUSH, __teleportPos_2\r\n        PUSH, __teleportRot_2\r\n       
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n       
+    PUSH, __instance_1C\r\n        PUSH, __message_B\r\n        EXTERN, \"SystemString.__ToString__SystemString\"\r\n       
+    PUSH, __message_B\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0x00000784\r\n        JUMP, 0x0000078C\r\n        JUMP, 0xFFFFFFFC\r\n   
+    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
     description: 
     nodes:
-    - fullName: Event_OnPlayerTriggerEnter
-      uid: da025efb-6ff6-43a0-b59d-32287eba9511
-      position: {x: 928, y: -791}
-      nodeUIDs: []
-      flowUIDs:
-      - a2daec91-d1d6-478e-bfae-00338078fb65
-      nodeValues: []
-    - fullName: Event_OnPlayerTriggerExit
-      uid: e4c33b92-ba84-4355-8a1c-1a4851d9d48c
-      position: {x: 924, y: 82.99994}
-      nodeUIDs: []
-      flowUIDs:
-      - 0e1c76d6-2cc0-40c8-b74d-d25e31c73882
-      nodeValues: []
     - fullName: Event_OnPickup
       uid: cde6d5b5-e48a-4644-b937-59d76dbfd66b
       position: {x: -1703, y: -809}
@@ -403,7 +420,7 @@ MonoBehaviour:
       position: {x: 2328.3167, y: -456.36224}
       nodeUIDs:
       - 
-      - da025efb-6ff6-43a0-b59d-32287eba9511|0
+      - f2d9fc3c-45c9-43d6-8094-c5c02c30022b|0
       - 
       flowUIDs:
       - 49962d77-257b-45cd-af31-4f75e43bc056
@@ -475,7 +492,7 @@ MonoBehaviour:
       uid: d439f7cc-42dc-4b38-b7e5-3f15a5663855
       position: {x: 2434, y: 496.99994}
       nodeUIDs:
-      - e4c33b92-ba84-4355-8a1c-1a4851d9d48c|0
+      - 3b4c2ce2-4fd3-4b7f-8e13-fbd612d1db51|0
       - 2e05457c-789e-41f8-9bcf-3d916ed89482|0
       - df1f8ec7-8393-494b-8fa9-7dbfca3893a5|0
       flowUIDs:
@@ -536,7 +553,7 @@ MonoBehaviour:
       uid: 30f36a32-361a-43eb-bb03-8d5aa23b372f
       position: {x: 1978, y: 272.99994}
       nodeUIDs:
-      - e4c33b92-ba84-4355-8a1c-1a4851d9d48c|0
+      - 3b4c2ce2-4fd3-4b7f-8e13-fbd612d1db51|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -1185,6 +1202,20 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|False
+    - fullName: Event_OnPlayerCollisionEnter
+      uid: f2d9fc3c-45c9-43d6-8094-c5c02c30022b
+      position: {x: 921.68695, y: -786.9392}
+      nodeUIDs: []
+      flowUIDs:
+      - a2daec91-d1d6-478e-bfae-00338078fb65
+      nodeValues: []
+    - fullName: Event_OnPlayerCollisionExit
+      uid: 3b4c2ce2-4fd3-4b7f-8e13-fbd612d1db51
+      position: {x: 901, y: 81.91819}
+      nodeUIDs: []
+      flowUIDs:
+      - 0e1c76d6-2cc0-40c8-b74d-d25e31c73882
+      nodeValues: []
     updateOrder: 0
   graphElementData:
   - type: 2
@@ -1193,10 +1224,10 @@ MonoBehaviour:
       the floor","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 57db01bd-43fb-4d38-9830-4e66b31a1af3
-    jsonData: '{"uid":"57db01bd-43fb-4d38-9830-4e66b31a1af3","layout":{"serializedVersion":"2","x":903.0001831054688,"y":-951.3861083984375,"width":2080.0,"height":779.0},"containedElements":["da025efb-6ff6-43a0-b59d-32287eba9511","c11fc5cd-ead4-4248-9df0-7baac7c8dc0d","49962d77-257b-45cd-af31-4f75e43bc056","09b47bd2-2959-4ce5-b18a-43172d22972e","9c53c7d8-08e8-49b5-a95e-1c7d954773c8","0e1684fa-f9c5-4253-a1ec-e485bc290cf9","dc6225fd-c845-4bc7-a159-aed2c9505d89","648716fa-3949-40f3-86c1-f29034f1ea86","0d333f94-08cc-480e-9d7d-a1dfb06ef75e","c9db6efa-1f2e-4db3-8fbb-4604a60aaf45","ad33b398-6a10-457c-98e3-fc220dbf4d13","9fbca7c1-c0a5-408c-9c0e-0135e0f6e08c","b20032f2-0c80-4e44-baae-f541f3c086e5","a1d41f19-d291-44a4-840b-7bff0d08a4ee","489eddfb-b266-4621-92fa-954f84a57282","db574cd6-8d1d-4665-9277-2fc2a7b3b5db","48aed999-792d-4cab-9f50-b1561ce25270","20c5fd90-6935-4406-8e22-bd2816ca17e8","f463b732-3175-4f27-be4a-896da760cc98","29a8aa75-6da1-430f-b2b9-b3921367cd34","fb7b4a32-8ce0-434e-bdfe-bccc07385d65","19293c2c-efff-4e97-b189-135b91847e57","0b009019-69ec-4a8c-b16e-cf06975b6ae5","0d0889c7-5bbe-401d-b2b5-db36a643af8a","a6c5fa75-f9c6-4571-b91e-571108c8e306","4248714c-6032-4371-80c1-108b156540d8","eecc4688-4889-4744-bd95-29fe4ab49a81","d5cc9cf9-56f1-44ee-9990-408c19d1fb95","516f4424-0562-4fde-8bad-80bd094708cf","b28df419-3c66-439d-9c99-e8b2609c6bba","c986b188-7f7b-4fb4-a413-db6ec7d78863","346a782c-6ec0-4f97-b2a6-87dd6157ec00","0ea57f96-c374-49fd-abb0-6d3a7a76fa34","bc25ea5a-d371-41cc-b478-7eab5cb685ed","3f14c790-4a30-4bef-9b44-03df29f57323","badfd581-98c0-4581-887d-56cc2e07f1db","09063789-62ad-489f-9846-9c325d2c1aeb","97b2630b-9704-44f6-8fea-23bd10f993f6","a2daec91-d1d6-478e-bfae-00338078fb65","b393f84a-083f-4b6a-a991-e41d4355360a","58cc473b-c535-42cf-a031-3d9f1aef8a24","edf5bdaa-e271-4744-b0b0-045d45682eef","c9b9aa5f-1e0a-4efc-89d1-b4dd392a8049","06cd2765-bab5-43a6-9450-1bccaa73dcce","6d42ba35-cfe1-4d52-89c3-a52356128e8e","d0635aa9-c783-47c5-8b00-a88f22839bf0","5af088e3-3b49-4de2-af42-06187801e612","3039a197-18d0-4812-97e6-9539544606df","b3935c3e-5a9c-4780-baa0-84e7dcefd56e","dcf0d51c-0b2f-437e-bd55-2d426e50700c","b8ef8eb4-e8d8-473b-aea4-a230cab09626","a829862e-877e-4100-8e33-3a7f83c2aa38"],"title":"OnPlayerTriggerEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"57db01bd-43fb-4d38-9830-4e66b31a1af3","layout":{"serializedVersion":"2","x":897.0,"y":-951.3861083984375,"width":2086.0,"height":777.0},"containedElements":["c11fc5cd-ead4-4248-9df0-7baac7c8dc0d","49962d77-257b-45cd-af31-4f75e43bc056","09b47bd2-2959-4ce5-b18a-43172d22972e","9c53c7d8-08e8-49b5-a95e-1c7d954773c8","0e1684fa-f9c5-4253-a1ec-e485bc290cf9","dc6225fd-c845-4bc7-a159-aed2c9505d89","648716fa-3949-40f3-86c1-f29034f1ea86","0d333f94-08cc-480e-9d7d-a1dfb06ef75e","c9db6efa-1f2e-4db3-8fbb-4604a60aaf45","ad33b398-6a10-457c-98e3-fc220dbf4d13","9fbca7c1-c0a5-408c-9c0e-0135e0f6e08c","b20032f2-0c80-4e44-baae-f541f3c086e5","a1d41f19-d291-44a4-840b-7bff0d08a4ee","489eddfb-b266-4621-92fa-954f84a57282","db574cd6-8d1d-4665-9277-2fc2a7b3b5db","48aed999-792d-4cab-9f50-b1561ce25270","20c5fd90-6935-4406-8e22-bd2816ca17e8","f463b732-3175-4f27-be4a-896da760cc98","29a8aa75-6da1-430f-b2b9-b3921367cd34","fb7b4a32-8ce0-434e-bdfe-bccc07385d65","19293c2c-efff-4e97-b189-135b91847e57","0b009019-69ec-4a8c-b16e-cf06975b6ae5","0d0889c7-5bbe-401d-b2b5-db36a643af8a","a6c5fa75-f9c6-4571-b91e-571108c8e306","4248714c-6032-4371-80c1-108b156540d8","eecc4688-4889-4744-bd95-29fe4ab49a81","d5cc9cf9-56f1-44ee-9990-408c19d1fb95","516f4424-0562-4fde-8bad-80bd094708cf","b28df419-3c66-439d-9c99-e8b2609c6bba","c986b188-7f7b-4fb4-a413-db6ec7d78863","346a782c-6ec0-4f97-b2a6-87dd6157ec00","0ea57f96-c374-49fd-abb0-6d3a7a76fa34","bc25ea5a-d371-41cc-b478-7eab5cb685ed","3f14c790-4a30-4bef-9b44-03df29f57323","badfd581-98c0-4581-887d-56cc2e07f1db","09063789-62ad-489f-9846-9c325d2c1aeb","97b2630b-9704-44f6-8fea-23bd10f993f6","a2daec91-d1d6-478e-bfae-00338078fb65","b393f84a-083f-4b6a-a991-e41d4355360a","58cc473b-c535-42cf-a031-3d9f1aef8a24","edf5bdaa-e271-4744-b0b0-045d45682eef","c9b9aa5f-1e0a-4efc-89d1-b4dd392a8049","06cd2765-bab5-43a6-9450-1bccaa73dcce","6d42ba35-cfe1-4d52-89c3-a52356128e8e","d0635aa9-c783-47c5-8b00-a88f22839bf0","5af088e3-3b49-4de2-af42-06187801e612","3039a197-18d0-4812-97e6-9539544606df","b3935c3e-5a9c-4780-baa0-84e7dcefd56e","dcf0d51c-0b2f-437e-bd55-2d426e50700c","b8ef8eb4-e8d8-473b-aea4-a230cab09626","a829862e-877e-4100-8e33-3a7f83c2aa38","f2d9fc3c-45c9-43d6-8094-c5c02c30022b"],"title":"OnPlayerTriggerEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: a162ab69-75b1-4969-a09b-98225f5692ab
-    jsonData: '{"uid":"a162ab69-75b1-4969-a09b-98225f5692ab","layout":{"serializedVersion":"2","x":898.9998779296875,"y":-75.00999450683594,"width":2003.0,"height":903.0},"containedElements":["cac8a98a-1bd1-4e75-8dbe-ceda22a33cb9","d6b85374-83fc-4584-bc24-058a05e6569a","30f36a32-361a-43eb-bb03-8d5aa23b372f","8bcf5778-b172-4f3d-a6d7-9d7cbfb17571","e223e6cb-f16b-4e45-8fdf-8b20b20fd10a","dedf5fbb-fa73-4a03-8df1-f29127232f56","7516091b-e293-438b-8f10-1ebe6e09b517","d439f7cc-42dc-4b38-b7e5-3f15a5663855","df1f8ec7-8393-494b-8fa9-7dbfca3893a5","2e05457c-789e-41f8-9bcf-3d916ed89482","2596103a-789a-46dd-98e3-c0ca9246bad6","e4c33b92-ba84-4355-8a1c-1a4851d9d48c","db861b55-773a-4265-bab3-81bf756737b8","9f0c8d6b-d35d-4c37-b54b-6f64b08e01dc","5805d3c5-193e-4e18-9127-6a84e6db1d3c","a4188b31-19d9-40e6-a702-1fdd6650bb94","281b0f72-4ee1-479d-9ea8-4e8c7d122606","804148d2-de55-40dc-89d7-1a40c74e9b2a","eab1b7ef-e612-4660-b41b-591a5c1beae4","6ac32c12-4fce-4a45-873d-7c04c00f27de","1a45a07a-966c-4632-93bd-7b1c1e21ce42","3df0533e-822e-4767-afac-b5e8afb86c98","118dc325-c7e2-4cc5-ae64-d41fd84bd5fa","8de2d682-9882-4bbf-a34d-b46f52dabb04","4c35f99f-1318-45a5-8f69-da9b2b4deaa8","e22a61c5-b622-4e93-bf9a-f775a265ae04","5107b326-4880-40b2-a479-eceb5d04d7d9","d1512655-7b8e-4df6-8232-37e6e5d538c6","6643e7cc-b088-4991-b2af-361074a38591","2085bb7b-e32b-429e-a26a-ec48d577c179","9e21b7b8-bc32-453f-a35c-296b547451fb","3174f53e-a04e-49eb-8ddd-1bf5525ad3d5","ece2b4a2-23d8-4595-a23e-2c49b1a5e6cc","26a39e30-dfe3-4fdb-b027-1a8b43099897","f1305a6d-741a-4900-8e6e-8b8e277a46ea","560027fe-d3ae-4dd1-90b9-4f9874594a41","c42496c6-3cba-4c48-ba49-f5e7f36523d9","7bfaff02-766a-4d39-8b69-12fe863dd8a3","c2abfb4f-9ebd-462e-a659-1ff84070d6ac","bfa5c616-242c-4289-b91a-e256ea44268e","261a1b86-ffb0-4860-acb0-9fdd3ce76828","f3cad8f5-11f5-432b-846e-41bac4ec14a7","cb37bf5a-340f-4d61-be14-1157ef41300a","9605ad10-b60c-4647-a6b9-8ddf2a8a9fec","3399d4da-c5fa-4bc9-81f1-64ccbae4bac6","0e1c76d6-2cc0-40c8-b74d-d25e31c73882","f98d0e86-9c10-4672-af94-28a8aaef690e","2ebcf0e8-376a-480c-91d3-3eb178244620","b18f3a2e-2b6f-4440-a6a4-e6ec05901de6","e830502d-b6d8-4869-a0e9-46b12a12d7e3","0da0a927-f29a-415d-a743-4ee58a512825","105eac96-2c69-44c9-acee-49e60d0e4c7f","22759f69-37ac-4556-afb8-b73ac5b73291","327d8136-dd01-4649-a3fe-3f294a9b36cc","d5f65572-2b14-4ac9-9352-3a8fed72e99f","d00f0cfb-1664-4926-9504-6d5c707dd39f","10781eaa-a9a0-4103-8e46-2ebc98b8f4b0","e90a2587-bcab-4957-a5aa-2c796ecc5dc5","2f4197cd-7d60-40be-8e6c-9a3ce7d7c5d5","dd9bd710-4fb3-4c72-8026-cf75b0275307","a230cb34-6bbe-4c70-bac2-8998cf83351b","9b792ef1-f90c-400a-af3a-ba190db87b57","b2b2dc23-7b5b-4b51-bdc3-7ea8edb546ec","d5cbd89f-72bc-4548-9f13-3eaf32f05f3d","37432b7b-2964-4d27-bee9-8156b629e41f","49168a48-b230-4466-9a94-bf040577eb16","b2f30b97-2e54-4a62-a657-a4a231c8a54e","bb0e665b-feb7-4e5f-bc1d-abcf1f9c6b37","072cd131-62c8-4863-8c0c-6f5b21a91a3a","a775a481-99da-40b2-ac99-4dbb7e906e12","395cf263-2b3b-4d85-bcf8-8024a091bdfd","23ec7921-72f5-4b52-8548-8257979e539d","a063d699-1cb8-4789-990d-f0499d6cfe18"],"title":"OnPlayerTriggerExit","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"a162ab69-75b1-4969-a09b-98225f5692ab","layout":{"serializedVersion":"2","x":876.0000610351563,"y":-75.01005554199219,"width":2023.0,"height":903.0},"containedElements":["cac8a98a-1bd1-4e75-8dbe-ceda22a33cb9","d6b85374-83fc-4584-bc24-058a05e6569a","30f36a32-361a-43eb-bb03-8d5aa23b372f","8bcf5778-b172-4f3d-a6d7-9d7cbfb17571","e223e6cb-f16b-4e45-8fdf-8b20b20fd10a","dedf5fbb-fa73-4a03-8df1-f29127232f56","7516091b-e293-438b-8f10-1ebe6e09b517","d439f7cc-42dc-4b38-b7e5-3f15a5663855","df1f8ec7-8393-494b-8fa9-7dbfca3893a5","2e05457c-789e-41f8-9bcf-3d916ed89482","2596103a-789a-46dd-98e3-c0ca9246bad6","db861b55-773a-4265-bab3-81bf756737b8","9f0c8d6b-d35d-4c37-b54b-6f64b08e01dc","5805d3c5-193e-4e18-9127-6a84e6db1d3c","a4188b31-19d9-40e6-a702-1fdd6650bb94","281b0f72-4ee1-479d-9ea8-4e8c7d122606","804148d2-de55-40dc-89d7-1a40c74e9b2a","eab1b7ef-e612-4660-b41b-591a5c1beae4","6ac32c12-4fce-4a45-873d-7c04c00f27de","1a45a07a-966c-4632-93bd-7b1c1e21ce42","3df0533e-822e-4767-afac-b5e8afb86c98","118dc325-c7e2-4cc5-ae64-d41fd84bd5fa","8de2d682-9882-4bbf-a34d-b46f52dabb04","4c35f99f-1318-45a5-8f69-da9b2b4deaa8","e22a61c5-b622-4e93-bf9a-f775a265ae04","5107b326-4880-40b2-a479-eceb5d04d7d9","d1512655-7b8e-4df6-8232-37e6e5d538c6","6643e7cc-b088-4991-b2af-361074a38591","2085bb7b-e32b-429e-a26a-ec48d577c179","9e21b7b8-bc32-453f-a35c-296b547451fb","3174f53e-a04e-49eb-8ddd-1bf5525ad3d5","ece2b4a2-23d8-4595-a23e-2c49b1a5e6cc","26a39e30-dfe3-4fdb-b027-1a8b43099897","f1305a6d-741a-4900-8e6e-8b8e277a46ea","560027fe-d3ae-4dd1-90b9-4f9874594a41","c42496c6-3cba-4c48-ba49-f5e7f36523d9","7bfaff02-766a-4d39-8b69-12fe863dd8a3","c2abfb4f-9ebd-462e-a659-1ff84070d6ac","bfa5c616-242c-4289-b91a-e256ea44268e","261a1b86-ffb0-4860-acb0-9fdd3ce76828","f3cad8f5-11f5-432b-846e-41bac4ec14a7","cb37bf5a-340f-4d61-be14-1157ef41300a","9605ad10-b60c-4647-a6b9-8ddf2a8a9fec","3399d4da-c5fa-4bc9-81f1-64ccbae4bac6","0e1c76d6-2cc0-40c8-b74d-d25e31c73882","f98d0e86-9c10-4672-af94-28a8aaef690e","2ebcf0e8-376a-480c-91d3-3eb178244620","b18f3a2e-2b6f-4440-a6a4-e6ec05901de6","e830502d-b6d8-4869-a0e9-46b12a12d7e3","0da0a927-f29a-415d-a743-4ee58a512825","105eac96-2c69-44c9-acee-49e60d0e4c7f","22759f69-37ac-4556-afb8-b73ac5b73291","327d8136-dd01-4649-a3fe-3f294a9b36cc","d5f65572-2b14-4ac9-9352-3a8fed72e99f","d00f0cfb-1664-4926-9504-6d5c707dd39f","10781eaa-a9a0-4103-8e46-2ebc98b8f4b0","e90a2587-bcab-4957-a5aa-2c796ecc5dc5","2f4197cd-7d60-40be-8e6c-9a3ce7d7c5d5","dd9bd710-4fb3-4c72-8026-cf75b0275307","a230cb34-6bbe-4c70-bac2-8998cf83351b","9b792ef1-f90c-400a-af3a-ba190db87b57","b2b2dc23-7b5b-4b51-bdc3-7ea8edb546ec","d5cbd89f-72bc-4548-9f13-3eaf32f05f3d","37432b7b-2964-4d27-bee9-8156b629e41f","49168a48-b230-4466-9a94-bf040577eb16","b2f30b97-2e54-4a62-a657-a4a231c8a54e","bb0e665b-feb7-4e5f-bc1d-abcf1f9c6b37","072cd131-62c8-4863-8c0c-6f5b21a91a3a","a775a481-99da-40b2-ac99-4dbb7e906e12","395cf263-2b3b-4d85-bcf8-8024a091bdfd","23ec7921-72f5-4b52-8548-8257979e539d","a063d699-1cb8-4789-990d-f0499d6cfe18","3b4c2ce2-4fd3-4b7f-8e13-fbd612d1db51"],"title":"OnPlayerTriggerExit","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 8e65f69b-f58a-458c-be72-71a2f2c4963a
     jsonData: '{"uid":"8e65f69b-f58a-458c-be72-71a2f2c4963a","layout":{"serializedVersion":"2","x":-1841.0,"y":-976.8717651367188,"width":2671.0,"height":1043.0},"containedElements":["d4b8b230-08d6-484a-8dac-92e207670525","751a3e80-140e-4617-9b01-ee41d7d8f146","a89819fb-bc08-4c02-9e45-60b0d094cc2a","803c9dfb-233b-4530-8da6-a0a3a4e0b2d2","0df19b53-668d-460b-9925-d15a91e07531","9e253c6a-a32c-4e83-9eae-0f1858e9e4ac","a13aeb86-9df1-4fca-806d-176e0b5c6873","8c1a6d26-3522-47dc-9343-9e5bc60f9ce3","9a0f4bfd-a16f-422f-aca7-62d07d8eb729","8fa85e0e-fedd-4f93-9d3f-a874faff37e2","a1f00146-3eb6-4fa9-8b81-2df6ad56d50d","3ccb240e-2891-437d-997d-3d272a3bea4d","9c4386b7-c1c6-42fb-b85c-7a16eb2d39ab","752413d3-29ce-46e6-b20b-f9fc677b3a58","4923a237-bc9d-4b24-bdb4-3a837bcee58a","ca333a2a-2454-4c4a-a247-cfce74e818c2","42ade50f-7040-48ea-a598-f70c1f67686a","74d047bb-79bc-47c5-b9f5-ec001a4aa59c","887d24c8-d2a8-4937-ac33-eb7ddb4eb86a","4413bc0f-e66d-45e0-a5e9-e4505a27176a","1b19cb01-919b-4493-be6f-7dd85e9bf808","9ebacf17-d96a-4134-87f2-4a65d057e6e9","de168d1d-6928-49c1-9e04-dd9efd5b931a","cde6d5b5-e48a-4644-b937-59d76dbfd66b","759693c7-9c2d-4f42-92b7-97e3c1d9a8a3","a090e132-5da3-46c3-a178-5d46e53f5cd7","fe49d797-649d-46f2-b172-12d68f9fa0b6","b9e99dbf-06f4-41a5-a3ce-dd3c5c85ba33","c62b9b9a-9438-4c53-a958-454aefd630e1","ec16eccc-687f-49e8-a96c-eb7b4e00ef1b","cc9178b2-6c74-41ca-9ef1-ae3c40c4bd58","3115ff2b-4260-4ece-9a29-06555fbe68f5","fc8d22da-735a-40a1-b798-6f66f7ec4cdd","36172154-0f29-42d6-a912-c69cfccd0f17","5910cd9c-0d5a-406a-96a3-399352187660","fc0b2c4f-b51e-43c5-a9fb-091bca8c543b","d70142ca-27fe-4e7d-877a-4c1e080fd3f0","af2e3c0e-8fdd-4f3b-8d55-06d355668306","4d8c0ed0-5061-4484-bdb4-3740c66af434","a750f0f4-d072-492e-a014-698c3a3eab64","3133c497-3d13-4dfa-b89c-3ac494647d6c","93f40fc3-2779-44cd-b782-1e7bf73290e8","6221c94a-6299-426f-b152-38efc084aa99","72039c72-972e-47fc-a4bb-12599c4977df","1932f2e4-6bdf-4989-b17b-cb8285bedb1f","21632740-4fc9-49a5-8c47-c137f60d6ee0","e74bf30e-5007-4703-9e05-ae977cad329a","bc45b50d-e4a9-4ad9-91aa-04143e5bd2d5","2b76ce4c-a15d-4418-b2a1-508745e11b8d","6d00867f-c7cb-4ef8-9084-bf1091232ca2","49ebd54d-1a62-4637-a630-b496d232d65f","73b792c9-1438-463f-96bf-08bc3fc4bc29","0cb6b0c2-615e-4a30-8f86-907d5d343760","d8805358-39b7-4464-a8e6-d5a4679f4c42","8a30c049-70ea-466d-8bd7-72fc995213bf","1d60221a-735b-4645-9ac2-a08b9dd9108e","dfd09243-8a82-4bed-9dca-fc92514e5451","8d79cdcc-cdf4-4799-9bd6-78635c655e99","799e60d9-c420-4149-8082-a56adbd50b4e","10cf6456-63f5-421d-ae80-89221f7bef2c","78dc0cc8-1e0c-4bc8-8cb3-9b4414c06a4f","55983d9f-aed4-4b89-839c-9e6033f17b38","fea10b5d-fc8b-4797-9cc7-bcb9186a378c","64a2f92e-9a60-48a6-861f-bc271d20fd3f","06a9e8fe-09bd-4ed8-a563-4ebae35ad3fc","6d53fff0-8308-4aba-bf8b-a424c77f4146","6eb212a2-5ca3-4599-9e18-6d683d99723e","eccf768a-fa83-40bc-a91a-8918fc27b556","32516791-1108-4bc2-b542-0157c72e833b","f518ee4c-b8f1-4fff-8308-6df97cd49f47","fae1bd30-8a22-42b9-87f1-6ad21e79c4c8","6375e4a1-dfc2-4503-9a50-cbcda5c2f30f","de117c8e-d38d-4b1d-87aa-dab778d7c53f","ae2bf10e-acc6-4813-a8ec-25100518f966","7b32b617-d1ff-4945-900c-553c9097b305","05b70314-c7ed-45f7-ac7a-8a8aea47ff6f","ae2eee3c-fee8-4f7b-8838-4e163251e469","4abac33b-e506-4f37-a2d7-943e7bc7386e","e80e4923-94f0-45a5-8229-e422ca692986","041aa5ca-8e54-4226-8ec5-66f760573cc2","ab10330b-d68e-49ad-ad8b-62a84872167b","61e997d2-fb8f-47c9-86ee-d51d7ea17aea","31b1181f-551c-4562-b259-79839b097a7e","8779023b-3d67-4888-aaa1-066930ac9091","746d2388-f9fb-425d-966a-066a576a403c","e4cc869c-acf6-4c47-8c05-a51891b86d18","3bdfe09d-2a1c-4e89-a319-4dccdd739b15","18017144-2c2a-42b9-a126-6585dc8c4239","7ecd5aea-df4f-457f-b3fb-39e9b48bd91b","eec3526d-fe3c-435b-bc32-1f4eff4ff070","6b51e59c-8a6e-442a-860e-bd93f91c9670","40fda21a-fce0-45d3-9244-d829745eee1e","cae72ab6-8001-4b89-8d2c-d0f7b961f542","efbbd927-5cf1-48f0-8a1e-b3c80ebd6dc2","a8cf8011-6784-4289-8000-99c847a9ab14","77dff849-63ff-4e1c-923a-cd02f06c4e66","68af0dd9-4fa3-4c0c-aceb-39403f15404a","9d09224b-2d5b-4c0b-9a6c-d3c4dc6d9d28","a18b17aa-03fc-4781-877c-cca2490cd427","dca23110-2b2f-4bdf-8085-335b5c7936d0","f6cc9a7e-ccfe-4294-88f0-0e7d826bb037","fa6b5fae-57d2-4a91-b12e-ed4e47484515","d27624bc-1766-44d4-a11b-028b897bf511","342c4933-8ed5-4489-93a2-56b18e6d31f9","be180d04-081e-49ac-bb9b-08aa1a9864c4","6245fb1b-45f2-4d72-b536-e797b61f248a","f7246b10-b4cb-4076-9792-62747d9cedab","42ee4986-9afd-4ede-b954-a93c64fa0ddc","5506c725-af49-4b59-98e4-f5e756bfc686","6a82db00-e3b0-4e47-b6fb-ad114b382f91","f6223bd8-c81e-41ad-b167-35f06f0a4bfa","cd0e514b-fc30-4bc4-9960-305723102796","e8df6bd3-a2a4-40fc-bab2-42af7bdd0d05","b009a767-0ff0-435b-9ec1-b96f51e38213","85bbdc4b-2a02-4540-862e-6c97726c0275","78f482a1-2f49-4429-8be2-eb4283850d66","7b4fa08f-804b-4bb4-be77-e13f6b77f1ab","e3c324b4-072d-488e-aa13-07b5b4dccc1d","5e1432c2-af3a-4b3a-b683-5e9f41206734","0f5166fc-4473-4d60-bc12-03570cf59a23","1ce088be-8d93-4413-8d60-7f9d40deb0f7","b67aa316-106e-4b09-94dc-6e31190767a9","83b3cf6a-178c-484c-9f16-8a905bb8ebc7","f6b7db02-65ee-4332-9675-c9b364122fe1","b833af7f-6bb6-453c-9a21-b0d541006706","402931c4-5da9-443f-8fb9-e4bc6afc8675","b41e0ea5-8f8e-4602-a97c-6a43ed3a9160","87b66e9c-e350-489f-b717-4dcc2fd80caa","01e5d9a0-a276-4e05-9d29-e9ba98cccb2f","0797fd95-6023-48a4-b51a-40e265d7e8b6","ed2d58ee-61e4-45be-97b3-ca735580ab98","0345df91-32dc-495b-a7e0-2b8294ace944","0aab729f-9818-4bd5-b092-dcd3d545a113","a796a0c0-89c2-4f3d-9960-d47bf1f54edf","34f71423-e522-4abf-9ec7-72ed5b5361e7","4731f5e1-5a89-4ac6-9e55-662b964cfe11","c26f4e99-3269-4ed2-b4c7-fa59a0b028c3","cf96ee43-42ba-4984-8b8c-b39e4f31f7d4","b9ab4154-4a73-47cb-b600-f60d621db4dc","3266b71e-3564-4cbf-bf3f-144413e60bd2","9e56c0f0-e1bf-49dc-a002-bc6762026cba","62e1d938-9a20-4462-afca-82ee353c8889","487021fa-4af5-42ff-912f-38bc9888be76","0f656071-924b-4240-825e-e2d4944fff66","9474e1e7-fd23-4c4b-9ca3-4426c86bb395","099a8c9f-b11b-4eb3-9dab-00a65a2db22e","a56ef159-13fd-4da8-88ea-c78f14f9bb1b","5c936e58-1580-415a-8ad5-05242950a9ea","6faaba58-aa15-4a31-9703-0dd40a1398d6","acf3cbfc-b33b-4480-9454-18a29615b7ea","d954243d-cd6e-478e-8a79-9275f858d043","ef3455da-a9dc-4bc6-9413-98ba89e63eaa","6d02a135-bf5a-4178-853a-d8f19d83edc5","01216090-532a-4195-99c4-f2a4a12748fb","9377dc32-930a-49a4-b39a-86ea56422f0b","d843225d-b9bb-4d40-b403-a86febdbb3b8","d56706b4-e5b3-4444-a94c-5b797f8c6c70","426006f0-6f06-4fe3-89d5-96eec3b6cec3","c6cdb018-2759-4c48-acd8-44d4d834c8fe","5441659f-6bf5-4a99-b763-5fbf2d81fd5a","494c7826-8946-4cc7-ae64-bbb365690a6c","a3a79254-1c7d-4e1b-82c1-2494995f3032","f2064dac-344d-4af6-9eec-373d35384cd3"],"title":"On
