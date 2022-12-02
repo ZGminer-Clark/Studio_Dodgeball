@@ -114,28 +114,28 @@ MonoBehaviour:
     nodes:
     - fullName: Event_OnPlayerTriggerEnter
       uid: da025efb-6ff6-43a0-b59d-32287eba9511
-      position: {x: 47.00004, y: 4.4556236}
+      position: {x: -948, y: 640}
       nodeUIDs: []
       flowUIDs:
       - 0e1684fa-f9c5-4253-a1ec-e485bc290cf9
       nodeValues: []
     - fullName: Event_OnPlayerTriggerExit
       uid: e4c33b92-ba84-4355-8a1c-1a4851d9d48c
-      position: {x: 94.17632, y: 426.786}
+      position: {x: -953, y: 1102}
       nodeUIDs: []
       flowUIDs:
       - 7516091b-e293-438b-8f10-1ebe6e09b517
       nodeValues: []
     - fullName: Event_OnPickup
       uid: cde6d5b5-e48a-4644-b937-59d76dbfd66b
-      position: {x: 1140.0002, y: -336.6952}
+      position: {x: -972.2501, y: -611.4002}
       nodeUIDs: []
       flowUIDs:
       - de168d1d-6928-49c1-9e04-dd9efd5b931a
       nodeValues: []
     - fullName: Event_OnDrop
       uid: ceb8f0e2-6e26-4960-879e-7d2ee82cefa6
-      position: {x: 1134.0425, y: 369.34756}
+      position: {x: -930.99316, y: 1726.9004}
       nodeUIDs: []
       flowUIDs:
       - 0bcba8e7-5a19-4eb4-a2ae-c85c7ef48e5b
@@ -327,7 +327,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 648716fa-3949-40f3-86c1-f29034f1ea86
-      position: {x: 223.00003, y: 111.45563}
+      position: {x: -520.2225, y: 797.3225}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -338,7 +338,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: dc6225fd-c845-4bc7-a159-aed2c9505d89
-      position: {x: 57.00004, y: 112.45563}
+      position: {x: -720.7425, y: 796}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -349,7 +349,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 0e1684fa-f9c5-4253-a1ec-e485bc290cf9
-      position: {x: 319.00003, y: 5.4556236}
+      position: {x: -566, y: 640}
       nodeUIDs:
       - dc6225fd-c845-4bc7-a159-aed2c9505d89|0
       flowUIDs:
@@ -361,7 +361,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Branch
       uid: 9c53c7d8-08e8-49b5-a95e-1c7d954773c8
-      position: {x: 486.00003, y: 5.4556236}
+      position: {x: -288, y: 640}
       nodeUIDs:
       - 648716fa-3949-40f3-86c1-f29034f1ea86|0
       flowUIDs:
@@ -373,7 +373,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 09b47bd2-2959-4ce5-b18a-43172d22972e
-      position: {x: 692.00006, y: 6.4556236}
+      position: {x: -27, y: 640}
       nodeUIDs:
       - 
       - da025efb-6ff6-43a0-b59d-32287eba9511|0
@@ -390,7 +390,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 49962d77-257b-45cd-af31-4f75e43bc056
-      position: {x: 882.00006, y: 7.4556236}
+      position: {x: 250, y: 640}
       nodeUIDs:
       - 
       - c11fc5cd-ead4-4248-9df0-7baac7c8dc0d|0
@@ -407,7 +407,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: c11fc5cd-ead4-4248-9df0-7baac7c8dc0d
-      position: {x: 747.00006, y: 164.45563}
+      position: {x: 129.64503, y: 811}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -417,7 +417,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
     - fullName: Get_Variable
       uid: 2596103a-789a-46dd-98e3-c0ca9246bad6
-      position: {x: 405.17633, y: 670.786}
+      position: {x: -149.39507, y: 1325.205}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -428,7 +428,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
       uid: 2e05457c-789e-41f8-9bcf-3d916ed89482
-      position: {x: 607.17633, y: 537.786}
+      position: {x: 58.935, y: 1229.39}
       nodeUIDs:
       - 2596103a-789a-46dd-98e3-c0ca9246bad6|0
       flowUIDs: []
@@ -437,7 +437,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
       uid: df1f8ec7-8393-494b-8fa9-7dbfca3893a5
-      position: {x: 610.17633, y: 630.786}
+      position: {x: 54, y: 1325}
       nodeUIDs:
       - 2596103a-789a-46dd-98e3-c0ca9246bad6|0
       flowUIDs: []
@@ -446,7 +446,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
       uid: d439f7cc-42dc-4b38-b7e5-3f15a5663855
-      position: {x: 827.17633, y: 417.786}
+      position: {x: 284.9325, y: 1101.7426}
       nodeUIDs:
       - e4c33b92-ba84-4355-8a1c-1a4851d9d48c|0
       - 2e05457c-789e-41f8-9bcf-3d916ed89482|0
@@ -463,7 +463,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0,"w":0.0}
     - fullName: Branch
       uid: 7516091b-e293-438b-8f10-1ebe6e09b517
-      position: {x: 347.17633, y: 426.786}
+      position: {x: -403, y: 1102}
       nodeUIDs:
       - dedf5fbb-fa73-4a03-8df1-f29127232f56|0
       flowUIDs:
@@ -475,7 +475,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: dedf5fbb-fa73-4a03-8df1-f29127232f56
-      position: {x: 185.17633, y: 338.786}
+      position: {x: -567.6749, y: 1227.3225}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -486,7 +486,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: e223e6cb-f16b-4e45-8fdf-8b20b20fd10a
-      position: {x: 35.176323, y: 582.786}
+      position: {x: -710.555, y: 1467.0625}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -497,7 +497,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__GetPlayerId__VRCSDKBaseVRCPlayerApi__SystemInt32
       uid: 8bcf5778-b172-4f3d-a6d7-9d7cbfb17571
-      position: {x: 248.17633, y: 624.786}
+      position: {x: -497.55502, y: 1467.0625}
       nodeUIDs:
       - e223e6cb-f16b-4e45-8fdf-8b20b20fd10a|0
       flowUIDs: []
@@ -506,7 +506,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
       uid: 30f36a32-361a-43eb-bb03-8d5aa23b372f
-      position: {x: 244.17633, y: 535.786}
+      position: {x: -500.55502, y: 1375.0625}
       nodeUIDs:
       - e4c33b92-ba84-4355-8a1c-1a4851d9d48c|0
       flowUIDs: []
@@ -515,7 +515,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
       uid: d6b85374-83fc-4584-bc24-058a05e6569a
-      position: {x: 404.17633, y: 557.786}
+      position: {x: -329.55496, y: 1375.0625}
       nodeUIDs:
       - 30f36a32-361a-43eb-bb03-8d5aa23b372f|0
       - 8bcf5778-b172-4f3d-a6d7-9d7cbfb17571|0
@@ -527,7 +527,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Branch
       uid: cac8a98a-1bd1-4e75-8dbe-ceda22a33cb9
-      position: {x: 554.17633, y: 426.786}
+      position: {x: -156, y: 1102}
       nodeUIDs:
       - d6b85374-83fc-4584-bc24-058a05e6569a|0
       flowUIDs:
@@ -539,7 +539,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: de168d1d-6928-49c1-9e04-dd9efd5b931a
-      position: {x: 1333.0002, y: -337.6952}
+      position: {x: -779.2501, y: -611.4002}
       nodeUIDs:
       - 
       - 9ebacf17-d96a-4134-87f2-4a65d057e6e9|0
@@ -556,7 +556,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: 9ebacf17-d96a-4134-87f2-4a65d057e6e9
-      position: {x: 1206.0002, y: -254.69519}
+      position: {x: -901, y: -435}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -566,7 +566,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
     - fullName: Get_Variable
       uid: 1b19cb01-919b-4493-be6f-7dd85e9bf808
-      position: {x: 1361.0002, y: -184.69519}
+      position: {x: -750.2501, y: -435.4002}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -577,7 +577,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: 4413bc0f-e66d-45e0-a5e9-e4505a27176a
-      position: {x: 1521.0002, y: -337.6952}
+      position: {x: -591.2501, y: -611.4002}
       nodeUIDs:
       - 1b19cb01-919b-4493-be6f-7dd85e9bf808|0
       flowUIDs:
@@ -589,7 +589,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 887d24c8-d2a8-4937-ac33-eb7ddb4eb86a
-      position: {x: 1731.0002, y: -469.6952}
+      position: {x: -206.25034, y: -856.7295}
       nodeUIDs:
       - 
       - 74d047bb-79bc-47c5-b9f5-ec001a4aa59c|0
@@ -606,7 +606,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: 74d047bb-79bc-47c5-b9f5-ec001a4aa59c
-      position: {x: 1612.0002, y: -424.6952}
+      position: {x: -327.2504, y: -689.7295}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -616,7 +616,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Set_Variable
       uid: 42ade50f-7040-48ea-a598-f70c1f67686a
-      position: {x: 1907.0002, y: -471.6952}
+      position: {x: 64.74966, y: -856.7295}
       nodeUIDs:
       - 
       - 4923a237-bc9d-4b24-bdb4-3a837bcee58a|0
@@ -632,7 +632,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: ca333a2a-2454-4c4a-a247-cfce74e818c2
-      position: {x: 1699.0002, y: -312.6952}
+      position: {x: -338.25037, y: -597.7295}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -643,7 +643,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi
       uid: 4923a237-bc9d-4b24-bdb4-3a837bcee58a
-      position: {x: 1878.0002, y: -313.6952}
+      position: {x: -159.25034, y: -597.7295}
       nodeUIDs:
       - ca333a2a-2454-4c4a-a247-cfce74e818c2|0
       flowUIDs: []
@@ -652,7 +652,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Branch
       uid: f6d66ffc-5a6c-43ac-adf6-8d0a86fa1106
-      position: {x: 1686.0002, y: -217.69519}
+      position: {x: -340.25012, y: -460.4002}
       nodeUIDs:
       - 49e9ed4d-7b11-439f-b243-b4165cc075ef|0
       flowUIDs:
@@ -664,7 +664,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 49e9ed4d-7b11-439f-b243-b4165cc075ef
-      position: {x: 1530.0002, y: -192.69519}
+      position: {x: -494.40012, y: -376.5}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -675,7 +675,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Set_Variable
       uid: 752413d3-29ce-46e6-b20b-f9fc677b3a58
-      position: {x: 1841.0002, y: -123.69519}
+      position: {x: -14.083491, y: -509.23267}
       nodeUIDs:
       - 
       - 9c4386b7-c1c6-42fb-b85c-7a16eb2d39ab|0
@@ -692,7 +692,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: 9c4386b7-c1c6-42fb-b85c-7a16eb2d39ab
-      position: {x: 1723.0002, y: -92.69519}
+      position: {x: -141.0835, y: -464.8946}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -702,7 +702,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
     - fullName: Branch
       uid: 3ccb240e-2891-437d-997d-3d272a3bea4d
-      position: {x: 2046.0002, y: -218.69519}
+      position: {x: 158, y: -390}
       nodeUIDs:
       - 9e253c6a-a32c-4e83-9eae-0f1858e9e4ac|0
       flowUIDs:
@@ -714,7 +714,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: a1f00146-3eb6-4fa9-8b81-2df6ad56d50d
-      position: {x: 1283.0002, y: 9.30481}
+      position: {x: -610.6859, y: -204.8548}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -725,7 +725,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDK3ComponentsVRCPickup.__get_currentPlayer__VRCSDKBaseVRCPlayerApi
       uid: 8fa85e0e-fedd-4f93-9d3f-a874faff37e2
-      position: {x: 1462.0002, y: 8.30481}
+      position: {x: -431.68585, y: -205.85487}
       nodeUIDs:
       - a1f00146-3eb6-4fa9-8b81-2df6ad56d50d|0
       flowUIDs: []
@@ -734,7 +734,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: 9a0f4bfd-a16f-422f-aca7-62d07d8eb729
-      position: {x: 1465.0002, y: 110.30481}
+      position: {x: -428.68588, y: -103.85483}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -745,7 +745,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
       uid: 8c1a6d26-3522-47dc-9343-9e5bc60f9ce3
-      position: {x: 1671.0002, y: 8.30481}
+      position: {x: -222.68585, y: -205.85487}
       nodeUIDs:
       - 8fa85e0e-fedd-4f93-9d3f-a874faff37e2|0
       flowUIDs: []
@@ -754,7 +754,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
       uid: a13aeb86-9df1-4fca-806d-176e0b5c6873
-      position: {x: 1668.0002, y: 108.30481}
+      position: {x: -225.68593, y: -105.85488}
       nodeUIDs:
       - 9a0f4bfd-a16f-422f-aca7-62d07d8eb729|0
       flowUIDs: []
@@ -763,7 +763,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean
       uid: 9e253c6a-a32c-4e83-9eae-0f1858e9e4ac
-      position: {x: 1835.0002, y: 44.30481}
+      position: {x: -58.685886, y: -169.85486}
       nodeUIDs:
       - 8c1a6d26-3522-47dc-9343-9e5bc60f9ce3|0
       - a13aeb86-9df1-4fca-806d-176e0b5c6873|0
@@ -775,14 +775,14 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Event_OnCollisionEnter
       uid: 4df18ab3-8b61-4c18-8a2d-45ef1125ee8b
-      position: {x: 53.74504, y: -374.31055}
+      position: {x: -957.4814, y: 153.43985}
       nodeUIDs: []
       flowUIDs:
       - bc4279da-4862-43c4-b122-b91729dc8713
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
       uid: 0df19b53-668d-460b-9925-d15a91e07531
-      position: {x: 2249.0002, y: -215.69519}
+      position: {x: 561.7734, y: -389.70575}
       nodeUIDs:
       - d4b8b230-08d6-484a-8dac-92e207670525|0
       - a89819fb-bc08-4c02-9e45-60b0d094cc2a|0
@@ -799,7 +799,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0,"w":0.0}
     - fullName: Get_Variable
       uid: 803c9dfb-233b-4530-8da6-a0a3a4e0b2d2
-      position: {x: 1828.0002, y: 161.30481}
+      position: {x: 128.56268, y: -136.4394}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -810,7 +810,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
       uid: a89819fb-bc08-4c02-9e45-60b0d094cc2a
-      position: {x: 2024.0002, y: -13.69519}
+      position: {x: 349.5209, y: -154.16302}
       nodeUIDs:
       - 803c9dfb-233b-4530-8da6-a0a3a4e0b2d2
       flowUIDs: []
@@ -819,7 +819,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
       uid: 751a3e80-140e-4617-9b01-ee41d7d8f146
-      position: {x: 2029.0002, y: 75.30481}
+      position: {x: 348.56265, y: -61.809128}
       nodeUIDs:
       - 803c9dfb-233b-4530-8da6-a0a3a4e0b2d2
       flowUIDs: []
@@ -828,7 +828,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: d4b8b230-08d6-484a-8dac-92e207670525
-      position: {x: 2023.0002, y: -101.69519}
+      position: {x: 352.43735, y: -244.26437}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -839,7 +839,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Set_Variable
       uid: 0bcba8e7-5a19-4eb4-a2ae-c85c7ef48e5b
-      position: {x: 1285.0425, y: 368.34756}
+      position: {x: -779.9933, y: 1725.9003}
       nodeUIDs:
       - 
       - cfbb94f5-6d16-45b7-b65b-f75a24ef5c7a|0
@@ -855,7 +855,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: cfbb94f5-6d16-45b7-b65b-f75a24ef5c7a
-      position: {x: 1141.0425, y: 454.34756}
+      position: {x: -923.99335, y: 1811.9004}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -865,7 +865,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Branch
       uid: bc4279da-4862-43c4-b122-b91729dc8713
-      position: {x: 378.0454, y: -338.20444}
+      position: {x: -23.481384, y: 153.43985}
       nodeUIDs:
       - 6030e65a-ba30-4d9c-934a-dfe456a2ce77|0
       flowUIDs:
@@ -876,7 +876,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: UnityEngineCollision.__get_gameObject__UnityEngineGameObject
       uid: a4c5a434-6b36-4df5-9556-4ed12d4dbbb3
-      position: {x: 49.045418, y: -218.20442}
+      position: {x: -655.4814, y: 291.43985}
       nodeUIDs:
       - 4df18ab3-8b61-4c18-8a2d-45ef1125ee8b|0
       flowUIDs: []
@@ -885,7 +885,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineGameObject.__get_name__SystemString
       uid: 274543e7-32cb-45eb-a5f0-2a070498e47a
-      position: {x: 253.04541, y: -219.20442}
+      position: {x: -451.48138, y: 291.43985}
       nodeUIDs:
       - a4c5a434-6b36-4df5-9556-4ed12d4dbbb3|0
       flowUIDs: []
@@ -894,9 +894,10 @@ MonoBehaviour:
         stringValue: 
     - fullName: SystemString.__Equals__SystemString_SystemString__SystemBoolean
       uid: 6030e65a-ba30-4d9c-934a-dfe456a2ce77
-      position: {x: 413.0454, y: -219.20442}
+      position: {x: -290.48138, y: 291.43985}
       nodeUIDs:
       - 274543e7-32cb-45eb-a5f0-2a070498e47a|0
+      - 
       - 
       flowUIDs: []
       nodeValues:
@@ -904,9 +905,12 @@ MonoBehaviour:
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|floor
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.StringComparison, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|CurrentCulture
     - fullName: Set_Variable
       uid: 5b1822ba-cfb8-4b5e-a9e8-cf74c76536b8
-      position: {x: 552.04535, y: -384.2044}
+      position: {x: 152.51862, y: 153.43985}
       nodeUIDs:
       - 
       - 41ded540-6f29-4840-9daf-d3398750b620|0
@@ -923,7 +927,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: 41ded540-6f29-4840-9daf-d3398750b620
-      position: {x: 432.04538, y: -447.20444}
+      position: {x: 16.518616, y: 337.43985}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -933,7 +937,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
     - fullName: Set_Variable
       uid: be7632f9-4407-41f7-bd7d-8f9aa0b844c1
-      position: {x: 745.87494, y: -387.32935}
+      position: {x: 345.51862, y: 153.43985}
       nodeUIDs:
       - 
       - edfe7afb-ffef-4286-b9d1-911d2d4440ef|0
@@ -949,7 +953,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Const_SystemBoolean
       uid: edfe7afb-ffef-4286-b9d1-911d2d4440ef
-      position: {x: 617.0453, y: -469.9886}
+      position: {x: 200.51862, y: 337.43985}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -961,18 +965,27 @@ MonoBehaviour:
   graphElementData:
   - type: 2
     uid: b05360a0-a884-4cdc-b82d-77cd3d7533b6
-    jsonData: '{"uid":"b05360a0-a884-4cdc-b82d-77cd3d7533b6","layout":{"serializedVersion":"2","x":24.00002098083496,"y":-528.9999389648438,"width":986.0,"height":462.0},"containedElements":["edfe7afb-ffef-4286-b9d1-911d2d4440ef","be7632f9-4407-41f7-bd7d-8f9aa0b844c1","41ded540-6f29-4840-9daf-d3398750b620","5b1822ba-cfb8-4b5e-a9e8-cf74c76536b8","6030e65a-ba30-4d9c-934a-dfe456a2ce77","274543e7-32cb-45eb-a5f0-2a070498e47a","a4c5a434-6b36-4df5-9556-4ed12d4dbbb3","bc4279da-4862-43c4-b122-b91729dc8713","4df18ab3-8b61-4c18-8a2d-45ef1125ee8b"],"title":"OnCollisionEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"b05360a0-a884-4cdc-b82d-77cd3d7533b6","layout":{"serializedVersion":"2","x":-982.0,"y":94.00004577636719,"width":1714.0,"height":356.0},"containedElements":["edfe7afb-ffef-4286-b9d1-911d2d4440ef","be7632f9-4407-41f7-bd7d-8f9aa0b844c1","41ded540-6f29-4840-9daf-d3398750b620","5b1822ba-cfb8-4b5e-a9e8-cf74c76536b8","6030e65a-ba30-4d9c-934a-dfe456a2ce77","274543e7-32cb-45eb-a5f0-2a070498e47a","a4c5a434-6b36-4df5-9556-4ed12d4dbbb3","bc4279da-4862-43c4-b122-b91729dc8713","4df18ab3-8b61-4c18-8a2d-45ef1125ee8b","a5c7af1b-8205-430d-a14a-a65db9fd036c","7cecf835-7ea0-491f-a35d-00e1a4f97747","42d30584-611e-443f-a577-233f08854f37","d01005ba-119d-43de-9c1b-7012ebcff4d3"],"title":"Eliminate
+      Player Tag","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 57db01bd-43fb-4d38-9830-4e66b31a1af3
-    jsonData: '{"uid":"57db01bd-43fb-4d38-9830-4e66b31a1af3","layout":{"serializedVersion":"2","x":22.00006103515625,"y":-55.000091552734378,"width":1038.0,"height":327.0},"containedElements":["da025efb-6ff6-43a0-b59d-32287eba9511","c11fc5cd-ead4-4248-9df0-7baac7c8dc0d","49962d77-257b-45cd-af31-4f75e43bc056","09b47bd2-2959-4ce5-b18a-43172d22972e","9c53c7d8-08e8-49b5-a95e-1c7d954773c8","0e1684fa-f9c5-4253-a1ec-e485bc290cf9","dc6225fd-c845-4bc7-a159-aed2c9505d89","648716fa-3949-40f3-86c1-f29034f1ea86"],"title":"OnPlayerTriggerEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"57db01bd-43fb-4d38-9830-4e66b31a1af3","layout":{"serializedVersion":"2","x":-973.0,"y":581.0,"width":1402.0,"height":338.0},"containedElements":["da025efb-6ff6-43a0-b59d-32287eba9511","c11fc5cd-ead4-4248-9df0-7baac7c8dc0d","49962d77-257b-45cd-af31-4f75e43bc056","09b47bd2-2959-4ce5-b18a-43172d22972e","9c53c7d8-08e8-49b5-a95e-1c7d954773c8","0e1684fa-f9c5-4253-a1ec-e485bc290cf9","dc6225fd-c845-4bc7-a159-aed2c9505d89","648716fa-3949-40f3-86c1-f29034f1ea86","0d333f94-08cc-480e-9d7d-a1dfb06ef75e","c9db6efa-1f2e-4db3-8fbb-4604a60aaf45"],"title":"OnPlayerTriggerEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: a162ab69-75b1-4969-a09b-98225f5692ab
-    jsonData: '{"uid":"a162ab69-75b1-4969-a09b-98225f5692ab","layout":{"serializedVersion":"2","x":10.000022888183594,"y":282.9998474121094,"width":1056.0,"height":496.0},"containedElements":["cac8a98a-1bd1-4e75-8dbe-ceda22a33cb9","d6b85374-83fc-4584-bc24-058a05e6569a","30f36a32-361a-43eb-bb03-8d5aa23b372f","8bcf5778-b172-4f3d-a6d7-9d7cbfb17571","e223e6cb-f16b-4e45-8fdf-8b20b20fd10a","dedf5fbb-fa73-4a03-8df1-f29127232f56","7516091b-e293-438b-8f10-1ebe6e09b517","d439f7cc-42dc-4b38-b7e5-3f15a5663855","df1f8ec7-8393-494b-8fa9-7dbfca3893a5","2e05457c-789e-41f8-9bcf-3d916ed89482","2596103a-789a-46dd-98e3-c0ca9246bad6","e4c33b92-ba84-4355-8a1c-1a4851d9d48c"],"title":"OnPlayerTriggerExit","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"a162ab69-75b1-4969-a09b-98225f5692ab","layout":{"serializedVersion":"2","x":-978.0,"y":1043.0,"width":1496.0,"height":532.0},"containedElements":["cac8a98a-1bd1-4e75-8dbe-ceda22a33cb9","d6b85374-83fc-4584-bc24-058a05e6569a","30f36a32-361a-43eb-bb03-8d5aa23b372f","8bcf5778-b172-4f3d-a6d7-9d7cbfb17571","e223e6cb-f16b-4e45-8fdf-8b20b20fd10a","dedf5fbb-fa73-4a03-8df1-f29127232f56","7516091b-e293-438b-8f10-1ebe6e09b517","d439f7cc-42dc-4b38-b7e5-3f15a5663855","df1f8ec7-8393-494b-8fa9-7dbfca3893a5","2e05457c-789e-41f8-9bcf-3d916ed89482","2596103a-789a-46dd-98e3-c0ca9246bad6","e4c33b92-ba84-4355-8a1c-1a4851d9d48c","db861b55-773a-4265-bab3-81bf756737b8","9f0c8d6b-d35d-4c37-b54b-6f64b08e01dc","5805d3c5-193e-4e18-9127-6a84e6db1d3c","a4188b31-19d9-40e6-a702-1fdd6650bb94","281b0f72-4ee1-479d-9ea8-4e8c7d122606","804148d2-de55-40dc-89d7-1a40c74e9b2a","eab1b7ef-e612-4660-b41b-591a5c1beae4","6ac32c12-4fce-4a45-873d-7c04c00f27de","1a45a07a-966c-4632-93bd-7b1c1e21ce42","3df0533e-822e-4767-afac-b5e8afb86c98"],"title":"OnPlayerTriggerExit","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 8e65f69b-f58a-458c-be72-71a2f2c4963a
-    jsonData: '{"uid":"8e65f69b-f58a-458c-be72-71a2f2c4963a","layout":{"serializedVersion":"2","x":1114.9998779296875,"y":-528.0000610351563,"width":1373.0,"height":797.0},"containedElements":["d4b8b230-08d6-484a-8dac-92e207670525","751a3e80-140e-4617-9b01-ee41d7d8f146","a89819fb-bc08-4c02-9e45-60b0d094cc2a","803c9dfb-233b-4530-8da6-a0a3a4e0b2d2","0df19b53-668d-460b-9925-d15a91e07531","9e253c6a-a32c-4e83-9eae-0f1858e9e4ac","a13aeb86-9df1-4fca-806d-176e0b5c6873","8c1a6d26-3522-47dc-9343-9e5bc60f9ce3","9a0f4bfd-a16f-422f-aca7-62d07d8eb729","8fa85e0e-fedd-4f93-9d3f-a874faff37e2","a1f00146-3eb6-4fa9-8b81-2df6ad56d50d","3ccb240e-2891-437d-997d-3d272a3bea4d","9c4386b7-c1c6-42fb-b85c-7a16eb2d39ab","752413d3-29ce-46e6-b20b-f9fc677b3a58","49e9ed4d-7b11-439f-b243-b4165cc075ef","f6d66ffc-5a6c-43ac-adf6-8d0a86fa1106","4923a237-bc9d-4b24-bdb4-3a837bcee58a","ca333a2a-2454-4c4a-a247-cfce74e818c2","42ade50f-7040-48ea-a598-f70c1f67686a","74d047bb-79bc-47c5-b9f5-ec001a4aa59c","887d24c8-d2a8-4937-ac33-eb7ddb4eb86a","4413bc0f-e66d-45e0-a5e9-e4505a27176a","1b19cb01-919b-4493-be6f-7dd85e9bf808","9ebacf17-d96a-4134-87f2-4a65d057e6e9","de168d1d-6928-49c1-9e04-dd9efd5b931a","cde6d5b5-e48a-4644-b937-59d76dbfd66b"],"title":"OnPickup","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"8e65f69b-f58a-458c-be72-71a2f2c4963a","layout":{"serializedVersion":"2","x":-996.9999389648438,"y":-914.0,"width":1792.0,"height":960.0},"containedElements":["d4b8b230-08d6-484a-8dac-92e207670525","751a3e80-140e-4617-9b01-ee41d7d8f146","a89819fb-bc08-4c02-9e45-60b0d094cc2a","803c9dfb-233b-4530-8da6-a0a3a4e0b2d2","0df19b53-668d-460b-9925-d15a91e07531","9e253c6a-a32c-4e83-9eae-0f1858e9e4ac","a13aeb86-9df1-4fca-806d-176e0b5c6873","8c1a6d26-3522-47dc-9343-9e5bc60f9ce3","9a0f4bfd-a16f-422f-aca7-62d07d8eb729","8fa85e0e-fedd-4f93-9d3f-a874faff37e2","a1f00146-3eb6-4fa9-8b81-2df6ad56d50d","3ccb240e-2891-437d-997d-3d272a3bea4d","9c4386b7-c1c6-42fb-b85c-7a16eb2d39ab","752413d3-29ce-46e6-b20b-f9fc677b3a58","49e9ed4d-7b11-439f-b243-b4165cc075ef","f6d66ffc-5a6c-43ac-adf6-8d0a86fa1106","4923a237-bc9d-4b24-bdb4-3a837bcee58a","ca333a2a-2454-4c4a-a247-cfce74e818c2","42ade50f-7040-48ea-a598-f70c1f67686a","74d047bb-79bc-47c5-b9f5-ec001a4aa59c","887d24c8-d2a8-4937-ac33-eb7ddb4eb86a","4413bc0f-e66d-45e0-a5e9-e4505a27176a","1b19cb01-919b-4493-be6f-7dd85e9bf808","9ebacf17-d96a-4134-87f2-4a65d057e6e9","de168d1d-6928-49c1-9e04-dd9efd5b931a","cde6d5b5-e48a-4644-b937-59d76dbfd66b","759693c7-9c2d-4f42-92b7-97e3c1d9a8a3","a090e132-5da3-46c3-a178-5d46e53f5cd7","fe49d797-649d-46f2-b172-12d68f9fa0b6","b9e99dbf-06f4-41a5-a3ce-dd3c5c85ba33","c62b9b9a-9438-4c53-a958-454aefd630e1","ec16eccc-687f-49e8-a96c-eb7b4e00ef1b","cc9178b2-6c74-41ca-9ef1-ae3c40c4bd58","3115ff2b-4260-4ece-9a29-06555fbe68f5","fc8d22da-735a-40a1-b798-6f66f7ec4cdd","36172154-0f29-42d6-a912-c69cfccd0f17","5910cd9c-0d5a-406a-96a3-399352187660","fc0b2c4f-b51e-43c5-a9fb-091bca8c543b","d70142ca-27fe-4e7d-877a-4c1e080fd3f0","af2e3c0e-8fdd-4f3b-8d55-06d355668306","4d8c0ed0-5061-4484-bdb4-3740c66af434","a750f0f4-d072-492e-a014-698c3a3eab64","3133c497-3d13-4dfa-b89c-3ac494647d6c","93f40fc3-2779-44cd-b782-1e7bf73290e8","6221c94a-6299-426f-b152-38efc084aa99","72039c72-972e-47fc-a4bb-12599c4977df","1932f2e4-6bdf-4989-b17b-cb8285bedb1f","21632740-4fc9-49a5-8c47-c137f60d6ee0","e74bf30e-5007-4703-9e05-ae977cad329a","bc45b50d-e4a9-4ad9-91aa-04143e5bd2d5","2b76ce4c-a15d-4418-b2a1-508745e11b8d","6d00867f-c7cb-4ef8-9084-bf1091232ca2","49ebd54d-1a62-4637-a630-b496d232d65f","73b792c9-1438-463f-96bf-08bc3fc4bc29"],"title":"Ball
+      Function","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 9715f9df-80e0-4fe7-a649-422dfb959d63
-    jsonData: '{"uid":"9715f9df-80e0-4fe7-a649-422dfb959d63","layout":{"serializedVersion":"2","x":1108.9998779296875,"y":311.9998779296875,"width":378.0,"height":250.0},"containedElements":["cfbb94f5-6d16-45b7-b65b-f75a24ef5c7a","0bcba8e7-5a19-4eb4-a2ae-c85c7ef48e5b","ceb8f0e2-6e26-4960-879e-7d2ee82cefa6"],"title":"OnDrop","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"9715f9df-80e0-4fe7-a649-422dfb959d63","layout":{"serializedVersion":"2","x":-955.9998779296875,"y":1668.0,"width":371.0,"height":252.0},"containedElements":["cfbb94f5-6d16-45b7-b65b-f75a24ef5c7a","0bcba8e7-5a19-4eb4-a2ae-c85c7ef48e5b","ceb8f0e2-6e26-4960-879e-7d2ee82cefa6"],"title":"OnDrop","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+  - type: 3
+    uid: a5c7af1b-8205-430d-a14a-a65db9fd036c
+    jsonData: '{"uid":"a5c7af1b-8205-430d-a14a-a65db9fd036c","layout":{"serializedVersion":"2","x":353.109619140625,"y":336.0185852050781,"width":354.17864990234377,"height":88.35914611816406},"title":"Player
+      is tagged as eliminated","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
+  - type: 3
+    uid: 0d333f94-08cc-480e-9d7d-a1dfb06ef75e
+    jsonData: '{"uid":"0d333f94-08cc-480e-9d7d-a1dfb06ef75e","layout":{"serializedVersion":"2","x":-886.4506225585938,"y":815.855224609375,"width":128.0,"height":40.0},"title":"Comment","layer":0,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":0.0}}'
   version: 1.0.0
   showAssembly: 0
