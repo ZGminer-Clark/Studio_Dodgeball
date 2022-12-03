@@ -203,7 +203,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_SystemBoolean
       uid: 131bc3ac-bcfb-4caf-aa4a-1fd479e4caa1
-      position: {x: -1134.5, y: -145.49994}
+      position: {x: -2257, y: 608.5001}
       nodeUIDs:
       - 
       - 
