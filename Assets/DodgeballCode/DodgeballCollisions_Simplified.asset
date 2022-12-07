@@ -871,6 +871,69 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3
+      uid: 834bab09-fc3b-4a56-a06a-cd0220a87fb2
+      position: {x: -306, y: 606}
+      nodeUIDs:
+      - c0f92f37-f405-43e4-adb9-036c86c13e76|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.HumanBodyBones, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|Hips
+    - fullName: VRCSDKBaseVRCPlayerApi.__GetPlayerById__SystemInt32__VRCSDKBaseVRCPlayerApi
+      uid: c0f92f37-f405-43e4-adb9-036c86c13e76
+      position: {x: -609, y: 791}
+      nodeUIDs:
+      - 728d3b60-c323-4add-961e-9aca68b51cc7|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
+      uid: 728d3b60-c323-4add-961e-9aca68b51cc7
+      position: {x: -776, y: 778}
+      nodeUIDs:
+      - 7531264a-e423-471a-a45e-259fa4edaea2|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Event_OnPlayerJoined
+      uid: 7531264a-e423-471a-a45e-259fa4edaea2
+      position: {x: -997, y: 663}
+      nodeUIDs: []
+      flowUIDs: []
+      nodeValues: []
+    - fullName: VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3
+      uid: 9124db7f-aa66-43e8-8537-955a9a3827b6
+      position: {x: -304, y: 748}
+      nodeUIDs:
+      - c0f92f37-f405-43e4-adb9-036c86c13e76|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.HumanBodyBones, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|Neck
+    - fullName: VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion
+      uid: cc9ff958-f406-4eee-b63d-754c49d1aade
+      position: {x: -312, y: 907}
+      nodeUIDs:
+      - c0f92f37-f405-43e4-adb9-036c86c13e76|0
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.HumanBodyBones, UnityEngine.AnimationModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|Hips
     updateOrder: 0
   graphElementData:
   - type: 2
