@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f45d1e46260d5746b5aef40f2d0e908
+guid: 14cf0a939b0adee4189048cf11c63b03
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -8,27 +8,27 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: RedDodgeball_Alpha
-    second: {fileID: 2800000, guid: 463ccc57c3325354580375322c97b8af, type: 3}
+    second: {fileID: 2800000, guid: 6c8efef0f099ebe4fbe85e2beae7f2a8, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: RedDodgeball_BaseColor
-    second: {fileID: 2800000, guid: f78372a4a3af90d4b9ae96a780a11c6b, type: 3}
+    second: {fileID: 2800000, guid: 894c512b422af914784903bd2169bf4e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: RedDodgeball_Metallic
-    second: {fileID: 2800000, guid: 54ca771a5b019424bb02b989b419dfe9, type: 3}
+    second: {fileID: 2800000, guid: a957455448c389748956bf6f8013e499, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: RedDodgeball_Roughness
-    second: {fileID: 2800000, guid: 159f53c8d40c5024894890885c8806cd, type: 3}
+    second: {fileID: 2800000, guid: 92eab909769d346479731a6addf75dde, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Rim_Emission
-    second: {fileID: 2800000, guid: 79f2b9a6ef476cb4c81d1e771564c99c, type: 3}
+    second: {fileID: 2800000, guid: f27f97a2a4926524eacef643b80ea2aa, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0

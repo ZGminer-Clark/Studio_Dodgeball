@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 9f7f39e8c4dde654a8e6993d059aa3a5
+guid: f16553a222748f841ad8e17c0ea49d6f
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Grid_BaseColor
-    second: {fileID: 2800000, guid: e84cbdb8fbfd5284c84bb9d08eddf24b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Grid_Normal
-    second: {fileID: 2800000, guid: 258da87f20c1be04088770fa8f1f7477, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
