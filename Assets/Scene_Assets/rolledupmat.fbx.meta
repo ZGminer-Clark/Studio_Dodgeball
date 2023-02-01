@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f45d1e46260d5746b5aef40f2d0e908
+guid: 8ddb10e924020ed44b889847dd7e9e3e
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,28 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
-      name: RedDodgeball_Alpha
-    second: {fileID: 2800000, guid: 463ccc57c3325354580375322c97b8af, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: RedDodgeball_BaseColor
-    second: {fileID: 2800000, guid: f78372a4a3af90d4b9ae96a780a11c6b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: RedDodgeball_Metallic
-    second: {fileID: 2800000, guid: 54ca771a5b019424bb02b989b419dfe9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: RedDodgeball_Roughness
-    second: {fileID: 2800000, guid: 159f53c8d40c5024894890885c8806cd, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Rim_Emission
-    second: {fileID: 2800000, guid: 79f2b9a6ef476cb4c81d1e771564c99c, type: 3}
+      name: RolledUpmat_BaseColor
+    second: {fileID: 2800000, guid: 41bec18d299befb44922051dd9c4d67d, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -59,7 +39,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.38
+    globalScale: 0.6
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -106,7 +86,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0037999998
+    globalScale: 0.006
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
