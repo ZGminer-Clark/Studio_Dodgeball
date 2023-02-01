@@ -1,9 +1,54 @@
 fileFormatVersion: 2
-guid: 707b1cf414e52cc49ae5961dd66f02ac
+guid: 06213e8f8a13f0a4bb7ca1aacc8d22bf
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Backboard(Glass)_Alpha
+    second: {fileID: 2800000, guid: e8216751204912447801fe43ec5a9321, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Backboard(Glass)_BaseColor
+    second: {fileID: 2800000, guid: 82a0a184a964ade46a35c1d1f12f210b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Backboard(Glass)_Emission
+    second: {fileID: 2800000, guid: 021f78cfbe2e0e94d854a42896d33821, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Backboard(Glass)_Metallic
+    second: {fileID: 2800000, guid: e5d1bc679e376f24d952729dacf4a363, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Backboard_BaseColor
+    second: {fileID: 2800000, guid: b9280b261f87abb40ad0d024c2312e54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Backboard_Roughness
+    second: {fileID: 2800000, guid: 55f33c0b5ee21614fb3e99609f095232, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rim_BaseColor
+    second: {fileID: 2800000, guid: 4a2e435b2eeb9b64885f24ad14ab3b1f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SupportBeam_BaseColor
+    second: {fileID: 2800000, guid: 3478c96914e41be45b533802439cc9c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Target_BaseColor
+    second: {fileID: 2800000, guid: af7d43f1ea024274081385118d55dffd, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0
