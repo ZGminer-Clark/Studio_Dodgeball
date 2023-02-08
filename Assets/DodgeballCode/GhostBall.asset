@@ -35,7 +35,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: UnityEngineTransform.__get_transform__UnityEngineTransform
       uid: 0b194c3d-98ac-4bca-ab77-622664e052e8
-      position: {x: 618, y: -30.679993}
+      position: {x: 518, y: 82}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -67,7 +67,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: UnityEngineTransform.__get_gameObject__UnityEngineGameObject
       uid: bbf11cbe-9073-40cf-bdc4-da87bf65a1d5
-      position: {x: 382, y: -33}
+      position: {x: 281, y: -142.44}
       nodeUIDs:
       - 
       flowUIDs: []
