@@ -40,15 +40,15 @@ MonoBehaviour:
       position: {x: 329, y: -346.1304}
       nodeUIDs: []
       flowUIDs:
-      - 82627eed-50b6-4468-aa3d-967104153271
+      - 
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
       uid: 82627eed-50b6-4468-aa3d-967104153271
       position: {x: 912, y: -286}
       nodeUIDs:
-      - 7ee39a33-fd3d-40b1-a6d4-a1f3133a44d3|0
-      - 072766d9-14b4-48e7-9dce-d1e2c53db8c2|0
-      - 2430d245-2083-4d22-bd06-08c167978df3|0
+      - 
+      - 
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
       uid: 9fa402b3-7424-49e3-9182-64cd748cb3ee
       position: {x: 472, y: -160}
       nodeUIDs:
-      - 8682570b-da9f-4e18-8bdf-8693cba6e3d8|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -106,7 +106,7 @@ MonoBehaviour:
       uid: 072766d9-14b4-48e7-9dce-d1e2c53db8c2
       position: {x: 681.56525, y: -160.34785}
       nodeUIDs:
-      - 9fa402b3-7424-49e3-9182-64cd748cb3ee|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
       uid: 2430d245-2083-4d22-bd06-08c167978df3
       position: {x: 681.56525, y: -69.34783}
       nodeUIDs:
-      - 9fa402b3-7424-49e3-9182-64cd748cb3ee|0
+      - 
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}

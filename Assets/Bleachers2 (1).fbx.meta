@@ -3,7 +3,62 @@ guid: ce1a908d79e98d541aff14c67b39c118
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Barricade
+    second: {fileID: 2100000, guid: ce2955fd09fc1d148ae6b79f23bd554c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing
+    second: {fileID: 2100000, guid: 95fc8d311a8ba8942936ac6937fb5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing.001
+    second: {fileID: 2100000, guid: 95fc8d311a8ba8942936ac6937fb5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing.002
+    second: {fileID: 2100000, guid: 95fc8d311a8ba8942936ac6937fb5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing.003
+    second: {fileID: 2100000, guid: 95fc8d311a8ba8942936ac6937fb5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing.004
+    second: {fileID: 2100000, guid: 95fc8d311a8ba8942936ac6937fb5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railing.005
+    second: {fileID: 2100000, guid: 95fc8d311a8ba8942936ac6937fb5830, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StairFloor
+    second: {fileID: 2100000, guid: 61a28436811367140993fd67a46d1b73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StairGuard
+    second: {fileID: 2100000, guid: 81e62c81f0e7c4f40982a02e7527266b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stairguard
+    second: {fileID: 2100000, guid: 81e62c81f0e7c4f40982a02e7527266b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steps
+    second: {fileID: 2100000, guid: e8e4e617c90a41645b9ee6708fdaee9a, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
