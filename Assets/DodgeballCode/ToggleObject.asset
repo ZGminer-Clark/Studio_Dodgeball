@@ -62,7 +62,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
       uid: 27a88d38-6730-426e-b504-ebf0d4b9e44a
-      position: {x: 813, y: 156}
+      position: {x: 812.99994, y: 154.25096}
       nodeUIDs:
       - 8b8f1f12-0a32-49ff-a8c2-5a1cab9a4e5e|0
       - b2cea1d3-7294-4709-8af5-769a3321d977|0
