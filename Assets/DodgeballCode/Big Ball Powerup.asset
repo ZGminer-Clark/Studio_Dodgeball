@@ -58,7 +58,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 542bdb4b-ed16-4250-a102-3edb4f56c46b
-      position: {x: -31.182781, y: -126.021935}
+      position: {x: -40, y: -120}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -69,7 +69,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid
       uid: 9ef6addc-21e8-4d75-a59c-486e2c8ab28b
-      position: {x: 1008.5796, y: -322.40652}
+      position: {x: 1000, y: -320}
       nodeUIDs:
       - 
       - 04d3900d-7bfe-4fe5-9508-c78984c7e38d|0
@@ -83,7 +83,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":1.5,"y":1.5,"z":1.5}
     - fullName: UnityEngineVector3.__Lerp__UnityEngineVector3_UnityEngineVector3_SystemSingle__UnityEngineVector3
       uid: 04d3900d-7bfe-4fe5-9508-c78984c7e38d
-      position: {x: 772.80066, y: -99.51393}
+      position: {x: 780, y: -100}
       nodeUIDs:
       - a4fc08a8-8abb-42ac-9eee-7f4129865216|0
       - 
@@ -100,7 +100,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineTransform.__get_localScale__UnityEngineVector3
       uid: a4fc08a8-8abb-42ac-9eee-7f4129865216
-      position: {x: 484.2277, y: -108.15901}
+      position: {x: 480, y: -100}
       nodeUIDs:
       - c71df2fd-be02-49b7-b8d6-3796d0e623c6|0
       flowUIDs: []
@@ -132,7 +132,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: c1fdb87a-5dfd-49da-8d76-2ee79601a40e
-      position: {x: 591.08044, y: 121.57255}
+      position: {x: 600, y: 120}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -143,7 +143,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
       uid: c71df2fd-be02-49b7-b8d6-3796d0e623c6
-      position: {x: 265.165, y: -168.85693}
+      position: {x: 260, y: -160}
       nodeUIDs:
       - 542bdb4b-ed16-4250-a102-3edb4f56c46b|0
       flowUIDs: []
@@ -152,7 +152,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_OnDrop
       uid: 71caa12b-b6d5-4cee-bd17-b8c42da1d79a
-      position: {x: 518.58606, y: -332.27875}
+      position: {x: 520, y: -340}
       nodeUIDs: []
       flowUIDs:
       - 9ef6addc-21e8-4d75-a59c-486e2c8ab28b
