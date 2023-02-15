@@ -12,7 +12,7 @@ public class AugmentSpawner : UdonSharpBehaviour
   public float upgradeRespawnTime = 15.0f;
   private int[] activeUpgradeIndex;
   private float[] upgradeRespawnTimers;
-  
+
   private void Start()
   {
     activeUpgradeIndex = new int[spawners.Length];
@@ -40,7 +40,7 @@ public class AugmentSpawner : UdonSharpBehaviour
         upgradeRespawnTimers[i] -= Time.deltaTime;
         if (upgradeRespawnTimers[i] <= 0.0f)
         {
-          SpawnNewUpgrade(i);
+          SendCustomEvent(SpawnNewUpgrade(i));
         }
       }
     }
