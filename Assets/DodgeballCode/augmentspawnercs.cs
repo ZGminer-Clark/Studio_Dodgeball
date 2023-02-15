@@ -6,67 +6,86 @@ using VRC.Udon;
 
 public class AugmentSpawner : UdonSharpBehaviour
 {
-    public GameObject[] upgradePrefabs;
-    public float upgradeRespawnTime = 15.0f;
-    private bool isHoldingUpgrade;
+  public GameObject[] upgradePrefabs;
+  public Transform[] spawners;
+  public bool holdingUpgrade;
+  public float upgradeRespawnTime = 15.0f;
+  private int[] activeUpgradeIndex;
+  private float[] upgradeRespawnTimers;
 
-    // Allows player to pick up upgrade if they don't already have one
-    private void OnPlayerTriggerEnter(VRCPlayerApi player)
+  private void Start()
+  {
+    activeUpgradeIndex = new int[spawners.Length];
+    upgradeRespawnTimers = new float[spawners.Length];
+
+    for (int i = 0; i < upgradePrefabs.Length; i++)
     {
-        if (!isHoldingUpgrade)
+      upgradePrefabs[i].SetActive(false);
+    }
+
+    for (int i = 0; i < spawners.Length; i++)
+    {
+      int upgradeIndex = Random.Range(0, upgradePrefabs.Length);
+      activeUpgradeIndex[i] = upgradeIndex;
+      upgradePrefabs[upgradeIndex].SetActive(true);
+    }
+  }
+
+  private void Update()
+  {
+    for (int i = 0; i < upgradeRespawnTimers.Length; i++)
+    {
+      if (upgradeRespawnTimers[i] > 0.0f)
+      {
+        upgradeRespawnTimers[i] -= Time.deltaTime;
+        if (upgradeRespawnTimers[i] <= 0.0f)
         {
-            int upgradeIndex = Random.Range(0, upgradePrefabs.Length);
-            upgradePrefabs[upgradeIndex].SetActive(false);
-            SendCustomEvent("ApplyUpgrade", upgradeIndex);
-            SendCustomEventDelayedSeconds("UpgradeRespawn", upgradeRespawnTime, upgradeIndex);
-            Debug.Log("Upgrade picked up");
+          SendCustomEvent(SpawnNewUpgrade(i));
         }
+      }
+    }
+  }
+
+  private void OnPlayerTriggerEnter(VRCPlayerApi player, int spawnerIndex)
+  {
+    if (holdingUpgrade)
+    {
+      return;
     }
 
-    // Respawns prefab after "upgradeRespawnTime" seconds of picking it up
-    private void UpgradeRespawn(int upgradeIndex)
+    if (upgradePrefabs[activeUpgradeIndex[spawnerIndex]].activeSelf)
     {
-        upgradePrefabs[upgradeIndex].SetActive(true);
+      upgradePrefabs[activeUpgradeIndex[spawnerIndex]].SetActive(false);
+      SendCustomEvent(ApplyUpgrade(spawnerIndex));
+      holdingUpgrade = true;
+      upgradeRespawnTimers[spawnerIndex] = upgradeRespawnTime;
+      Debug.Log("Upgrade picked up");
     }
+  }
 
-    // Spawns the prefabs for the first time
-    private void Start()
-    {
-        for (int i = 0; i < upgradePrefabs.Length; i++)
-        {
-            upgradePrefabs[i].SetActive(false);
-        }
-        int upgradeIndex = Random.Range(0, upgradePrefabs.Length);
-        upgradePrefabs[upgradeIndex].SetActive(true);
-    }
+  private void SpawnNewUpgrade(int spawnerIndex)
+  {
+    int upgradeIndex = Random.Range(0, upgradePrefabs.Length);
+    activeUpgradeIndex[spawnerIndex] = upgradeIndex;
+    upgradePrefabs[upgradeIndex].SetActive(true);
+  }
 
-    // Apply the upgrade
-    private void ApplyUpgrade(int upgradeIndex)
+  private void ApplyUpgrade(int spawnerIndex)
+  {
+    switch (activeUpgradeIndex[spawnerIndex])
     {
-        switch (upgradeIndex)
-        {
-            case 0:
-                // Apply Upgrade 1
-                /* Ex:
-                 Multiball multiball = gameObject.GetComponent<Multiball>();
-              if (multiball != null)
-              {
-                multiball.Activate();
-              }
-              else
-              {
-                Debug.LogError("Multiball script not found");
-              } */
-                break;
-            case 1:
-                // Apply Upgrade 2
-                break;
-            case 2:
-                // Apply Upgrade 3
-                break;
-            default:
-                Debug.LogError("Invalid upgrade index!");
-                break;
-        }
+      case 0:
+        // Apply Upgrade 1 to the next thrown ball
+        break;
+      case 1:
+        // Apply Upgrade 2 to the next thrown ball
+        break;
+      case 2:
+        // Apply Upgrade 3 to the next thrown ball
+        break;
+      default:
+        Debug.LogError("Invalid upgrade index!");
+        break;
     }
+  }
 }
