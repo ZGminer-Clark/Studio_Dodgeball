@@ -68,7 +68,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: Get_Variable
       uid: d5fffa5b-0e19-4a32-a6e3-9a5676ca68af
-      position: {x: 211.7331, y: 354}
+      position: {x: 212, y: 354}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -79,7 +79,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDK3ComponentsVRCObjectSyncArray.__get_Length__SystemInt32
       uid: 5e4d4e74-6bbb-45c4-a638-fc75cda9c0a2
-      position: {x: 502.21918, y: 354}
+      position: {x: 502, y: 354}
       nodeUIDs:
       - d5fffa5b-0e19-4a32-a6e3-9a5676ca68af|0
       flowUIDs: []
@@ -88,7 +88,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: a00bc478-75c5-41e8-a11b-1e51460fb4cb
-      position: {x: 695.251, y: 572.70526}
+      position: {x: 695, y: 573}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -99,7 +99,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDK3ComponentsVRCObjectSyncArray.__Get__SystemInt32__VRCSDK3ComponentsVRCObjectSync
       uid: 1167febd-7955-442a-8cb0-eb982f7d1f7f
-      position: {x: 705.251, y: 466.7053}
+      position: {x: 705, y: 467}
       nodeUIDs:
       - a00bc478-75c5-41e8-a11b-1e51460fb4cb|0
       - df99c3fc-4f16-4459-8665-25de6fe8fbd9|0
@@ -111,7 +111,7 @@ MonoBehaviour:
         stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: VRCSDK3ComponentsVRCObjectSync.__get_gameObject__UnityEngineGameObject
       uid: 8b3879fe-5c36-4455-88f7-7d20afec7a88
-      position: {x: 710.251, y: 379.70526}
+      position: {x: 710, y: 380}
       nodeUIDs:
       - 1167febd-7955-442a-8cb0-eb982f7d1f7f|0
       flowUIDs: []
@@ -120,7 +120,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid
       uid: 75534241-2d13-44c4-a7ad-2d4dd474eebb
-      position: {x: 733.7529, y: 167.67348}
+      position: {x: 734, y: 168}
       nodeUIDs:
       - 093d0da4-11c6-48e5-aea7-431f0987440f|0
       - 8b3879fe-5c36-4455-88f7-7d20afec7a88|0
@@ -133,13 +133,13 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi
       uid: 093d0da4-11c6-48e5-aea7-431f0987440f
-      position: {x: 717.35834, y: 296.94833}
+      position: {x: 717, y: 297}
       nodeUIDs: []
       flowUIDs: []
       nodeValues: []
     - fullName: VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid
       uid: 42c9e6f5-7f07-417d-8a8a-294a47058305
-      position: {x: 965.247, y: 168.30267}
+      position: {x: 965, y: 168}
       nodeUIDs:
       - 1167febd-7955-442a-8cb0-eb982f7d1f7f|0
       flowUIDs: []
