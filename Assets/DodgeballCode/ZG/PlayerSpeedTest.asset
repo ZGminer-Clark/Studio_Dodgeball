@@ -58,7 +58,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|PlayerHeightTest
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: 1d619385-984f-482a-8cd8-c0b4302707bc
-      position: {x: 0, y: 0}
+      position: {x: -645, y: -187.5}
       nodeUIDs:
       - 
       - 
@@ -88,7 +88,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__SetRunSpeed__SystemSingle__SystemVoid
       uid: d21eafd3-b32f-4939-8c39-074b47758572
-      position: {x: 1048.7501, y: -24.999996}
+      position: {x: 1049, y: -25}
       nodeUIDs:
       - 38cf87ed-3fa6-4cfd-ac05-23c060765a4c|0
       - 0d5f14c9-9f0b-45a0-bad9-1b2057bfaca4|0
@@ -101,7 +101,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: VRCSDKBaseVRCPlayerApi.__SetWalkSpeed__SystemSingle__SystemVoid
       uid: adfa522f-a35b-405b-a345-2539c636cc5a
-      position: {x: 1261.75, y: -24.999996}
+      position: {x: 1262, y: -25}
       nodeUIDs:
       - 38cf87ed-3fa6-4cfd-ac05-23c060765a4c|0
       - 56e4fd65-ba47-46e3-b7d9-8af9b07c4415|0
@@ -124,7 +124,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 54b02af5-b74a-41cb-a501-8f2fc29d41a5
-      position: {x: 61.300022, y: 379.85}
+      position: {x: 61, y: 380}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -165,7 +165,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_VRCSDKBaseVRCPlayerApi
       uid: 910c20cf-d87d-483e-8cb9-45c333fd8096
-      position: {x: 0, y: 0}
+      position: {x: -645, y: -187.5}
       nodeUIDs:
       - 
       - 
@@ -188,7 +188,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 38cf87ed-3fa6-4cfd-ac05-23c060765a4c
-      position: {x: 451.15, y: 71.200066}
+      position: {x: 451, y: 71}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -211,7 +211,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|4
     - fullName: SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle
       uid: 56e4fd65-ba47-46e3-b7d9-8af9b07c4415
-      position: {x: 852.4501, y: 400.20004}
+      position: {x: 852, y: 400}
       nodeUIDs:
       - 5ac065d8-7f42-41e7-b258-87e749f18092|0
       - 
