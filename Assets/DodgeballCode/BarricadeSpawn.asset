@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
-  m_Name: BarricadeTemplate
+  m_Name: BarricadeSpawn
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: ed5edd3dc3b55f94f925c25260538940,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export FloorMatUpTextured\r\n    .export
-    DodgeballTextured\r\n    .export FloorMatUpTextured_1\r\n    \r\n    __clone_0:
-    %UnityEngineGameObject, this\r\n    __instance_0: %UnityEngineTransform, this\r\n   
-    __value_0: %UnityEngineVector3, null\r\n    __instance_1: %UnityEngineGameObject,
-    this\r\n    __original_0: %UnityEngineGameObject, this\r\n    __instance_2: %UnityEngineTransform,
-    this\r\n    Dodgeball: %UnityEngineGameObject, this\r\n    Health: %SystemInt32,
-    null\r\n    EmptyBarricade: %UnityEngineGameObject, this\r\n    FloorMatUpTextured:
-    %UnityEngineGameObject, this\r\n    DodgeballTextured: %UnityEngineGameObject,
-    this\r\n    FloorMatUpTextured_1: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, FloorMatUpTextured\r\n       
-    PUSH, __original_0\r\n        COPY\r\n        PUSH, __original_0\r\n        PUSH,
-    __clone_0\r\n        EXTERN, \"VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject\"\r\n       
+    FloorMatUpTextured_1\r\n    \r\n    __clone_0: %UnityEngineGameObject, this\r\n   
+    __instance_0: %UnityEngineTransform, this\r\n    __value_0: %UnityEngineVector3,
+    null\r\n    __instance_1: %UnityEngineGameObject, this\r\n    __original_0: %UnityEngineGameObject,
+    this\r\n    __instance_2: %UnityEngineTransform, this\r\n    Dodgeball: %UnityEngineGameObject,
+    this\r\n    Health: %SystemInt32, null\r\n    EmptyBarricade: %UnityEngineGameObject,
+    this\r\n    FloorMatUpTextured: %UnityEngineGameObject, this\r\n    DodgeballTextured:
+    %UnityEngineGameObject, this\r\n    FloorMatUpTextured_1: %UnityEngineGameObject,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _interact\r\n   
+    \r\n    _interact:\r\n    \r\n        PUSH, FloorMatUpTextured\r\n        PUSH,
+    __original_0\r\n        COPY\r\n        PUSH, __original_0\r\n        PUSH, __clone_0\r\n       
+    EXTERN, \"VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject\"\r\n       
     PUSH, FloorMatUpTextured\r\n        PUSH, __original_0\r\n        COPY\r\n       
     PUSH, __clone_0\r\n        PUSH, __instance_1\r\n        COPY\r\n        PUSH,
     __clone_0\r\n        PUSH, __instance_0\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
@@ -212,7 +212,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|DodgeballTextured
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|True
+          PublicKeyToken=b77a5c561934e089|False
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089|False
