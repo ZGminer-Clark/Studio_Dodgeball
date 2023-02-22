@@ -665,6 +665,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fire Particle 180
       objectReference: {fileID: 0}
+    - target: {fileID: 6255440710467096996, guid: e21de82a037a1fb46a390a0f0c8a9a2d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6255440710467096997, guid: e21de82a037a1fb46a390a0f0c8a9a2d,
         type: 3}
       propertyPath: m_Mesh
@@ -745,7 +750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1922,7 +1927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2675,7 +2680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -3113,6 +3118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fire Particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6255440710467096996, guid: e21de82a037a1fb46a390a0f0c8a9a2d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6255440710467096997, guid: e21de82a037a1fb46a390a0f0c8a9a2d,
         type: 3}
