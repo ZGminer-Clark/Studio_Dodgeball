@@ -118,7 +118,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: Variable_VRCSDKBaseVRCPlayerApi
       uid: 5e2f07a8-cb89-4f55-b652-33873d2e80e2
-      position: {x: 0, y: 0}
+      position: {x: 960, y: -80}
       nodeUIDs:
       - 
       - 
