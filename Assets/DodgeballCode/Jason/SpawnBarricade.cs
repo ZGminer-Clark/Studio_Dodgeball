@@ -4,17 +4,11 @@ using UnityEngine;
 
 public class SpawnBarricade : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-               other.gameObject.CompareTag("respawner");
-
-               gameObject.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
+        if (other.CompareTag("respawner"))
+        {
+            gameObject.SetActive(false);
+        }
     }
 }
