@@ -33,28 +33,27 @@ MonoBehaviour:
     %UnityEngineGameObject, this\r\n    __instance_9: %UnityEngineGameObject, this\r\n   
     __value_2: %SystemString, null\r\n    __String_1: %SystemString, null\r\n   
     __String_2: %SystemString, null\r\n    __String_3: %SystemString, null\r\n   
-    __value_3: %SystemInt32, null\r\n    __instance_A: %VRCSDKBaseVRCPlayerApi, null\r\n   
-    __instance_B: %UnityEngineGameObject, this\r\n    __type_0: %SystemString, null\r\n   
-    __original_0: %UnityEngineGameObject, this\r\n    __instance_C: %VRCUdonUdonBehaviour,
-    this\r\n    __symbolName_0: %SystemString, null\r\n    __value_4: %SystemObject,
-    null\r\n    __String_4: %SystemString, null\r\n    __index_2: %SystemInt32, null\r\n   
-    __condition_0: %SystemBoolean, null\r\n    __Boolean_5: %SystemBoolean, null\r\n   
-    __instance_E: %SystemInt32, null\r\n    __obj_2: %SystemInt32, null\r\n    __instance_F:
-    %VRCSDKBaseVRCPlayerApi, null\r\n    onPlayerLeftPlayer: %VRCSDKBaseVRCPlayerApi,
-    null\r\n    __instance_10: %SystemInt32Array, null\r\n    __index_3: %SystemInt32,
-    null\r\n    __instance_11: %SystemInt32Array, null\r\n    __value_5: %SystemObject,
-    null\r\n    __index_4: %SystemInt32, null\r\n    __Int32_7: %SystemInt32, null\r\n   
-    __start_0: %SystemInt32, null\r\n    __end_0: %SystemInt32, null\r\n    __step_0:
-    %SystemInt32, null\r\n    __Int32_5: %SystemInt32, null\r\n    __Int32_6: %SystemInt32,
-    null\r\n    __instance_D: %VRCSDKBaseVRCPlayerApiArray, null\r\n    ColliderPrefab:
-    %UnityEngineGameObject, this\r\n    PlayerColliders: %UnityEngineGameObjectArray,
-    null\r\n    UpdateColliderPositions: %VRCUdonUdonBehaviour, this\r\n    PlayerIDs:
-    %SystemInt32Array, null\r\n    settingID: %SystemBoolean, null\r\n    counter:
-    %SystemInt32, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _onPlayerJoined\r\n   
-    \r\n    _onPlayerJoined:\r\n    \r\n        PUSH, settingID\r\n        JUMP_IF_FALSE,
-    0x000001E8\r\n        PUSH, PlayerIDs\r\n        PUSH, __instance_1\r\n       
-    COPY\r\n        PUSH, __instance_1\r\n        PUSH, counter\r\n        PUSH,
-    __instance_0\r\n        EXTERN, \"SystemInt32Array.__GetValue__SystemInt32__SystemObject\"\r\n       
+    __instance_A: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_B: %UnityEngineGameObject,
+    this\r\n    __type_0: %SystemString, null\r\n    __original_0: %UnityEngineGameObject,
+    this\r\n    __instance_C: %VRCUdonUdonBehaviour, this\r\n    __symbolName_0:
+    %SystemString, null\r\n    __value_3: %SystemObject, null\r\n    __String_4:
+    %SystemString, null\r\n    __index_2: %SystemInt32, null\r\n    __condition_0:
+    %SystemBoolean, null\r\n    __Boolean_5: %SystemBoolean, null\r\n    __instance_E:
+    %SystemInt32, null\r\n    __obj_2: %SystemInt32, null\r\n    __instance_F: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    onPlayerLeftPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __instance_10:
+    %SystemInt32Array, null\r\n    __index_3: %SystemInt32, null\r\n    __instance_11:
+    %SystemInt32Array, null\r\n    __value_4: %SystemObject, null\r\n    __index_4:
+    %SystemInt32, null\r\n    __Int32_7: %SystemInt32, null\r\n    __start_0: %SystemInt32,
+    null\r\n    __end_0: %SystemInt32, null\r\n    __step_0: %SystemInt32, null\r\n   
+    __Int32_5: %SystemInt32, null\r\n    __Int32_6: %SystemInt32, null\r\n    __instance_D:
+    %VRCSDKBaseVRCPlayerApiArray, null\r\n    ColliderPrefab: %UnityEngineGameObject,
+    this\r\n    PlayerColliders: %UnityEngineGameObjectArray, null\r\n    UpdateColliderPositions:
+    %VRCUdonUdonBehaviour, this\r\n    PlayerIDs: %SystemInt32Array, null\r\n   
+    settingID: %SystemBoolean, null\r\n    counter: %SystemInt32, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _onPlayerJoined\r\n    \r\n    _onPlayerJoined:\r\n    \r\n        PUSH,
+    settingID\r\n        JUMP_IF_FALSE, 0x000001E8\r\n        PUSH, PlayerIDs\r\n       
+    PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
+    counter\r\n        PUSH, __instance_0\r\n        EXTERN, \"SystemInt32Array.__GetValue__SystemInt32__SystemObject\"\r\n       
     PUSH, __Int32_0\r\n        PUSH, __obj_0\r\n        COPY\r\n        PUSH, __instance_0\r\n       
     PUSH, __obj_0\r\n        PUSH, __Boolean_1\r\n        EXTERN, \"SystemInt32.__Equals__SystemInt32__SystemBoolean\"\r\n       
     PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000104\r\n        PUSH, PlayerIDs\r\n       
@@ -90,8 +89,7 @@ MonoBehaviour:
     PUSH, __clone_0\r\n        PUSH, __instance_9\r\n        COPY\r\n        PUSH,
     __String_3\r\n        PUSH, __String_1\r\n        COPY\r\n        PUSH, onPlayerJoinedPlayer\r\n       
     PUSH, __instance_A\r\n        COPY\r\n        PUSH, __instance_A\r\n        PUSH,
-    __value_3\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
-    PUSH, __value_3\r\n        PUSH, __String_2\r\n        EXTERN, \"SystemConvert.__ToString__SystemInt32__SystemString\"\r\n       
+    __String_2\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n       
     PUSH, __String_1\r\n        PUSH, __String_2\r\n        PUSH, __value_2\r\n       
     EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
     PUSH, __clone_0\r\n        PUSH, __value_2\r\n        EXTERN, \"UnityEngineGameObject.__set_name__SystemString__SystemVoid\"\r\n       
@@ -101,8 +99,8 @@ MonoBehaviour:
     EXTERN, \"UnityEngineGameObject.__GetComponent__SystemString__UnityEngineComponent\"\r\n       
     PUSH, UpdateColliderPositions\r\n        PUSH, __instance_C\r\n        COPY\r\n       
     PUSH, __String_4\r\n        PUSH, __symbolName_0\r\n        COPY\r\n        PUSH,
-    onPlayerJoinedPlayer\r\n        PUSH, __value_4\r\n        COPY\r\n        PUSH,
-    __instance_C\r\n        PUSH, __symbolName_0\r\n        PUSH, __value_4\r\n       
+    onPlayerJoinedPlayer\r\n        PUSH, __value_3\r\n        COPY\r\n        PUSH,
+    __instance_C\r\n        PUSH, __symbolName_0\r\n        PUSH, __value_3\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerLeft\r\n    \r\n    _onPlayerLeft:\r\n   
     \r\n        PUSH, __instance_D\r\n        PUSH, __Int32_5\r\n        EXTERN,
@@ -110,7 +108,7 @@ MonoBehaviour:
     PUSH, __Int32_6\r\n        PUSH, __end_0\r\n        EXTERN, \"SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32\"\r\n       
     PUSH, __start_0\r\n        PUSH, __index_2\r\n        COPY\r\n        PUSH, __index_2\r\n       
     PUSH, __end_0\r\n        PUSH, __condition_0\r\n        EXTERN, \"SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean\"\r\n       
-    PUSH, __condition_0\r\n        JUMP_IF_FALSE, 0x000005BC\r\n        PUSH, onPlayerLeftPlayer\r\n       
+    PUSH, __condition_0\r\n        JUMP_IF_FALSE, 0x000005A4\r\n        PUSH, onPlayerLeftPlayer\r\n       
     PUSH, __instance_F\r\n        COPY\r\n        PUSH, __instance_F\r\n        PUSH,
     __instance_E\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32\"\r\n       
     PUSH, PlayerIDs\r\n        PUSH, __instance_10\r\n        COPY\r\n        PUSH,
@@ -118,14 +116,14 @@ MonoBehaviour:
     PUSH, __index_3\r\n        PUSH, __obj_2\r\n        EXTERN, \"SystemInt32Array.__GetValue__SystemInt32__SystemObject\"\r\n       
     PUSH, __instance_E\r\n        PUSH, __obj_2\r\n        PUSH, __Boolean_5\r\n       
     EXTERN, \"SystemInt32.__Equals__SystemInt32__SystemBoolean\"\r\n        PUSH,
-    __Boolean_5\r\n        JUMP_IF_FALSE, 0x00000594\r\n        PUSH, PlayerIDs\r\n       
+    __Boolean_5\r\n        JUMP_IF_FALSE, 0x0000057C\r\n        PUSH, PlayerIDs\r\n       
     PUSH, __instance_11\r\n        COPY\r\n        PUSH, __Int32_7\r\n        PUSH,
-    __value_5\r\n        COPY\r\n        PUSH, __index_2\r\n        PUSH, __index_4\r\n       
-    COPY\r\n        PUSH, __instance_11\r\n        PUSH, __value_5\r\n        PUSH,
+    __value_4\r\n        COPY\r\n        PUSH, __index_2\r\n        PUSH, __index_4\r\n       
+    COPY\r\n        PUSH, __instance_11\r\n        PUSH, __value_4\r\n        PUSH,
     __index_4\r\n        EXTERN, \"SystemInt32Array.__SetValue__SystemObject_SystemInt32__SystemVoid\"\r\n       
-    JUMP, 0x00000594\r\n        PUSH, __index_2\r\n        PUSH, __step_0\r\n       
+    JUMP, 0x0000057C\r\n        PUSH, __index_2\r\n        PUSH, __step_0\r\n       
     PUSH, __index_2\r\n        EXTERN, \"SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32\"\r\n       
-    JUMP, 0x0000045C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0x00000444\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -208,7 +206,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_This
       uid: 5238e155-a454-4871-ba5b-b3586d897b3c
-      position: {x: 1180, y: 560}
+      position: {x: 1160, y: 560}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -217,7 +215,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
       uid: 259c7d3a-9595-45fb-80ad-658c724a836f
-      position: {x: 1300, y: 560}
+      position: {x: 1280, y: 560}
       nodeUIDs:
       - 5238e155-a454-4871-ba5b-b3586d897b3c
       flowUIDs: []
@@ -239,7 +237,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCInstantiate.__Instantiate__UnityEngineGameObject__UnityEngineGameObject
       uid: a939cf46-5fb6-4d4b-828f-85938c35ff32
-      position: {x: 1040, y: 390}
+      position: {x: 1030, y: 390}
       nodeUIDs:
       - ad53127c-d352-4ba5-ab11-861b83e35c04|0
       flowUIDs:
@@ -307,7 +305,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_OnPlayerLeft
       uid: dbcf8025-b00e-45c4-af04-38d1ed24d48e
-      position: {x: -1580, y: 920}
+      position: {x: -1620, y: 920}
       nodeUIDs: []
       flowUIDs:
       - d099b42b-406e-418b-b475-d3f659e9bb07
@@ -325,7 +323,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 530a4700-e8fd-41a8-b677-7bcebcc8eea1
-      position: {x: 1320, y: 770}
+      position: {x: 1320, y: 750}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -338,34 +336,16 @@ MonoBehaviour:
       position: {x: 1580, y: 750}
       nodeUIDs:
       - 530a4700-e8fd-41a8-b677-7bcebcc8eea1|0
-      - eb986103-d8ef-475d-8873-b773e11f550c|0
+      - 74c349b4-635c-4b87-b407-6edd781eb800|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32
-      uid: 0398073c-5c37-4121-8ea3-5ab3b9430de4
-      position: {x: 1200, y: 880}
-      nodeUIDs:
-      - f0c0ab09-7396-40b3-886b-e9723aaebfda|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: SystemConvert.__ToString__SystemInt32__SystemString
-      uid: eb986103-d8ef-475d-8873-b773e11f550c
-      position: {x: 1370, y: 860}
-      nodeUIDs:
-      - 0398073c-5c37-4121-8ea3-5ab3b9430de4|0
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: Const_SystemString
       uid: fe949568-95ff-4f84-aae9-4622337bd3fa
-      position: {x: 1930, y: 730}
+      position: {x: 1860, y: 730}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -905,6 +885,15 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    - fullName: VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString
+      uid: 74c349b4-635c-4b87-b407-6edd781eb800
+      position: {x: 1320, y: 840}
+      nodeUIDs:
+      - f0c0ab09-7396-40b3-886b-e9723aaebfda|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData:
   - type: 2
@@ -917,7 +906,7 @@ MonoBehaviour:
       PlayerID from list","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: bf4b3044-bf37-4a0b-93c3-4eccfceaa519
-    jsonData: '{"uid":"bf4b3044-bf37-4a0b-93c3-4eccfceaa519","layout":{"serializedVersion":"2","x":761.0,"y":142.0,"width":1666.0,"height":845.0},"containedElements":["5697d720-265d-4284-9908-41c681fe6856","3180489f-fcea-4785-8430-37ec6a2a43d0","fe949568-95ff-4f84-aae9-4622337bd3fa","eb986103-d8ef-475d-8873-b773e11f550c","0398073c-5c37-4121-8ea3-5ab3b9430de4","b7179a4e-1b77-4024-b6cb-9d08513b6137","530a4700-e8fd-41a8-b677-7bcebcc8eea1","ad53127c-d352-4ba5-ab11-861b83e35c04","9463782f-cf4e-4b9e-ab0a-5fa753db47a6","b445c269-d052-419e-ac95-74a3e5690d82","a939cf46-5fb6-4d4b-828f-85938c35ff32","69b6859c-cf88-4e02-9e13-f8e25e554160","259c7d3a-9595-45fb-80ad-658c724a836f","5238e155-a454-4871-ba5b-b3586d897b3c","46790bb0-3f37-44f3-81f4-cb177f3a24ec","9eb42664-972b-4d3c-8ca6-bd27c61ee56b"],"title":"Instantiate
+    jsonData: '{"uid":"bf4b3044-bf37-4a0b-93c3-4eccfceaa519","layout":{"serializedVersion":"2","x":760.0,"y":140.0,"width":1662.0,"height":808.0},"containedElements":["5697d720-265d-4284-9908-41c681fe6856","3180489f-fcea-4785-8430-37ec6a2a43d0","fe949568-95ff-4f84-aae9-4622337bd3fa","b7179a4e-1b77-4024-b6cb-9d08513b6137","530a4700-e8fd-41a8-b677-7bcebcc8eea1","ad53127c-d352-4ba5-ab11-861b83e35c04","9463782f-cf4e-4b9e-ab0a-5fa753db47a6","b445c269-d052-419e-ac95-74a3e5690d82","a939cf46-5fb6-4d4b-828f-85938c35ff32","69b6859c-cf88-4e02-9e13-f8e25e554160","259c7d3a-9595-45fb-80ad-658c724a836f","5238e155-a454-4871-ba5b-b3586d897b3c","46790bb0-3f37-44f3-81f4-cb177f3a24ec","9eb42664-972b-4d3c-8ca6-bd27c61ee56b","74c349b4-635c-4b87-b407-6edd781eb800"],"title":"Instantiate
       Colliders","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0
