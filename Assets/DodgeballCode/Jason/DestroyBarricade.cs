@@ -29,11 +29,11 @@ public class DestroyBarricade : MonoBehaviour
         if (currentHealth <= 0)
         {
 
-            other.gameObject.CompareTag("respawner");
-
-            gameObject.SetActive(true);
+           
 
             gameObject.SetActive(false);
+
+          
 
           
         }

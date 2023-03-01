@@ -1,14 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class SpawnBarricade : MonoBehaviour
+using UdonSharp;
+using VRC.SDKBase;
+using VRC.Udon;
+public class SpawnBarricade : UdonSharpBehaviour
 {
-    void OnTriggerEnter(Collider other)
+    public GameObject FloorMatUpTextured;
+    public GameObject spawner;
+    void update()
     {
-        if (other.CompareTag("respawner"))
+
+        if (FloorMatUpTextured.activeInHierarchy==true)
         {
-            gameObject.SetActive(false);
+
+            spawner.SetActive(false);
         }
+
+        else if (FloorMatUpTextured.activeInHierarchy == false)
+        {
+
+            spawner.SetActive(true);
+        }
+
+    }
+    public void interact()
+    {
+        spawner.SetActive(false);
+        FloorMatUpTextured.SetActive(true);
     }
 }
