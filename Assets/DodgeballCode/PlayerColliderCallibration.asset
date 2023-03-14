@@ -247,7 +247,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_Custom
       uid: 98e85dfc-09fb-4a18-8666-9e9be577f8a0
-      position: {x: -90, y: 1750}
+      position: {x: 400, y: 1250}
       nodeUIDs:
       - 
       flowUIDs: []
