@@ -113,7 +113,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
       uid: 2430d245-2083-4d22-bd06-08c167978df3
-      position: {x: 680, y: -60}
+      position: {x: 674.753, y: -36.84314}
       nodeUIDs:
       - 9fa402b3-7424-49e3-9182-64cd748cb3ee|0
       flowUIDs: []

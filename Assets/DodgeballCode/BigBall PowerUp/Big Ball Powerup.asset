@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f11136daadff0b44ac2278a314682ab, type: 3}
   m_Name: Big Ball Powerup
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 3fc8a9e51a034564b824646195086fcc,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 890bae0cd2452694e931c81bf13716e1,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export Behave\r\n    .export EventName\r\n   
     \r\n    __instance_0: %VRCUdonUdonBehaviour, this\r\n    __eventName_0: %SystemString,
@@ -99,7 +99,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 6b6dfd05-b78a-4560-b563-22fbcd25e3f0
-      position: {x: 1140, y: -20}
+      position: {x: 1257.13, y: -17.612446}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -110,7 +110,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid
       uid: e4a1624b-2c29-4a07-a53b-4b3bc09d15fe
-      position: {x: 1600, y: -60}
+      position: {x: 1599.8862, y: -57.567837}
       nodeUIDs:
       - 6b6dfd05-b78a-4560-b563-22fbcd25e3f0|0
       - a25f18d7-89f4-461e-bec6-2d532356f543|0
@@ -122,7 +122,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: a25f18d7-89f4-461e-bec6-2d532356f543
-      position: {x: 1240, y: 120}
+      position: {x: 1265.4501, y: 114.3875}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -133,7 +133,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_OnPickup
       uid: 90e4a456-9189-431f-992e-94cc7096000c
-      position: {x: 1160, y: -160}
+      position: {x: 1283.4175, y: -144.84}
       nodeUIDs: []
       flowUIDs:
       - e4a1624b-2c29-4a07-a53b-4b3bc09d15fe
