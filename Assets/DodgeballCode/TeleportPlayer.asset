@@ -14,8 +14,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: 9b6b43967483d644784ffda1720a29d7,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export TeleportTarget\r\n    \r\n    TeleportTarget:
-    %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n\r\n.code_end\r\n"
+  udonAssembly: ".data_start\r\n\r\n    .export TeleportTarget\r\n    \r\n    __instance_0:
+    %VRCSDKBaseVRCPlayerApi, null\r\n    __teleportPos_0: %UnityEngineVector3, null\r\n   
+    __teleportRot_0: %UnityEngineQuaternion, null\r\n    __instance_1: %UnityEngineTransform,
+    this\r\n    __instance_3: %UnityEngineTransform, this\r\n    __instance_2: %UnityEngineGameObject,
+    this\r\n    TeleportTarget: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export _interact\r\n    \r\n    _interact:\r\n    \r\n        PUSH, __instance_0\r\n       
+    EXTERN, \"VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi\"\r\n       
+    PUSH, TeleportTarget\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, __instance_2\r\n        PUSH, __instance_1\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
+    PUSH, __instance_1\r\n        PUSH, __teleportPos_0\r\n        EXTERN, \"UnityEngineTransform.__get_position__UnityEngineVector3\"\r\n       
+    PUSH, TeleportTarget\r\n        PUSH, __instance_2\r\n        COPY\r\n       
+    PUSH, __instance_1\r\n        PUSH, __instance_3\r\n        COPY\r\n        PUSH,
+    __instance_1\r\n        PUSH, __teleportRot_0\r\n        EXTERN, \"UnityEngineTransform.__get_rotation__UnityEngineQuaternion\"\r\n       
+    PUSH, __instance_0\r\n        PUSH, __teleportPos_0\r\n        PUSH, __teleportRot_0\r\n       
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -26,15 +40,15 @@ MonoBehaviour:
       position: {x: 320, y: -340}
       nodeUIDs: []
       flowUIDs:
-      - 
+      - 82627eed-50b6-4468-aa3d-967104153271
       nodeValues: []
     - fullName: VRCSDKBaseVRCPlayerApi.__TeleportTo__UnityEngineVector3_UnityEngineQuaternion__SystemVoid
       uid: 82627eed-50b6-4468-aa3d-967104153271
       position: {x: 920, y: -280}
       nodeUIDs:
-      - 
-      - 
-      - 
+      - 7ee39a33-fd3d-40b1-a6d4-a1f3133a44d3|0
+      - 072766d9-14b4-48e7-9dce-d1e2c53db8c2|0
+      - 2430d245-2083-4d22-bd06-08c167978df3|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -83,7 +97,7 @@ MonoBehaviour:
       uid: 9fa402b3-7424-49e3-9182-64cd748cb3ee
       position: {x: 480, y: -160}
       nodeUIDs:
-      - 
+      - 8682570b-da9f-4e18-8bdf-8693cba6e3d8|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
@@ -92,16 +106,16 @@ MonoBehaviour:
       uid: 072766d9-14b4-48e7-9dce-d1e2c53db8c2
       position: {x: 680, y: -160}
       nodeUIDs:
-      - 
+      - 9fa402b3-7424-49e3-9182-64cd748cb3ee|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
     - fullName: UnityEngineTransform.__get_rotation__UnityEngineQuaternion
       uid: 2430d245-2083-4d22-bd06-08c167978df3
-      position: {x: 680, y: -60}
+      position: {x: 674.753, y: -36.84314}
       nodeUIDs:
-      - 
+      - 9fa402b3-7424-49e3-9182-64cd748cb3ee|0
       flowUIDs: []
       nodeValues:
       - unityObjectValue: {fileID: 0}
