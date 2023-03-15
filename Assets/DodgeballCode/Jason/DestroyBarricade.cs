@@ -1,27 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UdonSharp;
+using VRC.Udon;
+using VRC.SDKBase;
 using UnityEngine;
 
 public class DestroyBarricade : MonoBehaviour
 {
-    public int healthAmount = 3;
+    public int maxHealth = 3;
+    private int currentHealth;
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHealth = maxHealth;
+
     }
 
+
     // Update is called once per frame
+
     private void OnTriggerEnter(Collider other)
     {
+
+     
         if (other.gameObject.CompareTag("damage"))
         {
-            healthAmount = healthAmount - 1;
-         
+            currentHealth--;
         }
-        if (healthAmount <= 0)
-            {
-            other.gameObject.SetActive(false);
+
+        if (currentHealth <= 0)
+        {
+
+           
+
+            gameObject.SetActive(false);
+
+          
+
+          
         }
+
+      
+
     }
 }
