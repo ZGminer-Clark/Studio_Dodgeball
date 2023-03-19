@@ -4,7 +4,7 @@ using UnityEngine;
 using UdonSharp;
 using VRC.SDKBase;
 using VRC.Udon;
-public class SpawnBarricade : UdonSharpBehaviour
+public class SpawnBarricade : MonoBehaviour
 {
     public GameObject FloorMatUpTextured;
     public GameObject spawner;
