@@ -15,13 +15,19 @@ MonoBehaviour:
   serializedUdonProgramAsset: {fileID: 11400000, guid: 4f16a0bd2b07cd6409af677a20866c88,
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export dodgeball_GameObject\r\n    .export
-    scale_Increase\r\n    \r\n    __instance_0: %UnityEngineTransform, this\r\n   
-    __value_0: %UnityEngineVector3, null\r\n    __a_0: %UnityEngineVector3, null\r\n   
-    __b_0: %UnityEngineVector3, null\r\n    __t_0: %SystemSingle, null\r\n    __instance_2:
-    %UnityEngineTransform, this\r\n    __instance_1: %UnityEngineGameObject, this\r\n   
-    __Single_0: %SystemSingle, null\r\n    __message_0: %SystemObject, null\r\n   
-    __String_0: %SystemString, null\r\n    dodgeball_GameObject: %UnityEngineGameObject,
-    this\r\n    scale_Increase: %UnityEngineVector3, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    scale_Increase\r\n    .sync scale_Increase, none\r\n    \r\n    __instance_0:
+    %UnityEngineTransform, this\r\n    __value_0: %UnityEngineVector3, null\r\n   
+    __a_0: %UnityEngineVector3, null\r\n    __b_0: %UnityEngineVector3, null\r\n   
+    __t_0: %SystemSingle, null\r\n    __instance_2: %UnityEngineTransform, this\r\n   
+    __instance_1: %UnityEngineGameObject, this\r\n    __Single_0: %SystemSingle,
+    null\r\n    __message_0: %SystemObject, null\r\n    __String_0: %SystemString,
+    null\r\n    __instance_3: %UnityEngineTransform, this\r\n    __value_1: %UnityEngineVector3,
+    null\r\n    __a_1: %UnityEngineVector3, null\r\n    __b_1: %UnityEngineVector3,
+    null\r\n    __t_1: %SystemSingle, null\r\n    __instance_5: %UnityEngineTransform,
+    this\r\n    __instance_4: %UnityEngineGameObject, this\r\n    __Single_1: %SystemSingle,
+    null\r\n    __message_1: %SystemObject, null\r\n    __String_1: %SystemString,
+    null\r\n    dodgeball_GameObject: %UnityEngineGameObject, this\r\n    scale_Increase:
+    %UnityEngineVector3, null\r\n    scale_reset: %UnityEngineVector3, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onEnable\r\n    \r\n    _onEnable:\r\n    \r\n        PUSH, dodgeball_GameObject\r\n       
     PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
     __instance_0\r\n        EXTERN, \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n       
@@ -34,6 +40,19 @@ MonoBehaviour:
     PUSH, __instance_0\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid\"\r\n       
     PUSH, __String_0\r\n        PUSH, __message_0\r\n        COPY\r\n        PUSH,
     __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onDisable\r\n    \r\n    _onDisable:\r\n   
+    \r\n        PUSH, dodgeball_GameObject\r\n        PUSH, __instance_4\r\n       
+    COPY\r\n        PUSH, __instance_4\r\n        PUSH, __instance_3\r\n        EXTERN,
+    \"UnityEngineGameObject.__get_transform__UnityEngineTransform\"\r\n        PUSH,
+    dodgeball_GameObject\r\n        PUSH, __instance_4\r\n        COPY\r\n       
+    PUSH, __instance_3\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH,
+    __instance_3\r\n        PUSH, __a_1\r\n        EXTERN, \"UnityEngineTransform.__get_localScale__UnityEngineVector3\"\r\n       
+    PUSH, __Single_1\r\n        PUSH, __t_1\r\n        COPY\r\n        PUSH, __a_1\r\n       
+    PUSH, scale_reset\r\n        PUSH, __t_1\r\n        PUSH, __value_1\r\n       
+    EXTERN, \"UnityEngineVector3.__Lerp__UnityEngineVector3_UnityEngineVector3_SystemSingle__UnityEngineVector3\"\r\n       
+    PUSH, __instance_3\r\n        PUSH, __value_1\r\n        EXTERN, \"UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid\"\r\n       
+    PUSH, __String_1\r\n        PUSH, __message_1\r\n        COPY\r\n        PUSH,
+    __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
@@ -49,7 +68,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Variable_UnityEngineGameObject
       uid: 9f314700-0676-41c9-9b20-9ac3ab8275ff
-      position: {x: 0, y: 0}
+      position: {x: -815, y: -440}
       nodeUIDs:
       - 
       - 
@@ -141,7 +160,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: Variable_UnityEngineVector3
       uid: 44870a29-9e2d-4de8-8519-d0f20e9ae22c
-      position: {x: 0, y: 0}
+      position: {x: -815, y: -440}
       nodeUIDs:
       - 
       - 
@@ -160,7 +179,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
+          PublicKeyToken=b77a5c561934e089|True
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
@@ -193,10 +212,143 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|scale
           increased of dodgeball
+    - fullName: Event_OnDisable
+      uid: 903200c1-11f4-4a8d-9360-d8867d1253ed
+      position: {x: 620, y: 790}
+      nodeUIDs: []
+      flowUIDs:
+      - c8d7edcd-d9b3-40b7-9fbb-958c6c7f5172
+      nodeValues: []
+    - fullName: Const_SystemString
+      uid: 93715d78-25d9-4dba-b386-d7f23c3eb573
+      position: {x: 1220, y: 950}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|scale
+          reset
+    - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
+      uid: dea71c4c-e68a-4fa0-9699-5e19f775a10c
+      position: {x: 1300, y: 790}
+      nodeUIDs:
+      - 93715d78-25d9-4dba-b386-d7f23c3eb573
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_SystemSingle
+      uid: b754daaf-d207-47eb-b166-4fb99b8bd47f
+      position: {x: 820, y: 1130}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
+    - fullName: UnityEngineVector3.__Lerp__UnityEngineVector3_UnityEngineVector3_SystemSingle__UnityEngineVector3
+      uid: e3bd421d-f6e7-46e9-8e2b-7f2bdf5fb4ed
+      position: {x: 980, y: 950}
+      nodeUIDs:
+      - 44d62890-8908-4120-976e-4f422ffdbca2
+      - 9a92209d-86ff-456c-ab7b-ba3d1c8dc3ce|0
+      - b754daaf-d207-47eb-b166-4fb99b8bd47f
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
+    - fullName: UnityEngineTransform.__get_localScale__UnityEngineVector3
+      uid: 44d62890-8908-4120-976e-4f422ffdbca2
+      position: {x: 780, y: 950}
+      nodeUIDs:
+      - 2a4897c8-603b-4303-b9b3-b4b5a8cc4df5
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
+      uid: 2a4897c8-603b-4303-b9b3-b4b5a8cc4df5
+      position: {x: 600, y: 950}
+      nodeUIDs:
+      - 8127910a-355d-4f6c-8709-88e18b4a469c
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid
+      uid: c8d7edcd-d9b3-40b7-9fbb-958c6c7f5172
+      position: {x: 980, y: 790}
+      nodeUIDs:
+      - 2a4897c8-603b-4303-b9b3-b4b5a8cc4df5
+      - e3bd421d-f6e7-46e9-8e2b-7f2bdf5fb4ed
+      flowUIDs:
+      - dea71c4c-e68a-4fa0-9699-5e19f775a10c
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
+    - fullName: Get_Variable
+      uid: 8127910a-355d-4f6c-8709-88e18b4a469c
+      position: {x: 340, y: 950}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|9f314700-0676-41c9-9b20-9ac3ab8275ff
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Variable_UnityEngineVector3
+      uid: c57bc878-5082-4506-b012-633cc083932f
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null|{"x":1.0,"y":1.0,"z":1.0}
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|scale_reset
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: 9a92209d-86ff-456c-ab7b-ba3d1c8dc3ce
+      position: {x: 780, y: 1040}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|c57bc878-5082-4506-b012-633cc083932f
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData:
   - type: 2
     uid: ec27b417-739c-4ca6-99d4-661f006d1248
     jsonData: '{"uid":"ec27b417-739c-4ca6-99d4-661f006d1248","layout":{"serializedVersion":"2","x":1662.31640625,"y":492.76348876953127,"width":128.0,"height":128.0},"containedElements":["a033d5d7-9fa4-4f3e-bb07-c8d77569c9f2","8152295d-2f05-41de-9cd7-825673b7df14","5b89edb4-bafd-43c6-b945-973537a08f91","e44f8969-c35b-456c-8ae2-b2d6086cea91","2364edc6-4db6-4d0b-9393-c99a77123820","f8230909-147b-4990-9d1e-6108fbdb68ff","096759d9-0ca8-4134-985f-3bf9d71a7fbe","22973982-4976-4376-b56e-8f28e4a0c0d8","af50a652-4482-49e2-b934-6c9fd2ab9d77","d26a248d-3b80-41fe-ae41-88101999ae99"],"title":"Group","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+  - type: 2
+    uid: 3f02cba5-aaef-447a-ac2d-7e5961ad747b
+    jsonData: '{"uid":"3f02cba5-aaef-447a-ac2d-7e5961ad747b","layout":{"serializedVersion":"2","x":320.0,"y":730.0,"width":1147.0,"height":505.0},"containedElements":["9a92209d-86ff-456c-ab7b-ba3d1c8dc3ce","8127910a-355d-4f6c-8709-88e18b4a469c","c8d7edcd-d9b3-40b7-9fbb-958c6c7f5172","2a4897c8-603b-4303-b9b3-b4b5a8cc4df5","44d62890-8908-4120-976e-4f422ffdbca2","e3bd421d-f6e7-46e9-8e2b-7f2bdf5fb4ed","b754daaf-d207-47eb-b166-4fb99b8bd47f","dea71c4c-e68a-4fa0-9699-5e19f775a10c","93715d78-25d9-4dba-b386-d7f23c3eb573","903200c1-11f4-4a8d-9360-d8867d1253ed"],"title":"Group","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0
