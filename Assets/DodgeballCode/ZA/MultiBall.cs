@@ -5,8 +5,8 @@ using VRC.Udon;
 
 public class MultiBall : UdonSharpBehaviour
 {
-  public GameObject dodgeballPrefab; // Assign a prefab for the extra dodgeballs in the inspector
   public GameObject originalDodgeball;
+  public GameObject dodgeballPrefab;
 
   public void SpawnExtraDodgeballs(VRCPlayerApi player, Transform originalDodgeballPos)
   {
