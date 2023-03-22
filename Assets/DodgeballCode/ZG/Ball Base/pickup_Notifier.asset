@@ -76,7 +76,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: 5723d480-7094-4a67-b64c-b32aa1fa4661
-      position: {x: -1860, y: -1080}
+      position: {x: -2880, y: -1910}
       nodeUIDs:
       - 
       - 
