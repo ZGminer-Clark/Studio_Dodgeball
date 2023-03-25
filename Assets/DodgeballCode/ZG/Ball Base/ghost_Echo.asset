@@ -231,6 +231,10 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|wasHeld
     updateOrder: 0
-  graphElementData: []
+  graphElementData:
+  - type: 2
+    uid: 9cfaa789-246e-4608-973d-e3c33bf4d762
+    jsonData: '{"uid":"9cfaa789-246e-4608-973d-e3c33bf4d762","layout":{"serializedVersion":"2","x":400.0,"y":120.0,"width":774.0,"height":905.0},"containedElements":["344d3934-5a2f-4d9e-8ab2-6e00e3cc73fd","51b37e03-b29f-46fb-bd9b-bd31e16a71f6","9c54b136-9656-4fea-9909-0edbbf8c0c5e","3e388039-736f-46fd-ab2f-30f5ed464f9b","bd25b4ed-47bc-42a6-a041-b8981346055a","a6595617-62f8-4e23-91e3-117965a63ec7","b2aff416-b392-4eb5-b227-488cd76c1b76","63c76f1d-865c-4787-9604-9c50cdd066cd","c6b617dd-c0ba-42a8-9fa8-f2b9fef65b33","b7a035e4-7753-4449-9e0f-013d338c773a","d6f36071-3b25-43b0-abb1-0ebccf734096"],"title":"destroy
+      object if it was held and hit the floor","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0

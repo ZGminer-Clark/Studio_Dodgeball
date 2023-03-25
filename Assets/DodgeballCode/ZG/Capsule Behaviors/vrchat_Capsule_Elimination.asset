@@ -473,7 +473,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Event_Update
       uid: 41aef1eb-df0d-4649-987c-91dad7c570d2
-      position: {x: 710, y: -340}
+      position: {x: 460, y: -300}
       nodeUIDs: []
       flowUIDs:
       - aa302917-09e6-48e4-9f03-8bd988fdb6e7
@@ -503,7 +503,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 936ff3fe-4f00-4adc-be78-ee422759b9a4
-      position: {x: 910, y: 70}
+      position: {x: 660, y: 110}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -514,7 +514,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__set_position__UnityEngineVector3__SystemVoid
       uid: aa302917-09e6-48e4-9f03-8bd988fdb6e7
-      position: {x: 880, y: -340}
+      position: {x: 640, y: -300}
       nodeUIDs:
       - 0e02a507-71cb-4464-bfe9-3e2cca0a2eab|0
       - 0700723d-d160-4a03-a6f5-308e13882470|0
@@ -528,7 +528,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|{"x":0.0,"y":0.0,"z":0.0}
     - fullName: UnityEngineGameObject.__get_transform__UnityEngineTransform
       uid: 0e02a507-71cb-4464-bfe9-3e2cca0a2eab
-      position: {x: 880, y: -200}
+      position: {x: 640, y: -160}
       nodeUIDs:
       - ba3c7dd7-202e-478e-b739-8fa246c05544|0
       flowUIDs: []
@@ -537,7 +537,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: UnityEngineTransform.__get_position__UnityEngineVector3
       uid: 0700723d-d160-4a03-a6f5-308e13882470
-      position: {x: 870, y: -20}
+      position: {x: 620, y: 20}
       nodeUIDs:
       - 936ff3fe-4f00-4adc-be78-ee422759b9a4|0
       flowUIDs: []
@@ -546,7 +546,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_This
       uid: ba3c7dd7-202e-478e-b739-8fa246c05544
-      position: {x: 910, y: -110}
+      position: {x: 660, y: -70}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -565,7 +565,7 @@ MonoBehaviour:
       enters player capsule and marks player as hit","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: af6a88e4-174e-4b95-bf23-e35351aa1acd
-    jsonData: '{"uid":"af6a88e4-174e-4b95-bf23-e35351aa1acd","layout":{"serializedVersion":"2","x":680.0,"y":-400.0,"width":430.0,"height":575.0},"containedElements":["ba3c7dd7-202e-478e-b739-8fa246c05544","0700723d-d160-4a03-a6f5-308e13882470","0e02a507-71cb-4464-bfe9-3e2cca0a2eab","aa302917-09e6-48e4-9f03-8bd988fdb6e7","936ff3fe-4f00-4adc-be78-ee422759b9a4","41aef1eb-df0d-4649-987c-91dad7c570d2"],"title":"set
+    jsonData: '{"uid":"af6a88e4-174e-4b95-bf23-e35351aa1acd","layout":{"serializedVersion":"2","x":440.0,"y":-360.0,"width":427.0,"height":575.0},"containedElements":["ba3c7dd7-202e-478e-b739-8fa246c05544","0700723d-d160-4a03-a6f5-308e13882470","0e02a507-71cb-4464-bfe9-3e2cca0a2eab","aa302917-09e6-48e4-9f03-8bd988fdb6e7","936ff3fe-4f00-4adc-be78-ee422759b9a4","41aef1eb-df0d-4649-987c-91dad7c570d2"],"title":"set
       position","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0

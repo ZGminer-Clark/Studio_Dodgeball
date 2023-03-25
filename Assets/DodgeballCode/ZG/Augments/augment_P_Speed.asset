@@ -16,33 +16,36 @@ MonoBehaviour:
     type: 2}
   udonAssembly: ".data_start\r\n\r\n    .export player_Height_To_Speed\r\n    .export
     player_Speed_Increase\r\n    .export time_Of_Player_Speed_Increase\r\n    .sync
-    player_Speed_Increase, none\r\n    \r\n    __instance_0: %VRCUdonUdonBehaviour,
-    this\r\n    __symbolName_0: %SystemString, null\r\n    __value_0: %SystemObject,
+    player_Speed_Increase, none\r\n    \r\n    __instance_0: %UnityEngineGameObject,
+    this\r\n    __value_0: %SystemBoolean, null\r\n    __instance_1: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_0: %SystemString, null\r\n    __value_1: %SystemObject,
     null\r\n    __String_0: %SystemString, null\r\n    __Single_0: %SystemSingle,
     null\r\n    __message_0: %SystemObject, null\r\n    __String_1: %SystemString,
-    null\r\n    __instance_1: %VRCUdonUdonBehaviour, this\r\n    __symbolName_1:
-    %SystemString, null\r\n    __value_1: %SystemObject, null\r\n    __String_2:
+    null\r\n    __instance_2: %VRCUdonUdonBehaviour, this\r\n    __symbolName_1:
+    %SystemString, null\r\n    __value_2: %SystemObject, null\r\n    __String_2:
     %SystemString, null\r\n    __message_1: %SystemObject, null\r\n    __String_3:
-    %SystemString, null\r\n    __instance_2: %VRCUdonUdonBehaviour, this\r\n    __eventName_0:
+    %SystemString, null\r\n    __instance_3: %VRCUdonUdonBehaviour, this\r\n    __eventName_0:
     %SystemString, null\r\n    __delaySeconds_0: %SystemSingle, null\r\n    __eventTiming_0:
     %VRCUdonCommonEnumsEventTiming, null\r\n    player_Height_To_Speed: %VRCUdonUdonBehaviour,
     this\r\n    player_Speed_Increase: %SystemSingle, null\r\n    time_Of_Player_Speed_Increase:
-    %SystemSingle, null\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export reset_Player_Speed\r\n   
-    \r\n    reset_Player_Speed:\r\n    \r\n        PUSH, player_Height_To_Speed\r\n       
-    PUSH, __instance_0\r\n        COPY\r\n        PUSH, __String_0\r\n        PUSH,
-    __symbolName_0\r\n        COPY\r\n        PUSH, __Single_0\r\n        PUSH, __value_0\r\n       
-    COPY\r\n        PUSH, __instance_0\r\n        PUSH, __symbolName_0\r\n       
-    PUSH, __value_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    %SystemSingle, null\r\n    augment_Speed: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
+    .export reset_Player_Speed\r\n    \r\n    reset_Player_Speed:\r\n    \r\n       
+    PUSH, augment_Speed\r\n        PUSH, __instance_0\r\n        COPY\r\n       
+    PUSH, __instance_0\r\n        PUSH, __value_0\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    PUSH, player_Height_To_Speed\r\n        PUSH, __instance_1\r\n        COPY\r\n       
+    PUSH, __String_0\r\n        PUSH, __symbolName_0\r\n        COPY\r\n        PUSH,
+    __Single_0\r\n        PUSH, __value_1\r\n        COPY\r\n        PUSH, __instance_1\r\n       
+    PUSH, __symbolName_0\r\n        PUSH, __value_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, __String_1\r\n        PUSH, __message_0\r\n        COPY\r\n        PUSH,
     __message_0\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _interact\r\n    \r\n    _interact:\r\n   
-    \r\n        PUSH, player_Height_To_Speed\r\n        PUSH, __instance_1\r\n       
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onEnable\r\n    \r\n    _onEnable:\r\n   
+    \r\n        PUSH, player_Height_To_Speed\r\n        PUSH, __instance_2\r\n       
     COPY\r\n        PUSH, __String_2\r\n        PUSH, __symbolName_1\r\n        COPY\r\n       
-    PUSH, __instance_1\r\n        PUSH, __symbolName_1\r\n        PUSH, player_Speed_Increase\r\n       
+    PUSH, __instance_2\r\n        PUSH, __symbolName_1\r\n        PUSH, player_Speed_Increase\r\n       
     EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, __String_3\r\n        PUSH, __message_1\r\n        COPY\r\n        PUSH,
     __message_1\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject__SystemVoid\"\r\n       
-    PUSH, __instance_2\r\n        PUSH, __eventName_0\r\n        PUSH, time_Of_Player_Speed_Increase\r\n       
+    PUSH, __instance_3\r\n        PUSH, __eventName_0\r\n        PUSH, time_Of_Player_Speed_Increase\r\n       
     PUSH, __eventTiming_0\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
@@ -168,13 +171,13 @@ MonoBehaviour:
       nodeUIDs:
       - 
       flowUIDs:
-      - 2dd7ba60-a25d-46bc-9a15-184a61c7c318
+      - 9c1d360b-24ed-45f4-b97b-7196e06beeee
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|reset_Player_Speed
     - fullName: Const_SystemSingle
       uid: 2450d77c-be5e-45bc-925a-849a792462b3
-      position: {x: 570, y: 810}
+      position: {x: 900, y: 810}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -183,7 +186,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|1
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid
       uid: 2dd7ba60-a25d-46bc-9a15-184a61c7c318
-      position: {x: 570, y: 460}
+      position: {x: 900, y: 460}
       nodeUIDs:
       - f88b749a-5d72-4131-97e9-eac6dcaa2a8d
       - 835d6cf7-5b75-4b2f-b0d4-c3a868b2ca1c
@@ -199,7 +202,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Get_Variable
       uid: f88b749a-5d72-4131-97e9-eac6dcaa2a8d
-      position: {x: 570, y: 630}
+      position: {x: 900, y: 630}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -210,7 +213,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 835d6cf7-5b75-4b2f-b0d4-c3a868b2ca1c
-      position: {x: 570, y: 720}
+      position: {x: 900, y: 720}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -251,13 +254,6 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|ff0775fd-f9db-45a3-a16f-5e7758de9345
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: Event_Interact
-      uid: f64f856e-0164-4d55-9af1-4cf453923746
-      position: {x: 340, y: -90}
-      nodeUIDs: []
-      flowUIDs:
-      - a2ae8fba-0081-48a4-8571-1b4f4dbe7896
-      nodeValues: []
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: 6fcf49cf-4593-413c-b0ab-a913cf7d4e04
       position: {x: 960, y: -90}
@@ -280,7 +276,7 @@ MonoBehaviour:
           player speed
     - fullName: UnityEngineDebug.__Log__SystemObject__SystemVoid
       uid: 5d55fff6-c5de-4c2f-bc86-a0359f4ce811
-      position: {x: 910, y: 460}
+      position: {x: 1240, y: 460}
       nodeUIDs:
       - cc40c9e0-f955-4af8-a87f-3ad032fe29ad
       flowUIDs:
@@ -290,7 +286,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: cc40c9e0-f955-4af8-a87f-3ad032fe29ad
-      position: {x: 910, y: 630}
+      position: {x: 1240, y: 630}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -298,15 +294,70 @@ MonoBehaviour:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|player
           speed reset
+    - fullName: Event_OnEnable
+      uid: 805f4d7e-fc89-4e67-aab4-2fe55322d60a
+      position: {x: 340, y: -90}
+      nodeUIDs: []
+      flowUIDs:
+      - a2ae8fba-0081-48a4-8571-1b4f4dbe7896
+      nodeValues: []
+    - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
+      uid: 9c1d360b-24ed-45f4-b97b-7196e06beeee
+      position: {x: 580, y: 460}
+      nodeUIDs:
+      - bfbebdf0-feb4-4936-98be-c76661e7190b|0
+      - 
+      flowUIDs:
+      - 2dd7ba60-a25d-46bc-9a15-184a61c7c318
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: Variable_UnityEngineGameObject
+      uid: 53667ddb-5884-43a0-bd88-96ff42f406f1
+      position: {x: 0, y: 0}
+      nodeUIDs:
+      - 
+      - 
+      - 
+      - 
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|augment_Speed
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
+    - fullName: Get_Variable
+      uid: bfbebdf0-feb4-4936-98be-c76661e7190b
+      position: {x: 580, y: 600}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|53667ddb-5884-43a0-bd88-96ff42f406f1
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
     updateOrder: 0
   graphElementData:
   - type: 2
     uid: f340aef6-d23b-4bc5-8452-87d47a1aede8
-    jsonData: '{"uid":"f340aef6-d23b-4bc5-8452-87d47a1aede8","layout":{"serializedVersion":"2","x":320.0,"y":400.0,"width":835.0,"height":517.0},"containedElements":["835d6cf7-5b75-4b2f-b0d4-c3a868b2ca1c","f88b749a-5d72-4131-97e9-eac6dcaa2a8d","2dd7ba60-a25d-46bc-9a15-184a61c7c318","2450d77c-be5e-45bc-925a-849a792462b3","8da23d8d-6bfe-444e-bb82-34f9e326c545","34a83ebf-8e8a-4d03-b8eb-20e9b23630c7","1d41c51e-31dc-4e46-bf8e-1e08b85414a3","09d3dd79-e176-47f0-ac1c-462264739893","f2c834c7-43b2-4be6-8131-b5210d2c9e2d","b4dd7099-4177-439e-a8ea-1f7502347f1c","89d62316-6895-4272-8879-b9ce2768bd92","98dab2c7-41e4-4e05-853a-eb7d376ed14f","5d55fff6-c5de-4c2f-bc86-a0359f4ce811","cc40c9e0-f955-4af8-a87f-3ad032fe29ad"],"title":"reset
+    jsonData: '{"uid":"f340aef6-d23b-4bc5-8452-87d47a1aede8","layout":{"serializedVersion":"2","x":320.0,"y":400.0,"width":1165.0,"height":515.0},"containedElements":["835d6cf7-5b75-4b2f-b0d4-c3a868b2ca1c","f88b749a-5d72-4131-97e9-eac6dcaa2a8d","2dd7ba60-a25d-46bc-9a15-184a61c7c318","2450d77c-be5e-45bc-925a-849a792462b3","8da23d8d-6bfe-444e-bb82-34f9e326c545","34a83ebf-8e8a-4d03-b8eb-20e9b23630c7","1d41c51e-31dc-4e46-bf8e-1e08b85414a3","09d3dd79-e176-47f0-ac1c-462264739893","f2c834c7-43b2-4be6-8131-b5210d2c9e2d","b4dd7099-4177-439e-a8ea-1f7502347f1c","89d62316-6895-4272-8879-b9ce2768bd92","98dab2c7-41e4-4e05-853a-eb7d376ed14f","5d55fff6-c5de-4c2f-bc86-a0359f4ce811","cc40c9e0-f955-4af8-a87f-3ad032fe29ad","adc47ab8-24c9-49a5-8a7a-41c251a303be","61363307-8e68-4de6-9a71-6dec02bc89ba","f5ada31d-803a-4f42-a53c-6646c4a9863b","73711797-31ce-4bde-886f-9cc2c16e68ee","8503baa7-7a7d-4fec-a63b-950809234aef","9206498e-fbb8-4f5f-bf19-459d90d57817","bfbebdf0-feb4-4936-98be-c76661e7190b","9c1d360b-24ed-45f4-b97b-7196e06beeee","fd3dead4-bd81-46a9-809b-8e62cc1cb448","e3efbe04-eafd-464d-9230-6111928a3758","1f752a90-3fb5-4535-a9a9-3ad356a65b14","8623672a-0647-4ac0-aa20-df13bbca00b3","0dad04d5-9978-487f-bfc1-70008041678e","b68225cc-9432-47d4-8caf-1b8c0c81fb2c"],"title":"reset
       player speed after delayed time","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: d7b3c947-b5a5-4093-916c-f805a8a0d049
-    jsonData: '{"uid":"d7b3c947-b5a5-4093-916c-f805a8a0d049","layout":{"serializedVersion":"2","x":320.0,"y":-150.0,"width":1231.0,"height":537.0},"containedElements":["b1e7d3c1-c993-4017-bedb-23fa5ddb43b8","378fe82d-a278-4a12-9e27-5a7db2f33e95","a9716c49-51c7-43ff-b1e8-d8a9cb5fb763","f323e1e3-aa95-49b6-a719-778b291341ce","a2ae8fba-0081-48a4-8571-1b4f4dbe7896","969e443c-97b0-4053-a9b2-27911fb04e2f","a33607fd-b688-468b-845a-146b2ac760ea","a8d27daa-10e2-46a0-b04a-f853793e49b8","b959d0f4-37f6-41e5-91d5-202702366b08","82ec1d93-149c-4aa5-bfb0-418945920370","d9051183-29e2-4894-ab1d-9e614b7fe2fa","f64f856e-0164-4d55-9af1-4cf453923746","78bc02dd-4438-4061-abf8-db4ef152b649","0c36611e-c950-473b-a1ee-ada5993605fc","a49892aa-9d15-44ac-b492-b7d122ab3cf9","762a5df2-a9cb-4b0d-a577-6947eeed3194","a4a2c36a-9fb4-4d57-9fea-aed02d61fe8d","6fcf49cf-4593-413c-b0ab-a913cf7d4e04","0e612623-7cbc-4075-b655-d879faf61d46"],"title":"set
+    jsonData: '{"uid":"d7b3c947-b5a5-4093-916c-f805a8a0d049","layout":{"serializedVersion":"2","x":320.0,"y":-150.0,"width":1234.0,"height":536.0},"containedElements":["b1e7d3c1-c993-4017-bedb-23fa5ddb43b8","378fe82d-a278-4a12-9e27-5a7db2f33e95","a9716c49-51c7-43ff-b1e8-d8a9cb5fb763","f323e1e3-aa95-49b6-a719-778b291341ce","a2ae8fba-0081-48a4-8571-1b4f4dbe7896","969e443c-97b0-4053-a9b2-27911fb04e2f","a33607fd-b688-468b-845a-146b2ac760ea","a8d27daa-10e2-46a0-b04a-f853793e49b8","b959d0f4-37f6-41e5-91d5-202702366b08","82ec1d93-149c-4aa5-bfb0-418945920370","d9051183-29e2-4894-ab1d-9e614b7fe2fa","78bc02dd-4438-4061-abf8-db4ef152b649","0c36611e-c950-473b-a1ee-ada5993605fc","a49892aa-9d15-44ac-b492-b7d122ab3cf9","762a5df2-a9cb-4b0d-a577-6947eeed3194","a4a2c36a-9fb4-4d57-9fea-aed02d61fe8d","6fcf49cf-4593-413c-b0ab-a913cf7d4e04","0e612623-7cbc-4075-b655-d879faf61d46","805f4d7e-fc89-4e67-aab4-2fe55322d60a"],"title":"set
       player speed on enabled gameobject","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0
