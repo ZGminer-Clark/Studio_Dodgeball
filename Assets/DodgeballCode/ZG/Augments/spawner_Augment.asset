@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   serializedUdonProgramAsset: {fileID: 11400000, guid: ea3d15c5ffa61cf4cb8bb4f75b66fc79,
     type: 2}
-  udonAssembly: ".data_start\r\n\r\n    .export augmentSpawner\r\n    .export augmentPool\r\n   
-    .export spawnedAugment\r\n    .export hasAugment\r\n    .export heldAugmentName\r\n   
-    .export augment_Respawn_Time\r\n    .export initial_Delay\r\n    .export manager_NonBall\r\n   
-    .sync hasAugment, none\r\n    .sync heldAugmentName, none\r\n    .sync initial_Delay,
-    none\r\n    \r\n    __Boolean_0: %SystemBoolean, null\r\n    __instance_0: %VRCUdonUdonBehaviour,
+  udonAssembly: ".data_start\r\n\r\n    .export augmentPool\r\n    .export spawnedAugment\r\n   
+    .export hasAugment\r\n    .export heldAugmentName\r\n    .export augment_Respawn_Time\r\n   
+    .export initial_Delay\r\n    .export manager_NonBall\r\n    .sync hasAugment,
+    none\r\n    .sync heldAugmentName, none\r\n    .sync initial_Delay, none\r\n   
+    \r\n    __Boolean_0: %SystemBoolean, null\r\n    __instance_0: %VRCUdonUdonBehaviour,
     this\r\n    __symbolName_0: %SystemString, null\r\n    __value_0: %SystemObject,
     null\r\n    __message_0: %SystemObject, null\r\n    __context_0: %UnityEngineObject,
     null\r\n    __String_0: %SystemString, null\r\n    __String_1: %SystemString,
@@ -33,8 +33,8 @@ MonoBehaviour:
     null\r\n    __delaySeconds_0: %SystemSingle, null\r\n    __eventTiming_0: %VRCUdonCommonEnumsEventTiming,
     null\r\n    __message_2: %SystemObject, null\r\n    __String_4: %SystemString,
     null\r\n    __instance_6: %VRCUdonUdonBehaviour, this\r\n    __eventName_1: %SystemString,
-    null\r\n    __String_5: %SystemString, null\r\n    __instance_7: %UnityEngineGameObject,
-    this\r\n    __value_4: %SystemBoolean, null\r\n    __instance_8: %VRCSDK3ComponentsVRCObjectPool,
+    null\r\n    __String_5: %SystemString, null\r\n    __instance_7: %VRCSDK3ComponentsVRCObjectPool,
+    null\r\n    __value_4: %SystemBoolean, null\r\n    __instance_8: %VRCSDK3ComponentsVRCObjectPool,
     null\r\n    __message_3: %SystemObject, null\r\n    __context_2: %UnityEngineObject,
     null\r\n    __String_6: %SystemString, null\r\n    __GameObject_0: %UnityEngineGameObject,
     this\r\n    __object_0: %SystemObject, null\r\n    __result_0: %SystemBoolean,
@@ -45,19 +45,18 @@ MonoBehaviour:
     __instance_B: %VRCSDK3ComponentsVRCObjectPool, null\r\n    __message_5: %SystemObject,
     null\r\n    __context_4: %UnityEngineObject, null\r\n    __String_8: %SystemString,
     null\r\n    __GameObject_1: %UnityEngineGameObject, this\r\n    __object_1: %SystemObject,
-    null\r\n    __instance_C: %VRCSDK3ComponentsVRCObjectPool, null\r\n    __result_1:
-    %SystemBoolean, null\r\n    __instance_D: %VRCUdonUdonBehaviour, this\r\n   
-    __symbolName_3: %SystemString, null\r\n    __value_6: %SystemObject, null\r\n   
-    __message_6: %SystemObject, null\r\n    __context_5: %UnityEngineObject, null\r\n   
-    __String_9: %SystemString, null\r\n    __instance_E: %VRCUdonUdonBehaviour, this\r\n   
-    __eventName_2: %SystemString, null\r\n    __delaySeconds_1: %SystemSingle, null\r\n   
-    __eventTiming_1: %VRCUdonCommonEnumsEventTiming, null\r\n    __Single_0: %SystemSingle,
-    null\r\n    __Single_1: %SystemSingle, null\r\n    __message_7: %SystemObject,
-    null\r\n    __String_A: %SystemString, null\r\n    augmentSpawner: %UnityEngineGameObject,
-    this\r\n    augmentPool: %VRCSDK3ComponentsVRCObjectPool, null\r\n    __returnValue:
-    %SystemObject, null\r\n    spawnedAugment: %UnityEngineGameObject, this\r\n   
-    hasAugment: %SystemBoolean, null\r\n    heldAugmentName: %SystemString, null\r\n   
-    augment_Respawn_Time: %SystemSingle, null\r\n    initial_Delay: %SystemSingle,
+    null\r\n    __result_1: %SystemBoolean, null\r\n    __instance_D: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_3: %SystemString, null\r\n    __value_6: %SystemObject,
+    null\r\n    __instance_C: %VRCSDK3ComponentsVRCObjectPool, null\r\n    __message_6:
+    %SystemObject, null\r\n    __context_5: %UnityEngineObject, null\r\n    __String_9:
+    %SystemString, null\r\n    __instance_E: %VRCUdonUdonBehaviour, this\r\n    __eventName_2:
+    %SystemString, null\r\n    __delaySeconds_1: %SystemSingle, null\r\n    __eventTiming_1:
+    %VRCUdonCommonEnumsEventTiming, null\r\n    __Single_0: %SystemSingle, null\r\n   
+    __Single_1: %SystemSingle, null\r\n    __message_7: %SystemObject, null\r\n   
+    __String_A: %SystemString, null\r\n    augmentPool: %VRCSDK3ComponentsVRCObjectPool,
+    null\r\n    __returnValue: %SystemObject, null\r\n    spawnedAugment: %UnityEngineGameObject,
+    this\r\n    hasAugment: %SystemBoolean, null\r\n    heldAugmentName: %SystemString,
+    null\r\n    augment_Respawn_Time: %SystemSingle, null\r\n    initial_Delay: %SystemSingle,
     null\r\n    manager_NonBall: %VRCUdonUdonBehaviour, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onPlayerTriggerEnter\r\n    \r\n    _onPlayerTriggerEnter:\r\n    \r\n       
     PUSH, hasAugment\r\n        JUMP_IF_FALSE, 0x00000018\r\n        JUMP, 0x00000230\r\n       
@@ -88,8 +87,8 @@ MonoBehaviour:
     PUSH, __String_5\r\n        PUSH, __eventName_1\r\n        COPY\r\n        PUSH,
     __instance_6\r\n        PUSH, __eventName_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid\"\r\n       
     JUMP, 0xFFFFFFFC\r\n    \r\n    .export reenable\r\n    \r\n    reenable:\r\n   
-    \r\n        PUSH, augmentSpawner\r\n        PUSH, __instance_7\r\n        COPY\r\n       
-    PUSH, __instance_7\r\n        PUSH, __value_4\r\n        EXTERN, \"UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid\"\r\n       
+    \r\n        PUSH, augmentPool\r\n        PUSH, __instance_7\r\n        COPY\r\n       
+    PUSH, __instance_7\r\n        PUSH, __value_4\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectPool.__set_enabled__SystemBoolean__SystemVoid\"\r\n       
     PUSH, augmentPool\r\n        PUSH, __instance_8\r\n        COPY\r\n        PUSH,
     __instance_8\r\n        EXTERN, \"VRCSDK3ComponentsVRCObjectPool.__Shuffle__SystemVoid\"\r\n       
     PUSH, __String_6\r\n        PUSH, __message_3\r\n        COPY\r\n        PUSH,
@@ -120,11 +119,13 @@ MonoBehaviour:
     PUSH, augmentPool\r\n        PUSH, __instance_C\r\n        COPY\r\n        PUSH,
     __GameObject_1\r\n        PUSH, __object_1\r\n        COPY\r\n        PUSH, __GameObject_1\r\n       
     PUSH, __result_1\r\n        EXTERN, \"VRCSDKBaseUtilities.__IsValid__SystemObject__SystemBoolean\"\r\n       
-    PUSH, __result_1\r\n        JUMP_IF_FALSE, 0x00000524\r\n        PUSH, __instance_D\r\n       
-    PUSH, __symbolName_3\r\n        PUSH, __value_6\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
+    PUSH, __result_1\r\n        JUMP_IF_FALSE, 0x0000054C\r\n        PUSH, augmentPool\r\n       
+    PUSH, __instance_C\r\n        COPY\r\n        PUSH, __GameObject_1\r\n       
+    PUSH, __value_6\r\n        COPY\r\n        PUSH, __instance_D\r\n        PUSH,
+    __symbolName_3\r\n        PUSH, __GameObject_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid\"\r\n       
     PUSH, __String_9\r\n        PUSH, __message_6\r\n        COPY\r\n        PUSH,
     __message_6\r\n        PUSH, __context_5\r\n        EXTERN, \"UnityEngineDebug.__Log__SystemObject_UnityEngineObject__SystemVoid\"\r\n       
-    JUMP, 0x00000524\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onEnable\r\n   
+    JUMP, 0x0000054C\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onEnable\r\n   
     \r\n    _onEnable:\r\n    \r\n        PUSH, __Single_0\r\n        PUSH, initial_Delay\r\n       
     PUSH, __delaySeconds_1\r\n        EXTERN, \"SystemSingle.__op_Addition__SystemSingle_SystemSingle__SystemSingle\"\r\n       
     PUSH, __instance_E\r\n        PUSH, __eventName_2\r\n        PUSH, __delaySeconds_1\r\n       
@@ -137,29 +138,6 @@ MonoBehaviour:
     name: 
     description: 
     nodes:
-    - fullName: Variable_UnityEngineGameObject
-      uid: 43a28947-b6a4-49ad-854b-fcd8b5d82352
-      position: {x: -2286.875, y: -119.850006}
-      nodeUIDs:
-      - 
-      - 
-      - 
-      - 
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|augmentSpawner
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|True
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|False
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEventDelayedSeconds__SystemString_SystemSingle_VRCUdonCommonEnumsEventTiming__SystemVoid
       uid: 294706ca-87e3-466f-9e5c-3b50c783d2de
       position: {x: 2490, y: 980}
@@ -193,13 +171,13 @@ MonoBehaviour:
       nodeUIDs:
       - 
       flowUIDs:
-      - d251782c-c3a5-425a-84cf-3e4c6708846e
+      - b866be01-f27d-4e6d-bbd7-7defcb91b6a5
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|reenable
     - fullName: Variable_VRCSDK3ComponentsVRCObjectPool
       uid: 5ca1e9e1-69d1-4e41-b254-e637152ebc9f
-      position: {x: -1286.1001, y: -798.30005}
+      position: {x: -2996.1, y: -1863.3}
       nodeUIDs:
       - 
       - 
@@ -222,7 +200,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Get_Variable
       uid: 61fcf9a4-d955-4243-874f-4263c5538104
-      position: {x: 880, y: 1610}
+      position: {x: 880, y: 1640}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -275,31 +253,6 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5ca1e9e1-69d1-4e41-b254-e637152ebc9f
       - unityObjectValue: {fileID: 0}
         stringValue: 
-    - fullName: Get_Variable
-      uid: 9a287816-ef8b-41e4-b83a-3fc077a12245
-      position: {x: 630, y: 1610}
-      nodeUIDs:
-      - 
-      flowUIDs: []
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|43a28947-b6a4-49ad-854b-fcd8b5d82352
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-    - fullName: UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid
-      uid: d251782c-c3a5-425a-84cf-3e4c6708846e
-      position: {x: 630, y: 1470}
-      nodeUIDs:
-      - 9a287816-ef8b-41e4-b83a-3fc077a12245
-      - 
-      flowUIDs:
-      - 3bb1a7fa-8158-41b1-a3b1-dcf3110b203c
-      nodeValues:
-      - unityObjectValue: {fileID: 0}
-        stringValue: 
-      - unityObjectValue: {fileID: 0}
-        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
-          PublicKeyToken=b77a5c561934e089|True
     - fullName: UnityEngineGameObject.__ToString__SystemString
       uid: 210f6609-08c2-413d-b85c-cbe629c15642
       position: {x: 900, y: 1140}
@@ -324,7 +277,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: 384cbeeb-9b89-48b8-9019-70cd1b074f8d
-      position: {x: 1140, y: 1630}
+      position: {x: 1140, y: 1640}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -689,7 +642,7 @@ MonoBehaviour:
       position: {x: 1550, y: 620}
       nodeUIDs:
       - 
-      - 
+      - 8306325c-cb40-4fc8-b54b-a6d4a7f5c2b5|0
       - 
       flowUIDs:
       - f924f679-a053-4c22-bbbb-bf84a780d6c3
@@ -959,6 +912,31 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|pickup_Augment
+    - fullName: Get_Variable
+      uid: f720885b-cf11-4bd8-ac5c-dce678a3d5c4
+      position: {x: 640, y: 1640}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5ca1e9e1-69d1-4e41-b254-e637152ebc9f
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDK3ComponentsVRCObjectPool.__set_enabled__SystemBoolean__SystemVoid
+      uid: b866be01-f27d-4e6d-bbd7-7defcb91b6a5
+      position: {x: 640, y: 1470}
+      nodeUIDs:
+      - f720885b-cf11-4bd8-ac5c-dce678a3d5c4
+      - 
+      flowUIDs:
+      - 3bb1a7fa-8158-41b1-a3b1-dcf3110b203c
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|True
     updateOrder: 0
   graphElementData:
   - type: 2
@@ -967,7 +945,7 @@ MonoBehaviour:
       powerup spawn and function","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 3de2ae35-bf6e-40ef-ba2f-996f6dc52c3e
-    jsonData: '{"uid":"3de2ae35-bf6e-40ef-ba2f-996f6dc52c3e","layout":{"serializedVersion":"2","x":380.0,"y":1410.0,"width":1899.0,"height":337.0},"containedElements":["b0d57ee3-f653-461f-a238-7ee4cccd2d80","384cbeeb-9b89-48b8-9019-70cd1b074f8d","0739b774-fa27-4034-84a0-48fd79a64069","d251782c-c3a5-425a-84cf-3e4c6708846e","9a287816-ef8b-41e4-b83a-3fc077a12245","3bb1a7fa-8158-41b1-a3b1-dcf3110b203c","61fcf9a4-d955-4243-874f-4263c5538104","b708e01d-07e8-44d5-9bab-610c2fe96012","f4113e1d-b83b-4cbe-8246-c03e0071a913","950c1b09-8a28-4ffa-90da-db92570835de","3d98c74c-344d-4a0e-b0d7-a7e581f6efd6","13721163-7592-4dd8-bcd1-fddfd03de52a","e71fad01-b354-4b96-ad80-796e8554c03a","8b4c75d3-5e84-49a8-8430-350a7fce14b2","e97bb0c6-83dd-4e24-90dc-8f34d78f11a6","744905b5-7ed3-4c3a-b929-95546cbc9840","f7946d69-e267-4dfc-957f-ac9371b30fbe","0dfb87cc-d97d-42a4-81ac-53fc01a5a92e","6fe700bb-d71c-4749-aa71-49a8e8eb3346","f9a62c2d-ad6b-4f64-9c4e-046c7f63c29a","841bac50-5a6f-4316-a2ee-0bf9c316ddde","76a8ae51-75ff-4737-83de-eae345dfc6c2","33b082fd-b698-421c-9f15-7d74d244693a","c0a4fe99-8a22-4fe3-b224-2c2f19e4b0d0","b13b7822-1dc3-459d-9c0b-e1124f903b97","cc86fdaf-aa40-4184-94e1-86164ca1c0ad","f0dd7307-4028-4d8e-98ba-a7521a8835f0","2e5b1902-cef5-4629-af74-9dba6b146166","66a2eee4-86b3-415d-8f07-77cd5b1a1486","4cef078b-8ac0-4702-8c80-825fd5eb76e4","14788fcf-33ed-4552-8fd6-1f20c14ee647","2465c516-ae3e-4637-9774-dc39beb53173","580b8143-215f-4503-a133-b351731c37bf","a99114e1-ade7-413a-8fc9-5fca0d0df1d7","8cac17d5-516b-4302-83d5-18f59b6a4148","1ce3d495-a52a-455f-8669-d475d7eeac24","e3b85853-b315-47bb-8336-cb5308d8f284","d731ec98-ab96-483b-9b70-1fefbc29c99f","97e8180f-fdec-4b44-9cbc-8ccc66a1154e","6666503c-96d9-4e01-858f-21b23b956b8f","1dce2517-8dff-49ff-baee-fff684e2472e","5638aae0-0ea6-4cb3-8a61-4878b27f09a4","a1fa6d79-9a48-41cd-a270-4131ce8c63f0","9b83bb23-68ee-456c-9b8a-ceb83c2488cd","79898db5-c7d9-4c89-a7b6-75d401c2e2a5","a0cbdcd4-52c4-4323-b33a-a5240a779f64","e5188bbc-b81f-401e-9e7c-cd33a97e9061","ddce9555-f577-4019-95da-563a55c0c2e4","200c0d79-46af-4700-9194-79945b2734b1","b61d956e-bcb1-4172-99e9-aaff30899749","bf2d0efc-1aa5-4e78-accc-119ca00c5946","0711200e-b170-4e5c-a35d-caa3c3e0f0d2","aded0410-8ec1-410a-aaa8-02679ecfea58","d45c2e81-82a7-499e-baba-9f59c55faeb3","cb93943b-902f-402f-8fb6-ab5634ae1bbb","3b129e2f-1472-4077-a39d-5a093e4bce50","f5ec6378-0bf9-4b45-98eb-d3135a7ce28b","be689e73-6168-48d9-809a-1de2ffd29641","ad15f18d-dde1-46ba-b808-e1a036d6ce15","11edf8b2-a2d7-4939-bf6b-2d1d17751260","b0bc32db-e0b6-43f7-bf22-f2a7d5e0c7cf","b304b635-5f41-4d9d-9ff8-ab25c2e95202","aa3076fe-e99a-4cf1-92b1-c1cbbcc051ce","298a5130-dd2b-44ad-8243-464a419c8f85","4c20bc04-0f57-4569-8268-3fc9bb1c3566","31231459-be64-496c-b6c1-f29162d10b9b","a721eace-1748-48d5-9d15-4d41339e5cff","b34b320c-0590-435d-8291-4fd571cf4a2e","72a6454f-8f16-498b-b43c-2ad5d6766d5a","ed81973f-de3a-4c44-8b49-15bc6c645a5d","2f5a269c-deaa-4a68-8330-a32e671b2456","863ec13b-ea6d-4f6d-873f-b8a2927c3a42","2624ad25-31ac-458f-a18a-f5de836393f6","c382d3c9-9c41-4c0e-a145-83ff6109445e","b49c55dc-39d3-4091-8163-0020a50c445f","708f9a31-45e5-45bb-8c47-307e309e0ba8","e62334d2-2afa-4e54-bd37-54e36c7e4bd6","9d45f8cc-11ea-4687-bd16-c479db15c5ae","13ccecc3-746d-45e1-a5d7-eabb6a5860f7","7bb1f767-fb37-44c8-9647-7fbaf173c65b","155b18a4-a3b4-4516-a115-4ce8aea8e520","d6136db9-af32-412f-a5ca-30b556b1c857","024023ad-2e9c-4797-9bbc-d961bb489157","3b3813fa-95e9-48dc-a503-6195a06e2161","c10674d5-2532-40bb-ab58-37e45f62be0c","68fe2035-e319-4d6f-87c6-ae792b4413aa","87cc547e-53d5-499d-afe0-e726552258fd","66977982-06e9-42a0-8c76-55987b4a90d4","f27bd8d0-423f-4161-a863-6b9af85310e7","eee8780f-1786-4a09-bc75-40dd6d2aadec","bdec7857-d88e-4099-8c76-3845adb33aa4","ee2302ff-5088-4fc8-8bc8-0cb2720d29e3","5a42ed94-be6c-44c7-9f97-b9dcf3a889ec","22f6a948-b68a-4f3c-b355-26cb2d07d9ba","f64773d3-af95-4274-b95e-ca628981d2d6","34ebb3e0-4ed1-42db-8ce7-7ffe958e9c97","2ea73466-8e6d-46d9-aeaf-eb2c4d884247","9e56f299-8ccb-451a-ab04-1e19925e6988","277b688c-04b0-4a93-9361-facc2122cc04","ec1a862d-18df-40a7-a142-e6bfdd3f0033","c42d8cfd-cbac-4f59-9224-7daf25ec4b2c","1ed8c2bc-fb9a-45d3-a0be-faa0198eacb8","7681d352-f30f-4d17-97e2-bdc694fc30cb","d5c336da-1658-471e-a350-8d40b1284e32","6f224f79-b0bd-4f0a-afcc-81ad9b4b0978","2156cc06-9dce-4a8a-a752-1da0472795ce","19bcc4d9-8591-48e9-89a2-faf0873a2dd2","eca171bf-e08d-4968-aa2f-b32d9eb81049"],"title":"respawn
+    jsonData: '{"uid":"3de2ae35-bf6e-40ef-ba2f-996f6dc52c3e","layout":{"serializedVersion":"2","x":390.0,"y":1410.0,"width":1896.0,"height":335.0},"containedElements":["b0d57ee3-f653-461f-a238-7ee4cccd2d80","384cbeeb-9b89-48b8-9019-70cd1b074f8d","0739b774-fa27-4034-84a0-48fd79a64069","3bb1a7fa-8158-41b1-a3b1-dcf3110b203c","61fcf9a4-d955-4243-874f-4263c5538104","b708e01d-07e8-44d5-9bab-610c2fe96012","f4113e1d-b83b-4cbe-8246-c03e0071a913","950c1b09-8a28-4ffa-90da-db92570835de","3d98c74c-344d-4a0e-b0d7-a7e581f6efd6","13721163-7592-4dd8-bcd1-fddfd03de52a","e71fad01-b354-4b96-ad80-796e8554c03a","8b4c75d3-5e84-49a8-8430-350a7fce14b2","e97bb0c6-83dd-4e24-90dc-8f34d78f11a6","744905b5-7ed3-4c3a-b929-95546cbc9840","f7946d69-e267-4dfc-957f-ac9371b30fbe","0dfb87cc-d97d-42a4-81ac-53fc01a5a92e","6fe700bb-d71c-4749-aa71-49a8e8eb3346","f9a62c2d-ad6b-4f64-9c4e-046c7f63c29a","841bac50-5a6f-4316-a2ee-0bf9c316ddde","76a8ae51-75ff-4737-83de-eae345dfc6c2","33b082fd-b698-421c-9f15-7d74d244693a","c0a4fe99-8a22-4fe3-b224-2c2f19e4b0d0","b13b7822-1dc3-459d-9c0b-e1124f903b97","cc86fdaf-aa40-4184-94e1-86164ca1c0ad","f0dd7307-4028-4d8e-98ba-a7521a8835f0","2e5b1902-cef5-4629-af74-9dba6b146166","66a2eee4-86b3-415d-8f07-77cd5b1a1486","4cef078b-8ac0-4702-8c80-825fd5eb76e4","14788fcf-33ed-4552-8fd6-1f20c14ee647","2465c516-ae3e-4637-9774-dc39beb53173","580b8143-215f-4503-a133-b351731c37bf","a99114e1-ade7-413a-8fc9-5fca0d0df1d7","8cac17d5-516b-4302-83d5-18f59b6a4148","1ce3d495-a52a-455f-8669-d475d7eeac24","e3b85853-b315-47bb-8336-cb5308d8f284","d731ec98-ab96-483b-9b70-1fefbc29c99f","97e8180f-fdec-4b44-9cbc-8ccc66a1154e","6666503c-96d9-4e01-858f-21b23b956b8f","1dce2517-8dff-49ff-baee-fff684e2472e","5638aae0-0ea6-4cb3-8a61-4878b27f09a4","a1fa6d79-9a48-41cd-a270-4131ce8c63f0","9b83bb23-68ee-456c-9b8a-ceb83c2488cd","79898db5-c7d9-4c89-a7b6-75d401c2e2a5","a0cbdcd4-52c4-4323-b33a-a5240a779f64","e5188bbc-b81f-401e-9e7c-cd33a97e9061","ddce9555-f577-4019-95da-563a55c0c2e4","200c0d79-46af-4700-9194-79945b2734b1","b61d956e-bcb1-4172-99e9-aaff30899749","bf2d0efc-1aa5-4e78-accc-119ca00c5946","0711200e-b170-4e5c-a35d-caa3c3e0f0d2","aded0410-8ec1-410a-aaa8-02679ecfea58","d45c2e81-82a7-499e-baba-9f59c55faeb3","cb93943b-902f-402f-8fb6-ab5634ae1bbb","3b129e2f-1472-4077-a39d-5a093e4bce50","f5ec6378-0bf9-4b45-98eb-d3135a7ce28b","be689e73-6168-48d9-809a-1de2ffd29641","ad15f18d-dde1-46ba-b808-e1a036d6ce15","11edf8b2-a2d7-4939-bf6b-2d1d17751260","b0bc32db-e0b6-43f7-bf22-f2a7d5e0c7cf","b304b635-5f41-4d9d-9ff8-ab25c2e95202","aa3076fe-e99a-4cf1-92b1-c1cbbcc051ce","298a5130-dd2b-44ad-8243-464a419c8f85","4c20bc04-0f57-4569-8268-3fc9bb1c3566","31231459-be64-496c-b6c1-f29162d10b9b","a721eace-1748-48d5-9d15-4d41339e5cff","b34b320c-0590-435d-8291-4fd571cf4a2e","72a6454f-8f16-498b-b43c-2ad5d6766d5a","ed81973f-de3a-4c44-8b49-15bc6c645a5d","2f5a269c-deaa-4a68-8330-a32e671b2456","863ec13b-ea6d-4f6d-873f-b8a2927c3a42","2624ad25-31ac-458f-a18a-f5de836393f6","c382d3c9-9c41-4c0e-a145-83ff6109445e","b49c55dc-39d3-4091-8163-0020a50c445f","708f9a31-45e5-45bb-8c47-307e309e0ba8","e62334d2-2afa-4e54-bd37-54e36c7e4bd6","9d45f8cc-11ea-4687-bd16-c479db15c5ae","13ccecc3-746d-45e1-a5d7-eabb6a5860f7","7bb1f767-fb37-44c8-9647-7fbaf173c65b","155b18a4-a3b4-4516-a115-4ce8aea8e520","d6136db9-af32-412f-a5ca-30b556b1c857","024023ad-2e9c-4797-9bbc-d961bb489157","3b3813fa-95e9-48dc-a503-6195a06e2161","c10674d5-2532-40bb-ab58-37e45f62be0c","68fe2035-e319-4d6f-87c6-ae792b4413aa","87cc547e-53d5-499d-afe0-e726552258fd","66977982-06e9-42a0-8c76-55987b4a90d4","f27bd8d0-423f-4161-a863-6b9af85310e7","eee8780f-1786-4a09-bc75-40dd6d2aadec","bdec7857-d88e-4099-8c76-3845adb33aa4","ee2302ff-5088-4fc8-8bc8-0cb2720d29e3","5a42ed94-be6c-44c7-9f97-b9dcf3a889ec","22f6a948-b68a-4f3c-b355-26cb2d07d9ba","f64773d3-af95-4274-b95e-ca628981d2d6","34ebb3e0-4ed1-42db-8ce7-7ffe958e9c97","2ea73466-8e6d-46d9-aeaf-eb2c4d884247","9e56f299-8ccb-451a-ab04-1e19925e6988","277b688c-04b0-4a93-9361-facc2122cc04","ec1a862d-18df-40a7-a142-e6bfdd3f0033","c42d8cfd-cbac-4f59-9224-7daf25ec4b2c","1ed8c2bc-fb9a-45d3-a0be-faa0198eacb8","7681d352-f30f-4d17-97e2-bdc694fc30cb","d5c336da-1658-471e-a350-8d40b1284e32","6f224f79-b0bd-4f0a-afcc-81ad9b4b0978","2156cc06-9dce-4a8a-a752-1da0472795ce","19bcc4d9-8591-48e9-89a2-faf0873a2dd2","eca171bf-e08d-4968-aa2f-b32d9eb81049","9f5d0ad9-cd09-42e8-98f5-0e31e5b5ca0b","f720885b-cf11-4bd8-ac5c-dce678a3d5c4","b866be01-f27d-4e6d-bbd7-7defcb91b6a5"],"title":"respawn
       powerup randomly from array after being picked up","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 3aee3a20-e135-45a3-950e-122b030a05c9

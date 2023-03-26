@@ -22,8 +22,10 @@ MonoBehaviour:
     null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __a_0: %SystemString, null\r\n   
     __b_0: %SystemString, null\r\n    __instance_2: %UnityEngineGameObject, this\r\n   
     __instance_3: %UnityEngineCollision, null\r\n    onCollisionEnterOther: %UnityEngineCollision,
-    null\r\n    __instance_4: %VRCUdonUdonBehaviour, this\r\n    __target_2: %VRCUdonCommonInterfacesNetworkEventTarget,
-    null\r\n    __eventName_2: %SystemString, null\r\n    __String_2: %SystemString,
+    null\r\n    __Boolean_1: %SystemBoolean, null\r\n    __instance_4: %VRCUdonUdonBehaviour,
+    this\r\n    __symbolName_0: %SystemString, null\r\n    __String_2: %SystemString,
+    null\r\n    __instance_5: %VRCUdonUdonBehaviour, this\r\n    __target_2: %VRCUdonCommonInterfacesNetworkEventTarget,
+    null\r\n    __eventName_2: %SystemString, null\r\n    __String_3: %SystemString,
     null\r\n    ball_Test: %VRCUdonUdonBehaviour, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
     .export _onPickup\r\n    \r\n    _onPickup:\r\n    \r\n        PUSH, ball_Test\r\n       
     PUSH, __instance_0\r\n        COPY\r\n        PUSH, __String_0\r\n        PUSH,
@@ -41,11 +43,15 @@ MonoBehaviour:
     __instance_2\r\n        PUSH, __a_0\r\n        EXTERN, \"UnityEngineGameObject.__get_name__SystemString\"\r\n       
     PUSH, __a_0\r\n        PUSH, __b_0\r\n        PUSH, __Boolean_0\r\n        EXTERN,
     \"SystemString.__Equals__SystemString_SystemString__SystemBoolean\"\r\n       
-    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00000164\r\n        PUSH, ball_Test\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x000001C4\r\n        PUSH, ball_Test\r\n       
     PUSH, __instance_4\r\n        COPY\r\n        PUSH, __String_2\r\n        PUSH,
-    __eventName_2\r\n        COPY\r\n        PUSH, __instance_4\r\n        PUSH,
-    __target_2\r\n        PUSH, __eventName_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n       
-    JUMP, 0x00000164\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    __symbolName_0\r\n        COPY\r\n        PUSH, __instance_4\r\n        PUSH,
+    __symbolName_0\r\n        PUSH, __Boolean_1\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject\"\r\n       
+    PUSH, __Boolean_1\r\n        JUMP_IF_FALSE, 0x00000174\r\n        JUMP, 0x000001BC\r\n       
+    PUSH, ball_Test\r\n        PUSH, __instance_5\r\n        COPY\r\n        PUSH,
+    __String_3\r\n        PUSH, __eventName_2\r\n        COPY\r\n        PUSH, __instance_5\r\n       
+    PUSH, __target_2\r\n        PUSH, __eventName_2\r\n        EXTERN, \"VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid\"\r\n       
+    JUMP, 0x000001C4\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -76,7 +82,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: 5723d480-7094-4a67-b64c-b32aa1fa4661
-      position: {x: -2880, y: -1910}
+      position: {x: -4560, y: -3140}
       nodeUIDs:
       - 
       - 
@@ -178,7 +184,7 @@ MonoBehaviour:
       nodeUIDs:
       - af0382c8-d2c9-41d8-b49c-b5d297789d4c
       flowUIDs:
-      - 5a79c882-b66d-48a5-b282-23e13d79f791
+      - e4617bdd-2314-4cf7-a3bd-fc407c83aeeb
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
@@ -210,7 +216,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Const_SystemString
       uid: a6f207a9-79f8-4b45-8ac6-d46e302b3d08
-      position: {x: 1320, y: 1270}
+      position: {x: 1680, y: 1280}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -219,7 +225,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|onCollisionEnter
     - fullName: Get_Variable
       uid: b64989a9-fcfd-46cf-a569-138838afb1a4
-      position: {x: 1320, y: 1170}
+      position: {x: 1680, y: 1180}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -230,7 +236,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid
       uid: 5a79c882-b66d-48a5-b282-23e13d79f791
-      position: {x: 1320, y: 1000}
+      position: {x: 1680, y: 1010}
       nodeUIDs:
       - b64989a9-fcfd-46cf-a569-138838afb1a4
       - 
@@ -244,6 +250,50 @@ MonoBehaviour:
           Version=1.0.0.0, Culture=neutral, PublicKeyToken=null|All
       - unityObjectValue: {fileID: 0}
         stringValue: 
+    - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject
+      uid: 5f5f245d-092f-4d55-abf3-fee71ba8216d
+      position: {x: 1350, y: 1170}
+      nodeUIDs:
+      - 138e94b4-da8a-4835-8558-8c961bf1492a|0
+      - ee5b3c1c-45f4-469b-ba02-34fa2679c1f2|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Get_Variable
+      uid: 138e94b4-da8a-4835-8558-8c961bf1492a
+      position: {x: 1350, y: 1300}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|5723d480-7094-4a67-b64c-b32aa1fa4661
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_SystemString
+      uid: ee5b3c1c-45f4-469b-ba02-34fa2679c1f2
+      position: {x: 1350, y: 1400}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|ball_Hit_Floor
+    - fullName: Branch
+      uid: e4617bdd-2314-4cf7-a3bd-fc407c83aeeb
+      position: {x: 1350, y: 1010}
+      nodeUIDs:
+      - 5f5f245d-092f-4d55-abf3-fee71ba8216d|0
+      flowUIDs:
+      - 
+      - 5a79c882-b66d-48a5-b282-23e13d79f791
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
     updateOrder: 0
   graphElementData:
   - type: 2
@@ -254,6 +304,6 @@ MonoBehaviour:
     jsonData: '{"uid":"e5c77cbe-ba4a-418e-a1ed-3ca5f895fbf8","layout":{"serializedVersion":"2","x":700.0,"y":190.0,"width":588.0,"height":365.0},"containedElements":["08d9c2df-11a2-4d29-8688-4f20227803b2","ffbd8b0e-2fce-4da8-a432-795ac7efb143","132e1137-93c3-4d26-8959-fb6f716929e0","f3a4d27c-f717-4c81-9cd3-ac5eb8376621","9a7ad87e-06fd-49cb-80ae-5cea10ddac85","82bbdadf-e10c-40bf-ae45-addc2afbf20c","1c79ee8e-d96d-489c-830b-405b63f577c0"],"title":"OnDrop","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: 2e526232-1aa3-493f-aa8c-2bfee90599ae
-    jsonData: '{"uid":"2e526232-1aa3-493f-aa8c-2bfee90599ae","layout":{"serializedVersion":"2","x":700.0,"y":940.0,"width":908.0,"height":575.0},"containedElements":["07764f09-fec8-4f86-88f8-83956274f6c3","30cf6c7a-9ee1-422b-8e62-1682ebbce8e4","5a79c882-b66d-48a5-b282-23e13d79f791","b64989a9-fcfd-46cf-a569-138838afb1a4","a6f207a9-79f8-4b45-8ac6-d46e302b3d08","bfe127c7-1c51-475f-a06b-e9cc9f55b87a","4b4437d9-7d3d-4a7d-87e5-1dad4f210371","af0382c8-d2c9-41d8-b49c-b5d297789d4c"],"title":"OnCollisionEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"2e526232-1aa3-493f-aa8c-2bfee90599ae","layout":{"serializedVersion":"2","x":700.0,"y":950.0,"width":1268.0,"height":567.0},"containedElements":["07764f09-fec8-4f86-88f8-83956274f6c3","30cf6c7a-9ee1-422b-8e62-1682ebbce8e4","5a79c882-b66d-48a5-b282-23e13d79f791","b64989a9-fcfd-46cf-a569-138838afb1a4","a6f207a9-79f8-4b45-8ac6-d46e302b3d08","bfe127c7-1c51-475f-a06b-e9cc9f55b87a","4b4437d9-7d3d-4a7d-87e5-1dad4f210371","af0382c8-d2c9-41d8-b49c-b5d297789d4c","ff65b22f-0398-4ef6-8919-b95fe1e2317c","f19a22f5-c116-40d2-9c32-1883166889a8","4854525e-c834-4199-ad1d-a4640e76a173","9ef49044-06b3-4dcf-901d-247c8e39c525","e8f8f5b5-fea3-44a3-b618-aad0a80dd62b","95cf9708-9d13-49c3-893b-5b2fa5973087","5f5f245d-092f-4d55-abf3-fee71ba8216d","138e94b4-da8a-4835-8558-8c961bf1492a","ee5b3c1c-45f4-469b-ba02-34fa2679c1f2","e4617bdd-2314-4cf7-a3bd-fc407c83aeeb"],"title":"OnCollisionEnter","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   version: 1.0.0
   showAssembly: 0
