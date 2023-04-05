@@ -4,27 +4,29 @@ using UnityEngine;
 using UdonSharp;
 using VRC.SDKBase;
 using VRC.Udon;
-public class SpawnBarricade : UdonSharpBehaviour
+public class SpawnBarricade : MonoBehaviour
 {
     public GameObject FloorMatUpTextured;
-    public GameObject spawner;
+    public GameObject FloorMatUpSpawner;
+   
 
-    void Update()
-    {
-      if (FloorMatUpTextured.activeInHierarchy==true)
-      {
-        spawner.SetActive(false);
-      }
-      else if (FloorMatUpTextured.activeInHierarchy == false)
-      {
-        spawner.SetActive(true);
-      }
 
-    }
 
-    public void Interact()
-    {
-      spawner.SetActive(false);
-      FloorMatUpTextured.SetActive(true);
-    }
+
+    //void Update()
+    //  {
+    //if (FloorMatUpTextured.activeInHierarchy==true)
+    // {
+    //        FloorMatUpSpawner.SetActive(false);
+    //         Debug.Log("Spawner Off in Spawn Barricade");
+    //  }
+    //   else if (FloorMatUpTextured.activeInHierarchy == false)
+    //   {
+    //        FloorMatUpSpawner.SetActive(true);
+    //         Debug.Log("Spawner On in Spawn Barricade");
+    //    }
+
+    //  }
+
+
 }

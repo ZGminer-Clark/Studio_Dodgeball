@@ -6,12 +6,22 @@ using UnityEngine;
 public class DestroyBarricade : MonoBehaviour
 {
     public int maxHealth = 3;
-    private int currentHealth;
+    public int currentHealth;
+    public GameObject FloorMatUp;
+    public GameObject FloorMatUpPlaceholder;
+    public GameObject EmptyGameObjectSpawner;
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
 
+        EmptyGameObjectSpawner.SetActive(false);
+
+        Debug.Log("EmptyGameObjectSpawner is now off");
+
+        FloorMatUpPlaceholder.SetActive(false);
+
+        Debug.Log("FloorMatUpPlaceholder is now off");
     }
 
 
@@ -29,9 +39,12 @@ public class DestroyBarricade : MonoBehaviour
         if (currentHealth <= 0)
         {
 
-           
 
-            gameObject.SetActive(false);
+            FloorMatUpPlaceholder.SetActive(true);
+            EmptyGameObjectSpawner.SetActive(true);
+            Debug.Log("You turned on your placeholder");
+            currentHealth = maxHealth;
+            FloorMatUp.SetActive(false);
 
           
 
@@ -41,4 +54,5 @@ public class DestroyBarricade : MonoBehaviour
       
 
     }
+   
 }
