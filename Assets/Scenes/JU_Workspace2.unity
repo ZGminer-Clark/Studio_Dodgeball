@@ -3565,8 +3565,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.6973712, y: 1.82386, z: 3.0580127}
-  m_Center: {x: -0.09423971, y: 0, z: -0.39418483}
+  m_Size: {x: 2.6973712, y: 0.421152, z: 4.098447}
+  m_Center: {x: -0.09423971, y: -0.701354, z: -0.28922755}
 --- !u!1 &535516853
 GameObject:
   m_ObjectHideFlags: 0
@@ -9126,6 +9126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 3
+  currentHealth: 0
   FloorMatUp: {fileID: 1773980922}
   FloorMatUpPlaceholder: {fileID: 487811414}
   EmptyGameObjectSpawner: {fileID: 63040822}
