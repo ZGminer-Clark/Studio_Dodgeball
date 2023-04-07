@@ -24,7 +24,7 @@
       }
     },
     "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.9",
+      "version": "0.1.7",
       "dependencies": {}
     },
     "dev.onevr.vrworldtoolkit": {
@@ -38,7 +38,7 @@
       "dependencies": {}
     },
     "com.vrchat.udonsharp": {
-      "version": "1.1.6",
+      "version": "1.1.7",
       "dependencies": {
         "com.vrchat.worlds": "3.1.x"
       }

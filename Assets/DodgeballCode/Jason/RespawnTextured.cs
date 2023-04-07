@@ -23,9 +23,11 @@ public class RespawnTextured : MonoBehaviour
    
     void OnTriggerEnter(Collider other)
     {
-       
+        Debug.Log("Entered Spawn Zone");
+
         if (Input.GetMouseButtonDown(0))
         {
+            Debug.Log("Pressed primary button.");
             FloorMatUpTextured.SetActive(true);
             
            
