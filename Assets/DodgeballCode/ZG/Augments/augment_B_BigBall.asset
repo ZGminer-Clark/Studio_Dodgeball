@@ -119,7 +119,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Variable_UnityEngineGameObject
       uid: 9f314700-0676-41c9-9b20-9ac3ab8275ff
-      position: {x: -815, y: -440}
+      position: {x: -4155, y: -2480}
       nodeUIDs:
       - 
       - 
@@ -176,7 +176,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_UnityEngineVector3
       uid: 44870a29-9e2d-4de8-8519-d0f20e9ae22c
-      position: {x: -815, y: -440}
+      position: {x: -4155, y: -2480}
       nodeUIDs:
       - 
       - 
@@ -292,7 +292,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_UnityEngineVector3
       uid: c57bc878-5082-4506-b012-633cc083932f
-      position: {x: 0, y: 0}
+      position: {x: -3340, y: -2040}
       nodeUIDs:
       - 
       - 
@@ -341,7 +341,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|True
     - fullName: Variable_UnityEngineGameObject
       uid: 5b1d8dfa-c555-400b-a5b2-d556915d2153
-      position: {x: -3125, y: -700}
+      position: {x: -6465, y: -2740}
       nodeUIDs:
       - 
       - 
@@ -364,7 +364,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_UnityEngineGameObject
       uid: 35eec3f6-d1c4-4758-9b1a-ee31720cc4df
-      position: {x: -1625, y: -350}
+      position: {x: -4965, y: -2390}
       nodeUIDs:
       - 
       - 
@@ -494,7 +494,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_SystemBoolean
       uid: c6965a31-26b5-4863-aa43-fa5eafee64fe
-      position: {x: 0, y: 0}
+      position: {x: -3340, y: -2040}
       nodeUIDs:
       - 
       - 
@@ -581,7 +581,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: fb95250f-0d05-430e-8ea8-da9309187300
-      position: {x: 0, y: 0}
+      position: {x: -3340, y: -2040}
       nodeUIDs:
       - 
       - 
@@ -604,7 +604,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: ca1dfa1f-8b7d-429a-94dc-857262d2471f
-      position: {x: -810, y: -455}
+      position: {x: -4150, y: -2495}
       nodeUIDs:
       - 
       - 
@@ -819,7 +819,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Variable_VRCUdonCommonInterfacesIUdonEventReceiver
       uid: 7e6a8ba3-d10c-416e-b4c0-ca93e83b2812
-      position: {x: -2840, y: -2810}
+      position: {x: -6180, y: -4850}
       nodeUIDs:
       - 
       - 
