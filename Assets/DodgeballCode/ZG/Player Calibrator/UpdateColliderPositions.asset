@@ -166,17 +166,24 @@ MonoBehaviour:
     null\r\n    __instance_76: %UnityEngineGameObject, this\r\n    __instance_77:
     %VRCSDKBaseVRCPlayerApi, null\r\n    __tt_2A: %UnityEngineHumanBodyBones, null\r\n   
     __instance_78: %VRCSDKBaseVRCPlayerApi, null\r\n    __tt_2B: %UnityEngineHumanBodyBones,
-    null\r\n    Colliders: %UnityEngineTransformArray, null\r\n    TorsoHips: %UnityEngineGameObject,
-    this\r\n    LUArm: %UnityEngineGameObject, this\r\n    LLArm: %UnityEngineGameObject,
-    this\r\n    RUArm: %UnityEngineGameObject, this\r\n    RLArm: %UnityEngineGameObject,
-    this\r\n    LULeg: %UnityEngineGameObject, this\r\n    LLLeg: %UnityEngineGameObject,
-    this\r\n    RULeg: %UnityEngineGameObject, this\r\n    RLLeg: %UnityEngineGameObject,
-    this\r\n    Player: %VRCSDKBaseVRCPlayerApi, null\r\n    tempScale: %UnityEngineVector3,
-    null\r\n    tempPosition: %UnityEngineVector3, null\r\n    TorsoSpine: %UnityEngineGameObject,
-    this\r\n    TorsoChest: %UnityEngineGameObject, this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n   
-    .export _start\r\n    \r\n    _start:\r\n    \r\n        PUSH, Player\r\n       
-    PUSH, __instance_1\r\n        COPY\r\n        PUSH, __instance_1\r\n        PUSH,
-    __tt_0\r\n        PUSH, __a_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3\"\r\n       
+    null\r\n    __Boolean_0: %SystemBoolean, null\r\n    __instance_79: %UnityEngineGameObject,
+    this\r\n    __other_0: %SystemObject, null\r\n    __name_0: %SystemString, null\r\n   
+    __String_0: %SystemString, null\r\n    __String_1: %SystemString, null\r\n   
+    __String_2: %SystemString, null\r\n    __instance_7A: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    onPlayerLeftPlayer: %VRCSDKBaseVRCPlayerApi, null\r\n    __GameObject_0:
+    %UnityEngineGameObject, this\r\n    __obj_0: %UnityEngineGameObject, this\r\n   
+    __GameObject_1: %UnityEngineGameObject, this\r\n    Colliders: %UnityEngineTransformArray,
+    null\r\n    TorsoHips: %UnityEngineGameObject, this\r\n    LUArm: %UnityEngineGameObject,
+    this\r\n    LLArm: %UnityEngineGameObject, this\r\n    RUArm: %UnityEngineGameObject,
+    this\r\n    RLArm: %UnityEngineGameObject, this\r\n    LULeg: %UnityEngineGameObject,
+    this\r\n    LLLeg: %UnityEngineGameObject, this\r\n    RULeg: %UnityEngineGameObject,
+    this\r\n    RLLeg: %UnityEngineGameObject, this\r\n    Player: %VRCSDKBaseVRCPlayerApi,
+    null\r\n    tempScale: %UnityEngineVector3, null\r\n    tempPosition: %UnityEngineVector3,
+    null\r\n    TorsoSpine: %UnityEngineGameObject, this\r\n    TorsoChest: %UnityEngineGameObject,
+    this\r\n\r\n.data_end\r\n\r\n.code_start\r\n\r\n    .export _start\r\n    \r\n   
+    _start:\r\n    \r\n        PUSH, Player\r\n        PUSH, __instance_1\r\n       
+    COPY\r\n        PUSH, __instance_1\r\n        PUSH, __tt_0\r\n        PUSH, __a_0\r\n       
+    EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3\"\r\n       
     PUSH, Player\r\n        PUSH, __instance_2\r\n        COPY\r\n        PUSH, __instance_2\r\n       
     PUSH, __tt_1\r\n        PUSH, __b_0\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3\"\r\n       
     PUSH, __a_0\r\n        PUSH, __b_0\r\n        PUSH, __value_0\r\n        EXTERN,
@@ -512,7 +519,19 @@ MonoBehaviour:
     EXTERN, \"VRCSDKBaseVRCPlayerApi.__GetBoneRotation__UnityEngineHumanBodyBones__UnityEngineQuaternion\"\r\n       
     PUSH, __instance_75\r\n        PUSH, __position_A\r\n        PUSH, __rotation_A\r\n       
     EXTERN, \"UnityEngineTransform.__SetPositionAndRotation__UnityEngineVector3_UnityEngineQuaternion__SystemVoid\"\r\n       
-    JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
+    JUMP, 0xFFFFFFFC\r\n    \r\n    .export _onPlayerLeft\r\n    \r\n    _onPlayerLeft:\r\n   
+    \r\n        PUSH, __String_2\r\n        PUSH, __String_0\r\n        COPY\r\n       
+    PUSH, onPlayerLeftPlayer\r\n        PUSH, __instance_7A\r\n        COPY\r\n       
+    PUSH, __instance_7A\r\n        PUSH, __String_1\r\n        EXTERN, \"VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString\"\r\n       
+    PUSH, __String_0\r\n        PUSH, __String_1\r\n        PUSH, __name_0\r\n       
+    EXTERN, \"SystemString.__op_Addition__SystemString_SystemString__SystemString\"\r\n       
+    PUSH, __name_0\r\n        PUSH, __instance_79\r\n        EXTERN, \"UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject\"\r\n       
+    PUSH, __GameObject_0\r\n        PUSH, __other_0\r\n        COPY\r\n        PUSH,
+    __instance_79\r\n        PUSH, __other_0\r\n        PUSH, __Boolean_0\r\n       
+    EXTERN, \"UnityEngineGameObject.__Equals__SystemObject__SystemBoolean\"\r\n       
+    PUSH, __Boolean_0\r\n        JUMP_IF_FALSE, 0x00001A94\r\n        PUSH, __GameObject_1\r\n       
+    PUSH, __obj_0\r\n        COPY\r\n        PUSH, __obj_0\r\n        EXTERN, \"VRCSDKBaseNetworking.__Destroy__UnityEngineGameObject__SystemVoid\"\r\n       
+    JUMP, 0x00001A94\r\n        JUMP, 0xFFFFFFFC\r\n    \r\n\r\n.code_end\r\n"
   assemblyError: 
   graphData:
     name: 
@@ -3451,6 +3470,103 @@ MonoBehaviour:
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|ab4884e9-48c8-4642-829c-47fc75b07b2d
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Event_OnPlayerLeft
+      uid: 497b2704-ef22-4e6a-bffe-3d8e21f795f4
+      position: {x: 790, y: 600}
+      nodeUIDs: []
+      flowUIDs:
+      - f494ac40-1814-4f35-9acd-5d333499767c
+      nodeValues: []
+    - fullName: Const_This
+      uid: 8b8c6060-ebce-48c9-9e61-7949ca83cb8d
+      position: {x: 1910, y: 760}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDKBaseNetworking.__Destroy__UnityEngineGameObject__SystemVoid
+      uid: cbbce063-ab4a-4611-bf29-4029427d55c4
+      position: {x: 1930, y: 560}
+      nodeUIDs:
+      - 8b8c6060-ebce-48c9-9e61-7949ca83cb8d|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject
+      uid: 4089422c-7821-42c8-be17-92c10154082b
+      position: {x: 1120, y: 900}
+      nodeUIDs:
+      - f692e07c-29a8-4f93-9a4b-db0a1b417c26
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: SystemString.__op_Addition__SystemString_SystemString__SystemString
+      uid: f692e07c-29a8-4f93-9a4b-db0a1b417c26
+      position: {x: 1170, y: 990}
+      nodeUIDs:
+      - 4770bb47-6625-44d9-8f45-4ee3673b402e
+      - 96c2b3b0-fa6c-4c95-a14b-9c4c6aa60388
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString
+      uid: 96c2b3b0-fa6c-4c95-a14b-9c4c6aa60388
+      position: {x: 1220, y: 1190}
+      nodeUIDs:
+      - 497b2704-ef22-4e6a-bffe-3d8e21f795f4|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_SystemString
+      uid: 4770bb47-6625-44d9-8f45-4ee3673b402e
+      position: {x: 1220, y: 1100}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 'System.String, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|Player Collider: '
+    - fullName: Branch
+      uid: f494ac40-1814-4f35-9acd-5d333499767c
+      position: {x: 1370, y: 690}
+      nodeUIDs:
+      - 6dd7638d-de78-4ffa-8bf3-f42f29eaf472|0
+      flowUIDs:
+      - cbbce063-ab4a-4611-bf29-4029427d55c4
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral,
+          PublicKeyToken=b77a5c561934e089|False
+    - fullName: UnityEngineGameObject.__Equals__SystemObject__SystemBoolean
+      uid: 6dd7638d-de78-4ffa-8bf3-f42f29eaf472
+      position: {x: 1450, y: 860}
+      nodeUIDs:
+      - 4089422c-7821-42c8-be17-92c10154082b|0
+      - deb6e5c1-40bb-4cb0-8913-ca25d9d7b93f|0
+      flowUIDs: []
+      nodeValues:
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+      - unityObjectValue: {fileID: 0}
+        stringValue: 
+    - fullName: Const_This
+      uid: deb6e5c1-40bb-4cb0-8913-ca25d9d7b93f
+      position: {x: 1490, y: 1010}
+      nodeUIDs:
+      - 
+      flowUIDs: []
+      nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
     updateOrder: 0

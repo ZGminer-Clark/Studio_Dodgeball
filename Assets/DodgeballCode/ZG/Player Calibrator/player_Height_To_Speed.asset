@@ -161,7 +161,7 @@ MonoBehaviour:
         stringValue: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|0
     - fullName: UnityEngineVector3.__Distance__UnityEngineVector3_UnityEngineVector3__SystemSingle
       uid: 98726c32-11df-429e-91f2-dc470e1a01c2
-      position: {x: -3.822546, y: 194.6082}
+      position: {x: -0, y: 190}
       nodeUIDs:
       - e2203e17-d086-419f-8568-59416ef2c41b|0
       - 6b3c27f6-a0c5-4ac1-82d3-dbff36e70691|0
@@ -221,7 +221,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|none
     - fullName: Set_Variable
       uid: 3db10e1e-2f0c-4085-ac7d-bfbea1a62b84
-      position: {x: -33.822456, y: 34.608162}
+      position: {x: -30, y: 30}
       nodeUIDs:
       - 
       - 98726c32-11df-429e-91f2-dc470e1a01c2|0
@@ -260,7 +260,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__GetBonePosition__UnityEngineHumanBodyBones__UnityEngineVector3
       uid: e2203e17-d086-419f-8568-59416ef2c41b
-      position: {x: -233.8226, y: 194.6082}
+      position: {x: -230, y: 190}
       nodeUIDs:
       - 8cf10a88-35cf-4d7f-a2c7-07646ceecc58|0
       - 
@@ -273,7 +273,7 @@ MonoBehaviour:
           Culture=neutral, PublicKeyToken=null|Head
     - fullName: Event_Update
       uid: 370ac527-ddc4-4615-b85d-29784b7bcb3e
-      position: {x: 384.91306, y: 40.513905}
+      position: {x: 380, y: 40}
       nodeUIDs: []
       flowUIDs:
       - 3c3263e5-138a-45c7-a047-06506e92e275
@@ -335,7 +335,7 @@ MonoBehaviour:
           PublicKeyToken=b77a5c561934e089|False
     - fullName: Get_Variable
       uid: 8cf10a88-35cf-4d7f-a2c7-07646ceecc58
-      position: {x: -443.82254, y: 194.6082}
+      position: {x: -440, y: 190}
       nodeUIDs:
       - 
       flowUIDs: []
@@ -346,7 +346,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: VRCSDKBaseVRCPlayerApi.__GetPosition__UnityEngineVector3
       uid: 6b3c27f6-a0c5-4ac1-82d3-dbff36e70691
-      position: {x: -213.82262, y: 314.6082}
+      position: {x: -210, y: 310}
       nodeUIDs:
       - 8cf10a88-35cf-4d7f-a2c7-07646ceecc58|0
       flowUIDs: []
