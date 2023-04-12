@@ -318,7 +318,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: Set_Variable
       uid: fd40d911-b246-432e-a661-30a1acaba5f5
-      position: {x: -620, y: 30}
+      position: {x: -630, y: 30}
       nodeUIDs:
       - 
       - 6936b1c1-13d7-4b9d-9783-cd9d91eebdcf|0
@@ -787,7 +787,7 @@ MonoBehaviour:
       movement variables are updated based on new height","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: a1387e78-e039-4597-bd49-6eb8131e0e1a
-    jsonData: '{"uid":"a1387e78-e039-4597-bd49-6eb8131e0e1a","layout":{"serializedVersion":"2","x":-825.0001220703125,"y":-26.999996185302736,"width":1001.0,"height":450.0},"containedElements":["fd40d911-b246-432e-a661-30a1acaba5f5","6936b1c1-13d7-4b9d-9783-cd9d91eebdcf","d34f1418-96c0-49cd-9b42-377abd6966a5","4e3bc699-28a6-4138-92ad-74e8712313e5","bc0c0d83-1dd4-4c64-9da9-c9e7cbac0c78","4a347424-366d-48a1-91d1-c1b3079b2e9a","fefff929-8298-47ed-90a6-333d1d594f60","f5e6be7c-e2ca-4bc4-ac40-cf858e4e35c4","98726c32-11df-429e-91f2-dc470e1a01c2","3db10e1e-2f0c-4085-ac7d-bfbea1a62b84","e2203e17-d086-419f-8568-59416ef2c41b","8cf10a88-35cf-4d7f-a2c7-07646ceecc58","6b3c27f6-a0c5-4ac1-82d3-dbff36e70691"],"title":"set
+    jsonData: '{"uid":"a1387e78-e039-4597-bd49-6eb8131e0e1a","layout":{"serializedVersion":"2","x":-820.0,"y":-30.0,"width":1008.0,"height":445.0},"containedElements":["fd40d911-b246-432e-a661-30a1acaba5f5","6936b1c1-13d7-4b9d-9783-cd9d91eebdcf","d34f1418-96c0-49cd-9b42-377abd6966a5","4e3bc699-28a6-4138-92ad-74e8712313e5","bc0c0d83-1dd4-4c64-9da9-c9e7cbac0c78","4a347424-366d-48a1-91d1-c1b3079b2e9a","fefff929-8298-47ed-90a6-333d1d594f60","f5e6be7c-e2ca-4bc4-ac40-cf858e4e35c4","98726c32-11df-429e-91f2-dc470e1a01c2","3db10e1e-2f0c-4085-ac7d-bfbea1a62b84","e2203e17-d086-419f-8568-59416ef2c41b","8cf10a88-35cf-4d7f-a2c7-07646ceecc58","6b3c27f6-a0c5-4ac1-82d3-dbff36e70691"],"title":"set
       player","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 3
     uid: 951215df-abc9-4372-a971-743c369eb156
