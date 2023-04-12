@@ -177,7 +177,7 @@ MonoBehaviour:
         stringValue: System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089|reenable
     - fullName: Variable_VRCSDK3ComponentsVRCObjectPool
       uid: 5ca1e9e1-69d1-4e41-b254-e637152ebc9f
-      position: {x: -2996.1, y: -1863.3}
+      position: {x: -4511.1, y: -3173.3}
       nodeUIDs:
       - 
       - 
@@ -307,7 +307,7 @@ MonoBehaviour:
         stringValue: 
     - fullName: Variable_UnityEngineGameObject
       uid: fcca6032-522e-47ba-b326-041ee8fa53e4
-      position: {x: -735, y: -195}
+      position: {x: -2250, y: -1505}
       nodeUIDs:
       - 
       - 
