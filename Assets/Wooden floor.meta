@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Wooden floor.meta
 guid: 0b980f8d7dda79945a6f7ffe6899b2fc
+========
+guid: c0aab82df6a6cc9459e42ae5d1a0ad23
+>>>>>>>> 950a6f7129d249aec1294c3ad5a63834a56bb092:Assets/DE_workspace/Materials.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
