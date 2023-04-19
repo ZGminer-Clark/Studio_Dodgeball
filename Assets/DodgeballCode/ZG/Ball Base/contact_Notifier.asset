@@ -82,7 +82,7 @@ MonoBehaviour:
       nodeValues: []
     - fullName: VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid
       uid: ab75e9c4-4624-4a86-b1e9-266612dee552
-      position: {x: 940, y: 620}
+      position: {x: 896, y: 613}
       nodeUIDs:
       - 9b94fa27-4143-4e0c-be13-3b6a4ca49559|0
       - 
@@ -153,7 +153,8 @@ MonoBehaviour:
       - ffbd8b0e-2fce-4da8-a432-795ac7efb143
       - 
       - 08d9c2df-11a2-4d29-8688-4f20227803b2
-      flowUIDs: []
+      flowUIDs:
+      - 
       nodeValues:
       - unityObjectValue: {fileID: 0}
         stringValue: 
@@ -424,7 +425,7 @@ MonoBehaviour:
   graphElementData:
   - type: 2
     uid: fef311b0-9197-447e-87e4-420d333ce727
-    jsonData: '{"uid":"fef311b0-9197-447e-87e4-420d333ce727","layout":{"serializedVersion":"2","x":700.0,"y":560.0,"width":519.0,"height":425.0},"containedElements":["eec729e1-0100-4d2b-9612-ae660535307a","9b94fa27-4143-4e0c-be13-3b6a4ca49559","ab75e9c4-4624-4a86-b1e9-266612dee552","f51bf976-bd13-4f59-9880-3a9d8140820d","7b355dbc-6ec2-4d2c-b6ea-c6d51dcd706b","0f7ed175-a52d-4c51-9189-4a151857dd7d"],"title":"OnPickup","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
+    jsonData: '{"uid":"fef311b0-9197-447e-87e4-420d333ce727","layout":{"serializedVersion":"2","x":658.0,"y":555.0,"width":523.0,"height":433.0},"containedElements":["eec729e1-0100-4d2b-9612-ae660535307a","9b94fa27-4143-4e0c-be13-3b6a4ca49559","ab75e9c4-4624-4a86-b1e9-266612dee552","f51bf976-bd13-4f59-9880-3a9d8140820d","7b355dbc-6ec2-4d2c-b6ea-c6d51dcd706b","0f7ed175-a52d-4c51-9189-4a151857dd7d"],"title":"OnPickup","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
   - type: 2
     uid: e5c77cbe-ba4a-418e-a1ed-3ca5f895fbf8
     jsonData: '{"uid":"e5c77cbe-ba4a-418e-a1ed-3ca5f895fbf8","layout":{"serializedVersion":"2","x":710.0,"y":130.0,"width":468.0,"height":427.0},"containedElements":["08d9c2df-11a2-4d29-8688-4f20227803b2","ffbd8b0e-2fce-4da8-a432-795ac7efb143","132e1137-93c3-4d26-8959-fb6f716929e0","f3a4d27c-f717-4c81-9cd3-ac5eb8376621","9a7ad87e-06fd-49cb-80ae-5cea10ddac85","82bbdadf-e10c-40bf-ae45-addc2afbf20c","1c79ee8e-d96d-489c-830b-405b63f577c0","802997d1-f350-46f6-98a2-543754faa3d8","58cd9de2-baaf-46bf-828e-05b404635bb3","ce3c24c7-476a-45e1-a02e-ca94f505b8f1","a7f6fe78-c193-45bc-83a6-5541246a6e27","8114d057-d0d0-48db-9700-2dcd3b1955e4","892e121e-107b-4b14-a9df-afba2e4999cf","0fb948c7-8483-4741-80c2-908167950b8c","fdabaa41-aade-4314-a8f3-ec32ba87d01c"],"title":"OnDrop","layer":-1,"elementTypeColor":{"r":0.0,"g":0.0,"b":0.0,"a":1.0}}'
