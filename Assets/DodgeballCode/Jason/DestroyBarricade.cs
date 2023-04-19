@@ -15,9 +15,7 @@ public class DestroyBarricade : MonoBehaviour
     {
         currentHealth = maxHealth;
 
-        EmptyGameObjectSpawner.SetActive(false);
-
-        Debug.Log("EmptyGameObjectSpawner is now off");
+       
 
         FloorMatUpPlaceholder.SetActive(false);
 
@@ -41,7 +39,7 @@ public class DestroyBarricade : MonoBehaviour
 
 
             FloorMatUpPlaceholder.SetActive(true);
-            EmptyGameObjectSpawner.SetActive(true);
+          
             Debug.Log("You turned on your placeholder");
             currentHealth = maxHealth;
             FloorMatUp.SetActive(false);
