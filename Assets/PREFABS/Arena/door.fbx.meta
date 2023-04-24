@@ -3,7 +3,32 @@ guid: 80aec83f85a6f7c4790cb4d5e09c50c4
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome Handle
+    second: {fileID: 2100000, guid: 1a378899976240f4b82ff80e332d384a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle mech
+    second: {fileID: 2100000, guid: ed157cfb2da5ef24c97a6f784ceabcb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.139
+    second: {fileID: 2100000, guid: 1a378899976240f4b82ff80e332d384a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal Guard
+    second: {fileID: 2100000, guid: ed157cfb2da5ef24c97a6f784ceabcb8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rear Doors.001
+    second: {fileID: 2100000, guid: 2be87fa1a9f337b40bc5c59dc0d783aa, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
